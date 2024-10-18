@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title>
+    <h3> Update Billing Information </h3>
+    <p> Enter your payment details below to use it in future payments :
+  </mat-card-title>
+  <mat-card-content>
+    <p> Shipping & Billing Information
+      <app-payment-form (processPayment)="onTokenRecieve($event)" (cancelButton)="onCancel()" payButtonText="Save">
+      </app-payment-form>
+  </mat-card-content>
+</mat-card>

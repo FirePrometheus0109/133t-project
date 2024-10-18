@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-content>
+    <h4> Choose the package for trial</h4>
+    <p> Please find the available packages in the table below</p>
+    <p> You can have full access inside the selected package for a {{trialLengthPeriod}} days as a trial period</p>
+  </mat-card-content>
+
+  <app-plans-table [availablePlans]="availablePlans$ | async"
+                   (changeSelectedPlan)="onTrialPackageSelected($event)">
+  </app-plans-table>
+  <mat-action-row>
+    <button mat-raised-button (click)="onTrialPackageSubmitted()" [disabled]="!selectedPlan">Submit</button>
+  </mat-action-row>
+</mat-card>

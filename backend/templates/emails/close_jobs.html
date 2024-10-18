@@ -1,0 +1,34 @@
+subject: |
+    [{{ domain_name }}]: Job postings are going to be closed on {{ closing_date }}
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Close job posting</title>
+            <style>
+                #footer {
+                    padding-top: 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Hello {{ first_name }} {{ last_name }}!</p>
+            <p>
+                Following job postings are going to be closed in {{ interval }} days according to closing date specified in the job postings:
+                {% for url, title in urls_and_titles %}
+                    <div>
+                        <a href="{{ url }}">{{ title }}</a>
+                    </div>
+                {% endfor %}
+            <p>
+                Please note that all candidates in the job postings will be moved to Rejected automatically.
+            </p>
+            <p>
+                In case you need this job posting published, change the closing date in the job posting.
+            </p>
+            <p id="footer">
+                133T team
+            </p>
+        </body>
+    </html>

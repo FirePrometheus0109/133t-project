@@ -1,0 +1,23 @@
+<div class="short-notification-item">
+  <mat-card>
+    <mat-dialog-content>
+      <div *ngIf="isAutoApplyNotification">
+        <span>{{messageParts.firstPart}}</span>
+        <span class="link" (click)="navigateToAutoApply.emit(notificationItem.data.autoapply.id)">
+          {{notificationItem.data.autoapply.title}}
+        </span>
+        <span>{{messageParts.lastPart}}</span>
+      </div>
+      <div *ngIf="isPlanWithLinkNotification">
+        <span>{{messageParts.firstPart}}</span>
+        <span class="link" (click)="navigateToDashboard.emit()">
+          Dashboard
+        </span>
+        <span>{{messageParts.lastPart}}</span>
+      </div>
+      <div *ngIf="!isAutoApplyNotification && !isPlanWithLinkNotification">
+        <span>{{notificationItem.description}}</span>
+      </div>
+    </mat-dialog-content>
+  </mat-card>
+</div>

@@ -1,0 +1,18 @@
+# General
+# ------------------------------------------------------------------------------
+DJANGO_SETTINGS_MODULE=leet.settings.test
+DATABASE_URL="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}:${POSTGRES_PORT}/${POSTGRES_DB}"
+DOMAIN_NAME=leet.teamcity.com
+
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+CELERY_BROKER_URL=redis://redis:6379/0
+
+# TeamCity
+TEAMCITY_VERSION=1
+PROSPECTOR_EXPECTED_ERRORS=0
+
+HTTP_SCHEME=https

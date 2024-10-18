@@ -1,0 +1,65 @@
+{% extends "admin/reports_list.html" %}
+{% block result_list %}
+    <div class="results">
+        <table>
+
+            <thead>
+            <tr>
+                <th>
+                    <div class="text">
+                        <a href="#">Company</a>
+                    </div>
+                </th>
+                <th>
+                    <div class="text">
+                        <a href="#">Total amount</a>
+                    </div>
+                </th>
+                <th>
+                    <div class="text">
+                        <a href="#">Amount</a>
+                    </div>
+                </th>
+                <th>
+                    <div class="text">
+                        <a href="#">Description</a>
+                    </div>
+                </th>
+                <th>
+                    <div class="text">
+                        <a href="#">Date</a>
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for row in report %}
+
+                {% if row.invoices|length %}
+                    <tr class="{% cycle 'row1' 'row2' %}">
+                        <td rowspan="{{ row.invoices|length|add:1 }}">{{ row.company.name }}</td>
+                        <td rowspan="{{ row.invoices|length|add:1 }}">{{ row.company.total }}</td>
+                    </tr>
+                    {% for payment in row.invoices %}
+                        <tr class="{% cycle 'row1' 'row2' %}">
+                            <td>{{ payment.amount }}</td>
+                            <td>{{ payment.description }}</td>
+                            <td>{{ payment.datetime_of_payment }}</td>
+                        </tr>
+                    {% endfor %}
+
+                {% else %}
+                    <tr class="{% cycle 'row1' 'row2' %}">
+                        <td>{{ row.company.name }}</td>
+                        <td>{{ row.company.total }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            </tbody>
+
+        </table>
+    </div>
+{% endblock %}

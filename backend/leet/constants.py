@@ -1,0 +1,58 @@
+USER_WITH_CERTAIN_EMAIL_EXISTS = (
+    'A user is already registered with this e-mail address.'
+)
+
+CANDIDATE_STATUS_APPLIED = 'Applied'
+CANDIDATE_STATUS_SCREENED = 'Screened'
+CANDIDATE_STATUS_INTERVIEWED = 'Interviewed'
+CANDIDATE_STATUS_OFFERED = 'Offered'
+CANDIDATE_STATUS_HIRED = 'Hired'
+CANDIDATE_STATUS_REJECTED = 'Rejected'
+
+CANDIDATE_STATUSES = (
+    CANDIDATE_STATUS_APPLIED,
+    CANDIDATE_STATUS_SCREENED,
+    CANDIDATE_STATUS_INTERVIEWED,
+    CANDIDATE_STATUS_OFFERED,
+    CANDIDATE_STATUS_HIRED,
+    CANDIDATE_STATUS_REJECTED
+)
+
+SUBSCRIPTION_REQUIRED_ERROR = (
+    'You can not perform this action without subscription.'
+)
+
+MIN_FULL_TEXT_SEARCH_WEIGHT = 0.001
+
+CANDIDATE_STATUS_WORKFLOW_VALUE = {
+    CANDIDATE_STATUS_APPLIED: 0,
+    CANDIDATE_STATUS_SCREENED: 1,
+    CANDIDATE_STATUS_INTERVIEWED: 2,
+    CANDIDATE_STATUS_OFFERED: 3,
+    CANDIDATE_STATUS_HIRED: 4,
+    CANDIDATE_STATUS_REJECTED: 5,
+}
+
+
+EVENT_TYPES_SCREENING_NAME = 'Screening'
+EVENT_TYPES_INTERVIEW_NAME = 'Interview'
+
+EVENT_TYPES = [
+    EVENT_TYPES_SCREENING_NAME,
+    EVENT_TYPES_INTERVIEW_NAME
+]
+
+CENTS_IN_DOLLAR = 100
+
+FILL_COMPANY_PROFILE_ERROR = 'Please, fill the company profile.'
+
+PHOTO_MAX_SIZE_MB = 5 * 1024 * 1024
+PHOTO_VALID_EXTENSIONS = ('png', 'gif', 'jpeg', 'bmp', 'tiff')
+PHOTO_FILE_SIZE_ERROR = (
+    "The file size exceeds the limit of {}MB. Please upload a file that "
+    "doesn't exceed the limit".format(PHOTO_MAX_SIZE_MB)
+)
+NOT_VALID_PHOTO_EXTENSION_ERROR = (
+    'The extension is not valid. Valid extensions: {}'
+        .format(', '.join(PHOTO_VALID_EXTENSIONS))
+)

@@ -1,0 +1,11 @@
+<div class="letter-template-view">
+  <div class="template-property">
+    <div class="property-name">Subject:</div>
+    <div class="long-name">{{letterTemplate.subject}}</div>
+  </div>
+  <div class="template-property">
+    <div class="property-name">Body:</div>
+    <div class="long-name">{{letterTemplate.body}}</div>
+  </div>
+  <div *ngIf="letterTemplate.event_type">Default for {{letterTemplate.event_type.name}}</div>
+</div>

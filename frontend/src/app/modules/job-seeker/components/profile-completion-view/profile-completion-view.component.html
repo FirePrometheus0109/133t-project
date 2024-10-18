@@ -1,0 +1,10 @@
+<div class="progress-container">
+  <div class="progress-message">
+    <span *ngIf="checkIsProfileCompleted()">Well done! Your profile is 100% complete.</span>
+    <span *ngIf="!checkIsProfileCompleted()">Get noticed by Employers! Complete your profile!</span>
+  </div>
+  <app-completion-spinner [matTooltip]="getTooltipText"
+                          matTooltipClass="jsp-profile-validation-tooltip"
+                          [completionPercent]="profileCompletion?.total_complete">
+  </app-completion-spinner>
+</div>

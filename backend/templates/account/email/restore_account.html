@@ -1,0 +1,15 @@
+subject: |
+    [{{ domain_name }}]: Account Restore
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <head>
+        <title type="text/css">Account Restore</title>
+    </head>
+    <html>
+        <body>
+            <p>Hello {{ user.get_full_name }}!</p>
+            <p>To restore your account use <a href="{{ url }}">link</a>.</p>
+            <p>Thank you!</p>
+        </body>
+    </html>

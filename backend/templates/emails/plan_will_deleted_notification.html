@@ -1,0 +1,25 @@
+subject: |
+    [{{ domain_name }}]: Package deletion
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Package deletion</title>
+            <style>
+                td {
+                    padding: 0 20px 0 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Hello {{ user.get_full_name }},</p>
+            <p>
+                Starting from {{ deletion_date|date:"Y-m-d" }}, your package {{ plan }}  will be deleted.
+                Please select one of the other packages - <a href="{{ url }}">Link to the Dashboard</a>.
+                In case the new package is not selected, your package will be change to {{ next_plan }}.
+            </p>
+            <br>
+            <p>Thank you for using 133T!</p>
+        </body>
+    </html>

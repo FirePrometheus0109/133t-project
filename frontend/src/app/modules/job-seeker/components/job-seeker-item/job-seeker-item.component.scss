@@ -1,0 +1,44 @@
+.content-container {
+  display: flex;
+  flex-direction: row;
+  border-top: 3px solid rgba(0, 0, 0, 0.42);
+  padding: 20px 50px 20px 30px;
+  width: 75%;
+}
+
+.job-seeker-container {
+  flex-grow: 3;
+}
+
+.job-seeker-main-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.job-seeker-detail-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  .profile-info {
+    div {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.action-container {
+  display: flex;
+}

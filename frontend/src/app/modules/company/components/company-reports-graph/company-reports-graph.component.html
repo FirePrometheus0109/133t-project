@@ -1,0 +1,36 @@
+<div class="graph-container">
+  <div class="basic-contol">
+    <h4> Company Performing</h4>
+    <mat-form-field>
+      <mat-select [(value)]="selectedBasic" (selectionChange)="onBasisChange($event)">
+        <mat-option *ngFor="let item of dateBasis | keyvalue" [value]="item.value">
+          by {{item.value}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="graph-contol">
+    <ngx-charts-line-chart [view]="chartOptions.view"
+                           [scheme]="chartOptions.colorScheme"
+                           [results]="graphData$ | async"
+                           [gradient]="chartOptions.gradient"
+                           [xAxis]="chartOptions.showXAxis"
+                           [yAxis]="chartOptions.showYAxis"
+                           [legend]="chartOptions.showLegend"
+                           [showXAxisLabel]="chartOptions.showXAxisLabel"
+                           [showYAxisLabel]="chartOptions.showYAxisLabel"
+                           [autoScale]="chartOptions.autoScale"
+                           [timeline]="chartOptions.timeline"
+                           [xAxisTickFormatting]="formatTimeline.bind(this)">
+    </ngx-charts-line-chart>
+  </div>
+
+  <div class="navigation-control">
+    <button (click)="onMoveGraphToPast()" mat-fab matTooltip="Step to past">
+      <mat-icon>navigate_before</mat-icon>
+    </button>
+    <button (click)="onMoveGraphToFuture()" mat-fab matTooltip="Step to future" [disabled]="isGraphOnCurrentState()">
+      <mat-icon>navigate_next</mat-icon>
+    </button>
+  </div>
+</div>

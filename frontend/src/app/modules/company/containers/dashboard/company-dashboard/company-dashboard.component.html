@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content>
+    <app-score-card-stats *ngIf="!(isSubscriptionExpired$ | async)"></app-score-card-stats>
+    <div class="dashboard-activity-container" *ngIf="!(isSubscriptionExpired$ | async)">
+      <div class="candidates-activity-section">
+        <mat-card>
+          <mat-card-title>Candidates Activity</mat-card-title>
+          <mat-card-content>
+            <app-dashboard-candidates-activity></app-dashboard-candidates-activity>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="newest-jobs-section">
+        <app-dashboard-newest-jobs></app-dashboard-newest-jobs>
+      </div>
+    </div>
+    <mat-expansion-panel [expanded]="(isSubscriptionExpired$ | async)">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Remain Company Balance
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-set-subscription-panel>
+      </app-set-subscription-panel>
+    </mat-expansion-panel>
+  </mat-card-content>
+</mat-card>

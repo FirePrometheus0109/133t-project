@@ -1,0 +1,35 @@
+<form [formGroup]="form">
+  <div>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Name" formControlName="name">
+    </mat-form-field>
+    <app-control-messages
+        [form]="form"
+        [control]="f.name"
+        [submitted]="isSubmitted"
+        [errors]="errors">
+    </app-control-messages>
+  </div>
+  <div>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Subject" formControlName="subject">
+    </mat-form-field>
+    <app-control-messages
+        [form]="form"
+        [control]="f.subject"
+        [submitted]="isSubmitted"
+        [errors]="errors">
+    </app-control-messages>
+  </div>
+  <div>
+    <mat-form-field>
+      <textarea matInput placeholder="Body" formControlName="body" class="no-resize-textarea" rows="8"></textarea>
+    </mat-form-field>
+    <app-control-messages
+        [form]="form"
+        [control]="f.body"
+        [submitted]="isSubmitted"
+        [errors]="errors">
+    </app-control-messages>
+  </div>
+</form>

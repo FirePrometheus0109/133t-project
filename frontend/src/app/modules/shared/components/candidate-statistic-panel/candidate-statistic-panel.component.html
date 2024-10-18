@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-content>
+    <div class="dashboard-item"
+         matTooltip="Open {{item.key}} Candidate"
+         *ngFor="let item of panelData | keys"
+         (click)="onCandidateOpen(item)">
+      <span [ngClass]="item.value ? 'allowed' : 'not-allowed'">{{item.key}} : {{item.value}}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

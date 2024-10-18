@@ -1,0 +1,108 @@
+version: '3'
+
+volumes:
+    local_postgres_data: {}
+    local_postgres_data_backups: {}
+    local_node_modules: {}
+    logs: {}
+
+services:
+    django: &django
+        build:
+            context: .
+            dockerfile: ./compose/local/django/Dockerfile
+        image: reg133t.azurecr.io/one33t_local_django:latest
+        restart: on-failure
+        environment:
+            SERVICE: wsgi
+        depends_on:
+            - postgres
+            - elasticsearch
+        volumes:
+            - ./backend:/app
+            - logs:/var/log/gunicorn
+        env_file:
+            - ./.envs/.local/.django
+            - ./.envs/.local/.postgres
+        ports:
+            - '8000:8000'
+            - '3000:3000'
+        # command: sh -c "dockerize -wait tcp://postgres:5432 -timeout 300s -wait-retry-interval 5s /start"
+        command: sleep 9999999
+
+    node:
+        build:
+            context: .
+            dockerfile: ./compose/local/node/Dockerfile
+        image: reg133t.azurecr.io/one33t_local_node:latest
+        depends_on:
+            - django
+        volumes:
+            - ./frontend:/app
+            - local_node_modules:/frontend/node_modules
+        env_file:
+            - ./.envs/.local/.node
+        ports:
+            - '4200:4200'
+            - '49153:49153'
+            - '9876:9876'
+        command: /start
+
+    postgres:
+        image: kartoza/postgis:11.0-2.5
+        volumes:
+            - local_postgres_data:/var/lib/postgresql/data
+            - ./backend/postgres:/docker-entrypoint-initdb.d
+        env_file:
+            - ./.envs/.local/.postgres
+        ports:
+            - '5432:5432'
+
+    redis:
+        image: redis:4.0-alpine
+
+    celeryworker:
+        <<: *django
+        image: reg133t.azurecr.io/one33t_local_celeryworker:latest
+        environment:
+            SERVICE: worker
+        depends_on:
+            - redis
+            - postgres
+        ports:
+            - '3100:3100' # This lets you attach the VSCode debugger to the celery process
+        # command: pip install debugpy -t /tmp && python /tmp/debugpy --listen 0.0.0.0:3100 /usr/local/bin/celery -A leet.taskapp worker -l INFO -S django
+
+    celerybeat:
+        <<: *django
+        image: reg133t.azurecr.io/one33t_local_celerybeat:latest
+        environment:
+            SERVICE: beat
+        depends_on:
+            - redis
+            - postgres
+        ports: 
+            - '3002:3002' # This lets you attach the VSCode debugger to the celery process 
+        # command: pip install debugpy -t /tmp && python /tmp/debugpy --listen 0.0.0.0:3002 /usr/local/bin/celery -A leet.taskapp beat -l INFO -S django
+
+    elasticsearch:
+        image: elasticsearch:7.17.6
+        ports:
+            - 9200:9200
+        environment:
+            'http.host': elasticsearch
+            'transport.host': 127.0.0.1
+            ES_JAVA_OPTS: "-Xms512m -Xmx512m"
+        healthcheck:
+            test: 'curl -fsSL "http://elastic:changeme@elasticsearch:9200/_cat/health?h=status"'
+            interval: 10s
+            timeout: 5s
+            retries: 36
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.103.0.0/16

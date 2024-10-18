@@ -1,0 +1,10 @@
+<mat-paginator [length]="count$ | async"
+               [pageSize]="pageSize$ | async"
+               [pageSizeOptions]="pageSizeOptions$ | async"
+               (page)="onPageChanged($event)">
+</mat-paginator>
+<app-log-item *ngFor="let logItem of (logs$ | async)"
+              [logItem]="logItem"
+              (deleteLog)="deleteLog($event)"
+              (viewDeletedComment)="viewDeletedComment($event)">
+</app-log-item>

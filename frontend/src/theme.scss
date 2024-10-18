@@ -1,0 +1,82 @@
+@import '~@angular/material/theming';
+
+@mixin mat-custom-snack-bar-theme($theme) {
+  $info: #d9edf7;
+  $info-text: #31708f;
+
+  $success: #dff0d8;
+  $success-text: #3c763d;
+
+  $warning: #fcf8e3;
+  $warning-text: #8a6d3b;
+
+  $error: #f2dede;
+  $error-text: #a94442;
+
+  // Info
+  .style-info {
+    background: $info;
+    color: $info-text;
+  }
+  .style-info .mat-simple-snackbar-action {
+    color: $info-text;
+  }
+
+  // Success
+  .style-success {
+    background: $success;
+    color: $success-text;
+  }
+  .style-success .mat-simple-snackbar-action {
+    color: $success-text;
+  }
+
+  // Warning
+  .style-warning {
+    background: $warning;
+    color: $warning-text;
+  }
+  .style-warning .mat-simple-snackbar-action {
+    color: $warning-text;
+  }
+
+  // Error
+  .style-error {
+    background: $error;
+    color: $error-text;
+  }
+  .style-error .mat-simple-snackbar-action {
+    color: $error-text;
+  }
+
+}
+
+@mixin mat-custom-tooltip-theme($theme) {
+  $tooltip-font-size: 16px;
+  $min-width: 280px;
+  $max-width: 350px;
+  $white-space: pre-line;
+
+  .jsp-profile-validation-tooltip {
+    font-size: $tooltip-font-size;
+    min-width: $min-width;
+    max-width: $max-width;
+    white-space: $white-space;
+  }
+}
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+$app-primary: mat-palette($mat-blue-grey);
+$app-accent: mat-palette($mat-grey);
+$app-warn: mat-palette($mat-deep-orange);
+
+// Custom Sass colors vars (will be available in all the project)
+$primary: mat-color($app-primary);
+$accent: mat-color($app-accent);
+$warn: mat-color($app-warn);
+
+@include mat-core();
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+@include angular-material-theme($app-theme);
+@include mat-custom-snack-bar-theme($app-theme);
+@include mat-custom-tooltip-theme($app-theme);

@@ -1,0 +1,42 @@
+<mat-card>
+  <mat-card-title>
+    <span *ngIf="createMode$ | async">Create Letter Template</span>
+    <span *ngIf="editMode$ | async">Edit Letter Template</span>
+    <span *ngIf="viewMode$ | async">Letter Template {{currentLetterTemplate.name}}</span>
+  </mat-card-title>
+  <mat-card-content>
+    <div *ngIf="!(viewMode$ | async)">
+      <app-letter-template-from [form]="letterTemplateForm"
+                                [errors]="errors$ | async"
+                                [initialData]="currentLetterTemplate">
+      </app-letter-template-from>
+    </div>
+    <div *ngIf="viewMode$ | async">
+      <app-letter-template-view [letterTemplate]="currentLetterTemplate"></app-letter-template-view>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="buttons-group">
+    <button type="button" mat-raised-button color="primary"
+            *ngIf="!(viewMode$ | async)"
+            (click)="provideDefaultChoice()">
+      Default
+    </button>
+    <button type="button" mat-raised-button color="primary"
+            *ngIf="createMode$ | async"
+            (click)="createLetterTemplate()">
+      Create
+    </button>
+    <div *ngxPermissionsOnly="['change_lettertemplate']">
+      <button type="button" mat-raised-button color="primary" *ngIf="viewMode$ | async"
+              (click)="goToLetterTemplateEdit()">
+        Edit
+      </button>
+    </div>
+    <button type="button" mat-raised-button color="primary" *ngIf="editMode$ | async" (click)="saveLetterTemplate()">
+      Save
+    </button>
+    <button type="button" mat-raised-button color="primary" (click)="goToLetterTemplatesList()">
+      Cancel
+    </button>
+  </mat-card-actions>
+</mat-card>

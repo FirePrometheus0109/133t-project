@@ -1,0 +1,9 @@
+<mat-paginator [length]="count$ | async"
+               [pageSize]="pageSize$ | async"
+               [pageSizeOptions]="pageSizeOptions$ | async"
+               (page)="onPageChanged($event)">
+</mat-paginator>
+<app-last-view-item *ngFor="let item of (lastViews$ | async)"
+                    [lastViewItem]="item"
+                    (goToCompanyProfile)="goToCompanyProfile($event)">
+</app-last-view-item>

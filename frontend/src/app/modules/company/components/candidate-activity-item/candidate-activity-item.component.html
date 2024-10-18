@@ -1,0 +1,16 @@
+<div class="activity-item">
+  <div class="activity-title">
+    <span class="link" (click)="navigateToCandidate.emit(activityItem.candidate.id)">
+      {{activityItem.candidate.name}}
+    </span>
+  </div>
+  <div>
+    <span>
+      <span>{{activityBody}}</span>
+      <span class="link" (click)="navigateToJob.emit(activityItem.job.id)">
+        {{activityItem.job.title}}
+      </span>
+      &nbsp;{{formattedTime}}
+    </span>
+  </div>
+</div>

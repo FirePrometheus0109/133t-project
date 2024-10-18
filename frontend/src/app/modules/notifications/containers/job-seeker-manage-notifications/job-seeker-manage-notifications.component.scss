@@ -1,0 +1,26 @@
+.manage-notifications-grid {
+  display: flex;
+  justify-content: space-evenly;
+  .column {
+    width: 200px;
+  }
+  .column-toggle {
+    width: 50px;
+  }
+
+  .column,
+  .column-toggle {
+    div {
+      width: 100%;
+      height: 40px;
+    }
+  }
+
+  /deep/ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: #49c5b6;
+  }
+
+  /deep/ .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: #49c5b6;
+  }
+}

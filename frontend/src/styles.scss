@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.jsp-view-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-container {
+  align-self: center;
+}
+
+@media print {
+  app-sidenav { display: none; }
+  app-toolbar { display: none; }
+  app-root .removed-from-print {
+    display: none !important;
+  }
+  mat-card {
+    box-shadow: unset !important;
+  }
+  mat-sidenav-container {
+    background-color: transparent !important;
+    color: black !important;
+    position: relative !important;
+    mat-sidenav-content {
+      margin: 0 !important;
+      .container {
+        min-width: 0 !important;
+        padding: 0 !important;
+      }
+      h3, h4 {
+        page-break-after: avoid;
+      }
+      pre, blockquote, img {
+        page-break-inside: avoid;
+      }
+    }
+  }
+}
+
+@import "theme.scss";
+@import "~angular-calendar/css/angular-calendar.css";
+@import "~ng-pick-datetime/assets/style/picker.min.css";
+
+mwl-calendar-day-view {
+  *, ::after, ::before {
+    box-sizing: border-box;
+  }
+}
+
+//custom styling for plugins
+
+.stepper-main .mat-horizontal-stepper-header-container {
+  width: 100vw;
+  max-width: 1500px;
+}
+
+.stepper-main .mat-stepper-horizontal-line {
+  min-width: 10px !important;
+}
+
+.stepper-main .mat-step-label {
+  white-space: normal !important;
+}

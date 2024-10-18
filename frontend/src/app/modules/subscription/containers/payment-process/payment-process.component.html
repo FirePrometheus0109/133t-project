@@ -1,0 +1,19 @@
+<div class='payment-page'>
+  <mat-card>
+    <app-payment-form (processPayment)="onTokenRecieve($event)">
+    </app-payment-form>
+  </mat-card>
+  <mat-card>
+    <mat-card-title>
+      <h3>Order summary</h3>
+    </mat-card-title>
+    <mat-card-content>
+      <p> {{(purchasedPlan$ | async).name}}</p>
+      <p> Job posting {{(purchasedPlan$ | async)?.jobs_count}} </p>
+      <p> Profile views {{(purchasedPlan$ | async)?.job_seekers_count}} </p>
+
+      <h3> Total {{(purchasedPlan$ | async).price | currency}} </h3>
+
+    </mat-card-content>
+  </mat-card>
+</div>

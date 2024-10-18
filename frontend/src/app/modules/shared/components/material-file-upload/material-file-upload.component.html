@@ -1,0 +1,29 @@
+<button mat-button color="primary" (click)="onClick()" type="button">
+  <mat-icon>cloud_upload</mat-icon>
+  {{ text }}
+</button>
+<button mat-button color="warn" *ngIf="isImageUploaded" (click)="onDelete()" type="button">
+  <mat-icon>delete</mat-icon>
+  Delete
+</button>
+<br/>
+<ul>
+  <li *ngFor="let file of files" [@fadeInOut]="file.state">
+    <mat-progress-bar [value]="file.progress"></mat-progress-bar>
+    <span id="file-label">
+      {{ file.data.name }}
+      <a title="Retry" (click)="retryFile(file)" *ngIf="file.canRetry">
+        <mat-icon>refresh</mat-icon>
+      </a>
+      <a title="Cancel" (click)="cancelFile(file)" *ngIf="file.canCancel">
+        <mat-icon>cancel</mat-icon>
+      </a>
+    </span>
+  </li>
+  <li *ngIf="errorMessage" class="mat-error">{{errorMessage}}</li>
+</ul>
+<input type="file"
+       id="fileUpload"
+       name="fileUpload"
+       accept="{{ accept }}"
+       style="display:none;"/>

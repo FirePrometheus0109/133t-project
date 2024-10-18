@@ -1,0 +1,12 @@
+.template-property {
+  display: flex;
+  margin-bottom: 10px;
+  .property-name {
+    width: 50px;
+  }
+  .long-name {
+    max-width: 350px;
+    overflow-wrap: break-word;
+    margin-left: 15px;
+  }
+}

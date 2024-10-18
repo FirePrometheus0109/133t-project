@@ -1,0 +1,13 @@
+{% extends "admin/change_list.html" %}
+{% block object-tools-items %}
+
+    {{ block.super }}
+
+    <li>
+        <a href="add/?type=company_user" class="grp-state-focus addlink">Add Company User</a>
+    </li>
+    <li>
+        <a href="add/?type=job_seeker" class="grp-state-focus addlink">Add Job Seeker</a>
+    </li>
+
+{% endblock %}

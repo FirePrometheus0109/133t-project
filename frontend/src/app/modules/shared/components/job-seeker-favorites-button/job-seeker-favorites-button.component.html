@@ -1,0 +1,4 @@
+<button mat-icon-button color="accent" (click)="toggleJobFavorite()" [matTooltip]="isFavorite ? 'Remove from favorites': 'Add to favorites'">
+  <mat-icon *ngIf="!isFavorite">favorite_border</mat-icon>
+  <mat-icon *ngIf="isFavorite">favorite</mat-icon>
+</button>

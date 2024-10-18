@@ -1,0 +1,16 @@
+<div class="workflowstats-control">
+  <h4>Workflow Stats</h4>
+  <mat-form-field>
+    <mat-select [(value)]="selectedFilter" [compareWith]="compareFn" (selectionChange)=" onFilterChanges($event)">
+      <mat-option *ngFor="let item of (filterData$ | async) " [value]="item">
+        {{item.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div class="stat-container">
+  <div class="stat-item" *ngFor="let statItem of data$ | async">
+    <p> {{statItem.n_candidates}}</p>
+    <p> {{statItem.name}}
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<mat-card [ngClass]="{'no-padding': isDashboard}">
+  <div class="job-container" [ngClass]="{'dashboard-job-container': isDashboard}">
+    <div class="job-header">
+      <mat-card-title class="job-title">
+        <span class="link" (click)="navigateToJob()">{{jobItem.title}}</span>
+        <app-job-favorite-toggle [jobId]="jobItem.id" *ngIf="!isDashboard"></app-job-favorite-toggle>
+      </mat-card-title>
+    </div>
+    <mat-card-content class="job-company-container">
+      <div class="company-title" [ngClass]="{'short-detail': isDashboard}">
+        <div>Company name:
+          <span [ngClass]="{'link': !isDashboard}"
+                (click)="navigateToCompany()">
+            {{jobItem.company.name}}
+          </span>
+        </div>
+        <div>Location: {{jobItem.location.city.name}} ({{jobItem.location.city.state.abbreviation}})</div>
+        <div>Posted: {{jobItem.publish_date | date}}</div>
+        <div *ngIf="jobItem.applied_at">Applied: {{jobItem.applied_at | date}}</div>
+      </div>
+      <div *ngIf="jobItem.closing_date">Active till {{jobItem.closing_date | date}}</div>
+    </mat-card-content>
+    <mat-card-header *ngIf="!isDashboard">
+      <mat-card-title>
+        <h3>Detail</h3>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="job-detail-container">
+      <app-job-metadata [ngClass]="{'short-detail': isDashboard}"
+                        [jobItem]="jobItem"
+                        [enums]="enums">
+      </app-job-metadata>
+    </mat-card-content>
+  </div>
+</mat-card>

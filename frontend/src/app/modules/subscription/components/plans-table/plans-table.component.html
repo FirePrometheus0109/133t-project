@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-content>
+    <table mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="jobsCount">
+        <th mat-header-cell *matHeaderCellDef> Number of Job postings </th>
+        <td mat-cell *matCellDef="let element"> {{element.jobs_count}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="jobSeekerCount">
+        <th mat-header-cell *matHeaderCellDef> Number of Resume </th>
+        <td mat-cell *matCellDef="let element"> {{element.job_seekers_count}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="price">
+        <th mat-header-cell *matHeaderCellDef> Price </th>
+        <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="checkbox">
+        <th mat-header-cell *matHeaderCellDef> Select package </th>
+        <td mat-cell *matCellDef="let element; let i = index;">
+          <mat-radio-button color="primary"
+                            [value]="element"
+                            [checked]="i === 0"
+                            (change)="onChangeSelectedPlan($event)">
+          </mat-radio-button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+  </mat-card-content>
+</mat-card>

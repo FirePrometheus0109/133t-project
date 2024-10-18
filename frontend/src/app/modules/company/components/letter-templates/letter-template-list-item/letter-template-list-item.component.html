@@ -1,0 +1,33 @@
+<mat-card>
+  <mat-card-content>
+    <div class="letter-template-item">
+      <div>
+        <span class="link" *ngxPermissionsOnly="['view_lettertemplate']"
+              (click)="viewLetterTemplate.emit(letterTemplateItem.id)">
+          {{letterTemplateItem.name}}
+        </span>
+        <span *ngxPermissionsExcept="['view_lettertemplate']">
+          {{letterTemplateItem.name}}
+        </span>
+      </div>
+      <div>
+        <span *ngIf="letterTemplateItem.event_type && letterTemplateItem.event_type.id">
+          Default for {{letterTemplateItem.event_type.name}}
+        </span>
+      </div>
+      <div>
+        <span>Last modified: {{getModifiedDate()}}</span>
+      </div>
+      <div class="actions">
+        <button mat-button *ngxPermissionsOnly="['change_lettertemplate']"
+                (click)="editLetterTemplate.emit(letterTemplateItem.id)">
+          <mat-icon matSuffix>edit</mat-icon>
+        </button>
+        <button mat-button *ngxPermissionsOnly="['delete_lettertemplate']"
+                (click)="deleteLetterTemplate.emit(letterTemplateItem)">
+          <mat-icon matSuffix>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

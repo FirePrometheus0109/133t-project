@@ -1,0 +1,22 @@
+<app-search-field [autocompleteProp]="auto"
+                  [placeholder]="filterData.title"
+                  [isMatAutocompleteDisabled]="false"
+                  (searchChanged)="onSearchChange($event)"
+                  (focused)="focusFunction">
+</app-search-field>
+<mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectingItem($event)" [disableRipple]="true"
+                  [displayWith]="displayFn">
+  <mat-option *ngIf="!filteredItems.length && !isSearchEmpty" value="false" disabled>No results</mat-option>
+  <mat-option *ngFor="let filteredItem of filteredItems" [value]="filteredItem">
+    <ng-container *ngTemplateOutlet="templateName ? locationTemplate: defaultTemplate; context:{item: filteredItem}">
+    </ng-container>
+  </mat-option>
+</mat-autocomplete>
+
+<ng-template let-item="item" #defaultTemplate>
+  {{item.name}}
+</ng-template>
+
+<ng-template let-item="item" #locationTemplate>
+  {{item | searchLocation}}
+</ng-template>

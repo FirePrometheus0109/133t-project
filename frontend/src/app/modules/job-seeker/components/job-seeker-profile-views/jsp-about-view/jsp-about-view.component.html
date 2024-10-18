@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-title>
+    <div class="jsp-view-section-title">
+      <h4>About</h4>
+      <button mat-icon-button color="primary" (click)="changeToEditMode.emit(true)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+    <div>{{initialData}}</div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,23 @@
+.user-name{
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+.online-chip{
+  width: 20px;
+  height: 20px;
+}
+
+.is-online {
+  background-color: green;
+}
+
+.stats-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+}

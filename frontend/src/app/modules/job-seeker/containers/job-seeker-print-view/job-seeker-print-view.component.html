@@ -1,0 +1,122 @@
+<div>
+  <h2>
+    {{ jobSeekerProfile?.user?.first_name }} {{ jobSeekerProfile?.user?.last_name }}
+  </h2>
+
+  <div class="block color-secondary">
+    <div>
+      {{ jobSeekerProfile.user?.email }}
+    </div>
+    <div>
+      {{ jobSeekerProfile?.phone }}
+    </div>
+    <div>
+      {{ jobSeekerProfile.address?.country?.name }},
+      {{ jobSeekerProfile.address?.city?.state?.name }},
+      {{ jobSeekerProfile.address?.city?.name }},
+      {{ jobSeekerProfile.address?.zip?.code }},
+      {{ jobSeekerProfile.address?.address }}
+    </div>
+  </div>
+
+  <div class="block" *ngIf="currentJobs?.length">
+    <h3>Current Job</h3>
+    <div *ngFor="let currentJob of currentJobs">
+      {{ currentJob?.job_title }} at <strong>{{ currentJob?.company }}</strong>
+    </div>
+  </div>
+
+  <div class="block" *ngIf="jobSeekerProfile?.about">
+    <h3>About</h3>
+    <p>{{ jobSeekerProfile?.about }}</p>
+  </div>
+
+  <div class="block">
+    <h3>Profile details</h3>
+    <div class="block half-block page-break-protected">
+      <div>
+        <div class="half-block color-secondary">Position type:</div>
+        <div class="half-block">{{ enums?.PositionTypes[jobSeekerProfile?.position_type] }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Education:</div>
+        <div class="half-block">{{ enums?.EducationTypes[jobSeekerProfile?.education] }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Years of experience:</div>
+        <div class="half-block">{{ enums?.ExperienceTypes[jobSeekerProfile?.experience] }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Travel opportunities:</div>
+        <div class="half-block">{{ enums?.JSTravelOpportunities[jobSeekerProfile?.travel] }}</div>
+      </div>
+    </div>
+    <div class="block half-block">
+      <div>
+        <div class="half-block color-secondary">Salary:</div>
+        <div class="half-block">{{ jobSeekerProfile?.salary_min }} - {{ jobSeekerProfile?.salary_max }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Clearance:</div>
+        <div class="half-block">{{ enums?.ClearanceTypes[jobSeekerProfile?.clearance] }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Benefits:</div>
+        <div class="half-block">{{ enums?.Benefits[jobSeekerProfile?.benefits] }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block skills" *ngIf="jobSeekerProfile?.skills?.length">
+    <h3>Skills</h3>
+    <div class="page-break-protected" *ngFor="let skill of jobSeekerProfile?.skills">{{ skill.name }}</div>
+  </div>
+
+  <div class="block" *ngIf="educationAndCertificationData?.length">
+    <h3>Education details</h3>
+    <div class="block page-break-protected" *ngFor="let education of educationAndCertificationData">
+      <h4>{{ education.institution }}</h4>
+      <div class="block">
+        <div class="half-block">{{ education.type | titlecase }}</div>
+        <div *ngIf="education.degree"
+              class="half-block">
+          {{ enums.EducationTypes[education.degree] }}
+        </div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Field of study:</div>
+        <div class="half-block">{{ education.field_of_study }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Location:</div>
+        <div class="half-block">{{ education.location }}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Date of gratulation:</div>
+        <div class="half-block">{{ (education.date_to || education.graduated | date:'MMMM, yyyy') || '...' }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block" *ngIf="experienceData?.length">
+    <h3>Experience</h3>
+    <div class="block extra-indent page-break-protected" *ngFor="let job of experienceData">
+      <div>
+        <div class="half-block color-secondary">Company:</div>
+        <div class="half-block">{{job.company}}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Job title:</div>
+        <div class="half-block">{{job.job_title}}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Years of work:</div>
+        <div class="half-block">{{job.date_from | date}} - {{(job.date_to | date) || 'up to now'}}</div>
+      </div>
+      <div>
+        <div class="half-block color-secondary">Description:</div>
+        <div class="half-block">{{job.description}}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<mat-paginator [length]="count$ | async"
+               [pageSize]="pageSize$ | async"
+               [pageSizeOptions]="pageSizeOptions$ | async"
+               (page)="onPageChanged($event)">
+</mat-paginator>
+<div *ngIf="isUserMode()">
+  <button mat-button>
+    <span (click)="backToPostingPage()">{{(jobData$ | async)?.title}}</span>
+  </button>
+  <app-candidate-statistic-panel [panelData]="(jobData$ | async)?.candidates_count"
+                                 (navigateToCandidates)="goToCandidatesPage($event)">
+  </app-candidate-statistic-panel>
+</div>
+<mat-card>
+  <mat-card-content>
+    <div class="top-search-section">
+      <app-search-list-form [form]="candidateSearchForm"
+                            [locationSearchFilter]="locationSearchFilter"
+                            (searchChanged)="onFullTextSearchChanged($event)"
+                            (selectedLocation)="onSelectLocationFilter($event)"
+                            (submitted)="onSubmitSearch($event)">
+      </app-search-list-form>
+      <button *ngIf="!isUserMode()" mat-raised-button color="primary" (click)="toggleFilterPanel()"> Filters</button>
+    </div>
+    <mat-chip-list>
+      <mat-chip *ngFor="let filter of (selectedFilters$ | async)">
+        <span>{{ filter.data.title}}: {{filter.value.value}}</span>
+        <button type="button" mat-button (click)="removeFilter(filter)">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-chip>
+      <mat-chip *ngIf="(selectedFilters$ | async).length" (click)="clearFilters()"> Clear Filters</mat-chip>
+    </mat-chip-list>
+    <div class="filter-card" [hidden]="!(showFilter$ | async)">
+      <app-radio-filter *ngFor="let filter of filterData"
+                        [filterData]="filter"
+                        (radioFilterSelect)="onRadioFilterSelect($event)"
+                        [selectedFilters]="selectedFilters$ | async">
+      </app-radio-filter>
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content align="end" class="button-section">
+    <div class="candidate-list-sorting">
+      <mat-checkbox class="select-all-checkbox" (change)="onSelectAllCandidate()"></mat-checkbox>
+      <app-sorting-field class="sorting-field"
+                         [sortingFilter]="candidateSortingFilter$ | async"
+                         (sortingFilterSelect)="onSortingFilterSelect($event)">
+      </app-sorting-field>
+    </div>
+    <div class="candidate-list-actions">
+      <app-assign-candidate-button [assignedUser]="getSelectedCandidates()"
+                                   [isCandidate]="true"></app-assign-candidate-button>
+      <app-download-selected-to-csv [isDisabled]="!isCandidatesSelected()"
+                                    (downloadToCSV)="downloadCandidatesToCSV()">
+      </app-download-selected-to-csv>
+    </div>
+  </mat-card-content>
+</mat-card>
+<app-view-candidate-item *ngFor="let candidateItem of results$ | async;index as i" [index]="i"
+                         [candidateItem]="candidateItem"
+                         [checkBoxName]="checkBoxHelper.checkBoxName"
+                         [candidateStatus]="CandidateStatusEnum$ | async"
+                         [isJobMode]="isUserMode()"
+                         [enums]="enums$ | async"
+                         (provideQuickView)="onQuickViewCandidate($event)"
+                         (commentCandidate)="onCommentCandidate($event)"
+                         (change)="onChangeCandidate($event)">
+</app-view-candidate-item>

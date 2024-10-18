@@ -1,0 +1,74 @@
+<div *ngxPermissionsOnly="['purchase_subscription_plan']">
+  <mat-card>
+    <mat-card-title>
+      <h3>Subscription</h3>
+    </mat-card-title>
+    <mat-card-content>
+      <div class='sub-list'>
+        <div>
+          <p>Current Plan - {{(activePlan$ | async)?.plan.name}}
+             till {{(activePlan$ | async)?.date_end | date}}
+            <button mat-button color="primary" (click)="onUnsubscribe()"> Unsubscribe</button>
+          </p>
+        </div>
+        <div *ngIf="(activePlan$ | async)?.next_subscription">
+          <p>Future Plan - {{(activePlan$ | async)?.next_subscription.plan.name}}
+             till {{(activePlan$ | async)?.next_subscription.date_start | date}}
+            <button mat-button color="primary" (click)="onCancel()"> Cancel</button>
+          </p>
+        </div>
+      </div>
+    </mat-card-content>
+    <mat-action-row>
+      <button mat-button (click)="changeBillingData()"><u>Change billing information</u></button>
+    </mat-action-row>
+  </mat-card>
+
+  <div class="subsctiption-panel">
+    <mat-card>
+      <mat-card-content>
+        <p>
+          Job Postings
+        </p>
+        <p>
+          Remain {{((activePlan$ | async)?.balance.jobs_remain)}}
+          out of {{((activePlan$ | async)?.balance.jobs_total)}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-content>
+        <p>
+          Profile views
+        </p>
+        <p>
+          Remain {{((activePlan$ | async)?.balance.job_seekers_remain)}}
+          out of {{((activePlan$ | async)?.balance.job_seekers_total)}}
+
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card>
+      <mat-card-content>
+        <p>
+          You pay monthly
+        </p>
+        <p>
+          {{(activePlan$ | async)?.plan.price | currency}}
+        </p>
+        <app-new-price-marker *ngIf="(activePlan$ | async).plan.price_apply_date"
+                              [newPrice]="(activePlan$ | async).plan.new_price"
+                              [priceApplyDate]="(activePlan$ | async).plan.price_apply_date">
+        </app-new-price-marker>
+      </mat-card-content>
+      <mat-action-row *ngIf="!(activePlan$ | async)?.next_subscription">
+        <button (click)="processRenew()" mat-button> Renew</button>
+      </mat-action-row>
+    </mat-card>
+  </div>
+
+  <app-payment-history-table [paymentHistory]="paymentHistory$ | async">
+  </app-payment-history-table>
+</div>

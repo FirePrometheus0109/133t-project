@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title>
+    <h3> Payment </h3>
+    <p>
+      <small>
+        Complete your payment details below:
+      </small>
+    </p>
+  </mat-card-title>
+  <app-stripe-data-form [form]="stripeUserForm">
+  </app-stripe-data-form>
+  <ngx-stripe-card [options]="cardOptions"
+                   [elementsOptions]="elementsOptions"
+                   (on)="detectChanges($event)">
+  </ngx-stripe-card>
+  <mat-error *ngIf="stripeComponentError">
+    {{stripeComponentError?.message}}
+  </mat-error>
+  <button mat-button color="primary"
+          [disabled]="!isCardDataCompleted || stripeUserForm.invalid"
+          (click)="getCardToken()">
+    {{payButtonText}}
+  </button>
+  <button *ngIf="isCancelUsed" mat-button (click)="onCancelButton()">Cancel</button>
+</mat-card>

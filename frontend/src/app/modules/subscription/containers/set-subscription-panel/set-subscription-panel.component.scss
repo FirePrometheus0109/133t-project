@@ -1,0 +1,16 @@
+.subscription-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.trial-notification-container {
+  display: flex;
+  justify-content: flex-end;
+  .trial-notification {
+    width: 140px;
+    text-align: center;
+    background-color: #a94442;
+    color: #f2dede;
+  }
+}

@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-title align="center">
+    Dashboard
+  </mat-card-title>
+  <mat-card-content>
+    <div class="dashboard-container">
+      <div class="autoapply-and-views-container">
+        <div class="auto-apply-view-container">
+          <mat-card>
+            <mat-card-title>Auto apply progress</mat-card-title>
+            <mat-card-content>
+              <app-job-seeker-auto-apply-progress></app-job-seeker-auto-apply-progress>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div class="views-container">
+          <mat-card>
+            <mat-card-title>Last views</mat-card-title>
+            <mat-card-content>
+              <app-job-seeker-last-views-list></app-job-seeker-last-views-list>
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+      <div class="saved-container">
+        <mat-card>
+          <mat-card-title>Saved Jobs</mat-card-title>
+          <mat-card-content align="end">
+            <app-job-seeker-saved-jobs-list [isDashboard]="true"></app-job-seeker-saved-jobs-list>
+            <button type="button" mat-raised-button color="primary" (click)="goToSavedJobsList()">
+              <span>See more</span>
+              <mat-icon matSuffix>navigate_next</mat-icon>
+            </button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

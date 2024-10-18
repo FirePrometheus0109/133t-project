@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+    django:
+        restart: always
+        build:
+            context: .
+            dockerfile: ./compose/local/django/Dockerfile
+        image: one33t_test_django
+        depends_on:
+            - postgres
+        volumes:
+            - ${GLOBAL_WORK_DIR}backend:/app
+        environment:
+            - SOCIAL_AUTH_FACEBOOK_NAME=${SOCIAL_AUTH_FACEBOOK_NAME}
+            - SOCIAL_AUTH_FACEBOOK_APP_ID=${SOCIAL_AUTH_FACEBOOK_APP_ID}
+            - SOCIAL_AUTH_FACEBOOK_SECRET=${SOCIAL_AUTH_FACEBOOK_SECRET}
+            - SOCIAL_AUTH_GOOGLE_NAME=${SOCIAL_AUTH_GOOGLE_NAME}
+            - SOCIAL_AUTH_GOOGLE_APP_ID=${SOCIAL_AUTH_GOOGLE_APP_ID}
+            - SOCIAL_AUTH_GOOGLE_SECRET=${SOCIAL_AUTH_GOOGLE_SECRET}
+        env_file:
+            - ./.envs_example/.test/.django
+            - ./.envs_example/.test/.postgres
+        command: sleep 24h
+
+    node:
+        build:
+            context: .
+            dockerfile: ./compose/local/node/Dockerfile
+        image: one33t_test_node
+        volumes:
+            - ${GLOBAL_WORK_DIR}frontend:/app
+            - ${GLOBAL_WORK_DIR}frontend/node_modules:/frontend/node_modules
+        env_file:
+            - ./.envs_example/.test/.node
+        command: sleep 24h
+
+    postgres:
+        build:
+            context: .
+            dockerfile: ./compose/production/postgres/Dockerfile
+        image: one33t_test_postgres
+        env_file:
+            - ./.envs_example/.test/.postgres
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.160.0.1/16

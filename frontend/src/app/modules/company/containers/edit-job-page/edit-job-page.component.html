@@ -1,0 +1,123 @@
+<mat-card>
+  <div class="row-container">
+    <mat-card-subtitle>
+      Created by:&nbsp;
+    </mat-card-subtitle>
+    <mat-card-content>
+      {{ (initialData$ | async)?.owner?.name }}
+    </mat-card-content>
+  </div>
+  <div class="row-container">
+    <mat-card-subtitle>
+      Created:&nbsp;
+    </mat-card-subtitle>
+    <mat-card-content>
+      {{ (initialData$ | async)?.created_at | date }}
+    </mat-card-content>
+  </div>
+
+  <div class="block-content">
+    <mat-card-title>Active:</mat-card-title>
+    <app-job-status-form [form]="jobStatusForm" [initialData]="initialData$ | async" [pending]="pending$ | async"
+                         [errors]="errors$ | async" [jobStatusEnum]="jobStatusEnums$ | async"
+                         (selectChange)="onStatusChanged($event)">
+    </app-job-status-form>
+  </div>
+
+  <div class="block-content">
+    <mat-card-title>Industry:</mat-card-title>
+    <app-industry-select-form [form]="jobIndustryForm" [initialData]="initialData$ | async" [pending]="pending$ | async"
+                              [errors]="errors$ | async">
+    </app-industry-select-form>
+  </div>
+
+  <div class="block-content">
+    <mat-card-title>Main info:</mat-card-title>
+    <app-job-title-form [form]="jobInfoForm" [initialData]="initialData$ | async" [pending]="pending$ | async"
+                        [errors]="errors$ | async">
+    </app-job-title-form>
+    <app-address-component [form]="addressForm"
+                           [initialData]="(initialData$ | async)?.location"></app-address-component>
+  </div>
+
+  <div class="block-content">
+    <mat-card-title>Profile:</mat-card-title>
+    <app-profile-details-ext-form [form]="jobProfileDetailsForm" [initialData]="initialData$ | async"
+                                  [pending]="pending$ | async" [errors]="errors$ | async">
+    </app-profile-details-ext-form>
+  </div>
+
+  <div class="block-content">
+    <mat-card-title>Details:</mat-card-title>
+    <app-job-description-form [form]="jobDescriptionForm" [initialData]="initialData$ | async"
+                              [pending]="pending$ | async" [errors]="errors$ | async">
+    </app-job-description-form>
+  </div>
+  <div class="block-content">
+    <mat-card-title>Skills:</mat-card-title>
+    <mat-card-subtitle>Must have</mat-card-subtitle>
+    <app-skills-select-component [initialData]="(initialData$ | async)"
+                                 [form]="jobRequiredSkillsForm"
+                                 [pending]="pending$ | async"
+                                 [errors]="errors$ | async"
+                                 [excludedSkills]="jobOptionalSkillsForm.value[optionalSkillPropertyName]"
+                                 [skillPropertyName]="requiredSkillPropertyName">
+    </app-skills-select-component>
+  </div>
+  <div class="block-content">
+    <mat-card-subtitle>Nice to have</mat-card-subtitle>
+    <app-skills-select-component [initialData]="(initialData$ | async)"
+                                 [form]="jobOptionalSkillsForm"
+                                 [pending]="pending$ | async"
+                                 [errors]="errors$ | async"
+                                 [excludedSkills]="jobRequiredSkillsForm.value[requiredSkillPropertyName]"
+                                 [skillPropertyName]="optionalSkillPropertyName">
+    </app-skills-select-component>
+  </div>
+  <div class="block-content">
+    <mat-card-title>
+      <h4>Questionnaire</h4>
+      <span>Up to 10 questions</span>
+    </mat-card-title>
+    <mat-card-content align="center">
+      <app-survey-edit-container></app-survey-edit-container>
+    </mat-card-content>
+  </div>
+  <div class="block-content" *ngxPermissionsOnly="['set_job_is_cover_letter_required']">
+    <mat-card-title>
+      <h4>Cover Letter</h4>
+    </mat-card-title>
+    <mat-card-content align="center">
+      <app-job-cover-letter-required-form [form]="jobCoverLetterForm" [initialData]="initialData$ | async"
+                                          [pending]="pending$ | async" [errors]="errors$ | async">
+      </app-job-cover-letter-required-form>
+    </mat-card-content>
+  </div>
+  <div class="block-content" *ngxPermissionsOnly="['create_delayed_job', 'set_job_closing_date']">
+    <mat-card-title>Publish date:</mat-card-title>
+    <app-job-date-form [initialData]="(initialData$ | async)" [form]="jobPublishDateForm" [pending]="pending$ | async"
+                       [errors]="errors$ | async">
+    </app-job-date-form>
+  </div>
+  <div class="buttons-container">
+    <mat-action-row>
+      <button type="submit" mat-raised-button color="primary" (click)="postJobData(false)">
+        Save
+        <mat-icon matSuffix>save</mat-icon>
+      </button>
+      <button *ngIf="isSaveAndPublishAvailable" type="submit" mat-raised-button color="primary"
+              (click)="postJobData(true)">
+        Save and publish
+        <mat-icon matSuffix>save</mat-icon>
+      </button>
+      <button type="submit" mat-raised-button color="primary" (click)="previewJob()">
+        Preview
+        <mat-icon matSuffix>remove_red_eye</mat-icon>
+      </button>
+      <button type="submit" mat-raised-button color="primary" (click)="goToJobListPage()">
+        Cancel
+        <mat-icon matSuffix>arrow_back_ios</mat-icon>
+      </button>
+    </mat-action-row>
+  </div>
+</mat-card>

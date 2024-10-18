@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-card-content class="one-line-form">
+    <app-search-field [formCtrl]="form.controls.search" [placeholder]="placeholder"
+                      (searchChanged)="onFullTextSearchChanged($event)">
+    </app-search-field>
+    <app-autocomplete-filter (searchElement)="onLocationSearchChange($event)"
+                             (selectingElement)="onSelectLocationFilter($event)"
+                             [showLocationSelection]="showLocationSelection"
+                             [filteredItems]="filteredLocation$ | async"
+                             [filterData]="locationSearchFilter"
+                             [templateName]="locationFilterTemplate">
+    </app-autocomplete-filter>
+    <mat-action-row *ngIf="isGlobalSearch">
+      <button type="submit" mat-raised-button color="primary" [disabled]="form.invalid"> Search
+        <mat-icon matSuffix>search</mat-icon>
+      </button>
+    </mat-action-row>
+  </mat-card-content>
+</form>

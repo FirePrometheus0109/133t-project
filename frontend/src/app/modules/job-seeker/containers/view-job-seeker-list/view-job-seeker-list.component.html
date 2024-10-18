@@ -1,0 +1,48 @@
+<mat-paginator [length]="count$ | async"
+               [pageSize]="pageSize$ | async"
+               [pageSizeOptions]="pageSizeOptions$ | async"
+               (page)="onPageChanged($event)">
+</mat-paginator>
+<mat-card>
+  <app-search-list-form [form]="jobSeekersSearchForm"
+                        [locationSearchFilter]="locationSearchFilter"
+                        (searchChanged)="onFullTextSearchChanged($event)"
+                        (selectedLocation)="onSelectLocationFilter($event)"
+                        (submitted)="onSubmitSearch($event)">
+  </app-search-list-form>
+  <button class="filter-button" mat-raised-button color="primary" type="button"
+          *ngIf="shouldShowFilter((mode$ | async))"
+          (click)="onToggleFilter()">
+    Filters
+  </button>
+  <app-sorting-field [sortingFilter]="sortingFilter$ | async"
+                     (sortingFilterSelect)="onSortingFilterSelect($event)">
+  </app-sorting-field>
+  <app-filters-chip-list [selectedFilters]="(selectedFilters$ | async)"
+                         (clearFilters)="clearFilters()"
+                         (removeFilterAction)="removeFilter($event)">
+  </app-filters-chip-list>
+</mat-card>
+<mat-card class="filter-card" [hidden]="!(showFilter$ | async)">
+  <app-autocomplete-filter (searchElement)="onSkillSearchChange($event)"
+                           (selectingElement)="onSelectSkillFilter($event)"
+                           [filteredItems]="skillsFiltered$ | async"
+                           [filterData]="skillSearchFilter">
+  </app-autocomplete-filter>
+  <app-radio-filter *ngFor="let filter of radioFilterData"
+                    [filterData]="filter"
+                    (radioFilterSelect)="onRadioFilterSelect($event)"
+                    [selectedFilters]="selectedFilters$ | async"
+                    (radioFilterDelete)="removeFilter($event)">
+  </app-radio-filter>
+</mat-card>
+
+<mat-card>
+  <app-job-seeker-item *ngFor="let jobSeekerItem of (results | async)"
+                       [jobSeekerItem]="jobSeekerItem"
+                       [editable]="false"
+                       [enums]="enums$ | async"
+                       [listMode]="mode$ | async"
+                       (commentJobSeeker)="onCommentJobSeeker($event)">
+  </app-job-seeker-item>
+</mat-card>

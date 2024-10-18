@@ -1,0 +1,8 @@
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .column:first-child {
+    margin-right: 15px;
+  }
+}

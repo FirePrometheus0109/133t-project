@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title type="text/css">Event</title>
+        <style>
+            #footer {
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello {{ attendee_full_name }}!</p>
+        <p>
+            {{ event_owner_full_name }} from {{ company_name }} has just sent you an invitation:
+        <p>
+        <p>
+        </p>
+        <p>
+        </p>
+            <div>{{ event_description }}</div>
+            <div>{{ time_from }}-{{ time_to }} ({{ timezone }})</div>
+            <div>{{ country_name }}, {{ city_name }} {{ state_abbreviation }}, {{ address }}, {{ zip_code }}</div>
+        </p>
+        <p>
+            <div>Learn more about the job posting:</div>
+            <div>
+                <a href="{{ job_details_url }}">{{ job_title }}</a>.
+            </div>
+            <div>
+                {{ company_name }} {{ company_address }}
+            </div>
+        </p>
+        <p>
+            Please let organizer know if you will attend the meeting: <a href="{{ respond_url }}">Respond</a>.
+        </p>
+        <p id="footer">
+            133T team
+        </p>
+    </body>
+</html>

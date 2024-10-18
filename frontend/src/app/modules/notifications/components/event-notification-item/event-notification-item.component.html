@@ -1,0 +1,44 @@
+<p>
+  {{eventNotification?.event_subject}}
+</p>
+<p *ngIf="isActionNotification()">
+  {{eventNotification?.event_owner_full_name}} from {{eventNotification?.company_name}} has just sent you an invitation:
+</p>
+<p *ngIf="(isCompanyUser$ | async) && !isActionNotification()">
+  {{eventNotification?.attendee_full_name}} has {{eventNotification?.attendee_status}} this invitation:
+</p>
+<p>
+  {{eventNotification?.event_description}}
+</p>
+<p>
+  {{timeInformation}}
+  {{eventNotification?.timezone}}
+</p>
+<p>
+  {{eventNotification?.country_name}}, {{eventNotification?.city_name}}({{eventNotification?.state_abbreviation}}),
+  {{eventNotification?.zip_code}}, {{eventNotification?.address}}
+</p>
+<p>
+  Learn more about the job posting:
+  <a class="link" href="{{eventNotification?.job_details_url}}">{{eventNotification?.job_title}}</a>
+</p>
+<p>
+  {{eventNotification?.company_name}}, {{eventNotification?.company_address}}
+</p>
+
+<div *ngIf="isActionNotification() && areActionsEnabled()">
+  Please respond
+  <button type="button" mat-raised-button color="primary"
+          [disabled]="pending$ | async"
+          (click)="provideAnswer(EventResponseStatusEnum.Accepted)">
+    Accept invitation
+  </button>
+  <button type="button" mat-raised-button color="warn"
+          [disabled]="pending$ | async"
+          (click)="provideAnswer(EventResponseStatusEnum.Rejected)">
+    Reject invitation
+  </button>
+</div>
+<div *ngIf="isActionNotification() && !areActionsEnabled() && eventNotification.status">
+  {{eventNotification.status}}
+</div>

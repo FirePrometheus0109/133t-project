@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-title>
+    <h4>Select default event type</h4>
+    <mat-card-subtitle>
+      The letter template will be used as default for the event type
+    </mat-card-subtitle>
+  </mat-card-title>
+  <mat-dialog-content>
+    <mat-card-content>
+      <mat-select placeholder="Select event type" [formControl]="selectedEventType">
+        <mat-option *ngFor="let eventType of modalData.eventTypes" [value]="eventType.id">
+          {{eventType.name}}
+        </mat-option>
+      </mat-select>
+    </mat-card-content>
+  </mat-dialog-content>
+  <mat-card-actions>
+    <button type="button" mat-raised-button color="primary" (click)="selectEventType()">
+      <span>Select</span>
+    </button>
+    <button type="button" mat-raised-button matDialogClose color="primary">
+      <span>Close</span>
+    </button>
+  </mat-card-actions>
+</mat-card>

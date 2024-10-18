@@ -1,0 +1,16 @@
+<form [formGroup]="form">
+  <app-search-field [placeholder]="'Zip'"
+                    [isMatAutocompleteDisabled]="false"
+                    [autocompleteProp]="auto"
+                    [formCtrl]="form.controls.zip"
+                    [initialValue]="initialData?.zip"
+                    [isDisabled]="isDisabled"
+                    (searchChanged)="onSearchZip($event)"></app-search-field>
+  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+    <mat-option *ngFor="let zip of availableZips" [value]="zip">
+      <span>{{ zip.code }}</span>
+    </mat-option>
+  </mat-autocomplete>
+  <app-control-messages [form]="form" [control]="f.zip" [submitted]="isSubmitted" [errors]="errors">
+  </app-control-messages>
+</form>

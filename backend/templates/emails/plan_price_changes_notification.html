@@ -1,0 +1,24 @@
+subject: |
+    [{{ domain_name }}]: Price changes
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Price changes</title>
+            <style>
+                td {
+                    padding: 0 20px 0 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Hello {{ user.get_full_name }},</p>
+            <p>
+                Starting from {{ price_apply_date|date:"Y-m-d" }}, your subscription price will be {{ new_price }}$ per month.
+                This increase will take effect on your next billing date on or after {{ price_apply_date|date:"Y-m-d" }}.
+            </p>
+            <br>
+            <p>Thank you for using 133T!</p>
+        </body>
+    </html>

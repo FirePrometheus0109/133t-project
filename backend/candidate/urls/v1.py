@@ -1,0 +1,94 @@
+from django.urls import path
+
+
+from candidate import views
+
+app_name = 'api_v1_candidate'
+
+urlpatterns = [
+    path(
+        'job/<int:pk>/candidates/',
+        views.JobCandidatesView.as_view(),
+        name='job-candidates'
+    ),
+    path(
+        'job/<int:pk>/answer/',
+        views.AnswerForJobQuestionsView.as_view(),
+        name='answers-for-questions'
+    ),
+    path(
+        'job/<int:job_id>/job_seeker/<int:job_seeker_id>/answer/',
+        views.CandidateAnswerView.as_view(),
+        name='candidate-answers'
+    ),
+    path(
+        'candidate/assignment/',
+        views.CandidateAssignView.as_view(),
+        name='assign-candidate'
+    ),
+    path(
+        'candidate/',
+        views.CandidatesList.as_view(),
+        name='candidates'
+    ),
+    path(
+        'candidate/<int:pk>/',
+        views.CandidateDetailsView.as_view(),
+        name='candidate-details'
+    ),
+    path(
+        'candidate/<int:pk>/rating/',
+        views.CandidateRatingView.as_view(),
+        name='change-candidate-rating'
+    ),
+    path(
+        'candidate/quick-view/',
+        views.CandidateQuickView.as_view(),
+        name='candidate-quick-view'
+    ),
+    path(
+        'candidate/<int:pk>/status/',
+        views.CandidateStatusView.as_view(),
+        name='candidate-status'
+    ),
+    path(
+        'candidate/<int:pk>/restoring/',
+        views.RestoreCandidateView.as_view(),
+        name='candidate-restore'
+    ),
+    path(
+        'candidates-workflow-stats/',
+        views.WorkflowStepsCompanyStatView.as_view(),
+        name='candidates-workflow-stats'
+    ),
+    path(
+        'company/<int:pk>/report/',
+        views.CompanyReportView.as_view(),
+        name='company-report'
+    ),
+    path(
+        'candidates/activities/',
+        views.CandidateActivityView.as_view(),
+        name='candidates-activities'
+    ),
+    path(
+        'candidates-quick-list/',
+        views.CandidateQuickListView.as_view(),
+        name='candidates-quick-list'
+    ),
+    path(
+        'company/<int:pk>/users-activity/',
+        views.CompanyUsersActivityView.as_view(),
+        name='company-users-activity'
+    ),
+    path(
+        'candidate/export-to-csv/',
+        views.CandidateListCSVExportView.as_view(),
+        name='candidate-export-csv'
+    ),
+    path(
+        'enums/candidates/',
+        views.CandidateEnumView.as_view(),
+        name='enums-candidates'
+    )
+]

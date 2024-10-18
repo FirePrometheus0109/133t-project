@@ -1,0 +1,20 @@
+:host {
+      text-align: center;
+    }
+
+    .row-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .block-content {
+      margin-top: 2rem;
+    }
+
+    .buttons-container {
+      margin: 3rem;
+    }
+
+    .buttons-container mat-action-row button {
+      margin-right: 2rem;
+    }

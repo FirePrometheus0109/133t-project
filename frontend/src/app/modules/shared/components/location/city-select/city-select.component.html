@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+  <app-search-field [placeholder]="'City, State'"
+                    [isMatAutocompleteDisabled]="false"
+                    [autocompleteProp]="auto"
+                    [formCtrl]="form.controls.city"
+                    [initialValue]="initialData?.city"
+                    (searchChanged)="onSearchLocation($event)"></app-search-field>
+  <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn" (optionSelected)="onSelectionChange($event)">
+    <mat-option *ngFor="let city of filteredCities" [value]="city">
+      <span>{{ displayFn(city) }}</span>
+    </mat-option>
+  </mat-autocomplete>
+  <app-control-messages [form]="form" [control]="f.city" [submitted]="isSubmitted" [errors]="errors">
+  </app-control-messages>
+</form>

@@ -1,0 +1,42 @@
+output-format: grouped
+
+strictness: veryhigh
+test-warnings: true
+doc-warnings: false
+member-warnings: true
+
+uses:
+  - django
+  - celery
+
+pep8:
+  full: true
+  options:
+    max-line-length: 80
+
+pylint:
+  disable:
+    - invalid-name
+    - too-few-public-methods
+    - too-many-ancestors
+
+pyflakes:
+  run: true
+
+dodgy:
+  run: true
+
+mccabe:
+  run: true
+
+ignore-paths:
+  - node_modules
+  - venv
+  - env
+
+ignore-patterns:
+  - .+/migrations/.+
+  - .+/settings/.+
+  - .*tests/.+
+  - .+/media/.+
+  - .+/dist/.+

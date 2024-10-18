@@ -1,0 +1,13 @@
+<mat-card>
+  <mat-card-content>
+    <div align="start">
+      <ng-template [ngxPermissionsOnly]="['delete_log']">
+        <button type="button" mat-raised-button color="primary" (click)="deleteLog.emit(logItem.id)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </ng-template>
+      {{logItem.time | date: 'short'}}:&nbsp;{{logItem.owner.name}}&nbsp;{{logItem.message}}
+      <span *ngIf="isHasDeletedComment" class="link" (click)="viewDeletedComment.emit(logItem)">(view comment)</span>
+    </div>
+  </mat-card-content>
+</mat-card>

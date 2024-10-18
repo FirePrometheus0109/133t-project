@@ -1,0 +1,4 @@
+.mat-action-row{
+  flex-direction: row-reverse;
+  display: flex;
+}

@@ -1,0 +1,22 @@
+subject: |
+    [{{ domain_name }}]: Trial period expires
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css"> Trial period expires</title>
+        </head>
+        <body>
+            <p>Hello {{ user.first_name }} {{ user.last_name }}!</p>
+            <p>
+                Trial period expires {{ date_end }}. You will loose the access to all options on the web site.
+            </p>
+            <p>
+                You can choose one of the packages to purchase required amount of job postings and profile views, Please use the <a href="{{ url }}">link</a> to view all available packages.
+            </p>
+            <p>
+                Thank you for using 133T!
+            </p>
+        </body>
+    </html>

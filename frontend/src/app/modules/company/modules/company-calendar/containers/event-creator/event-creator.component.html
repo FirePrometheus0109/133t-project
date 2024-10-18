@@ -1,0 +1,21 @@
+<mat-card *ngIf="!(eventTypesState$ | async).pending && (eventTypesState$ | async).data; else loadingView">
+  <mat-card-subtitle *ngIf="withLabel">
+    Schedule:
+  </mat-card-subtitle>
+  <mat-button-toggle-group name="schedule" aria-label="Schedule">
+    <button
+      mat-button
+      (click)="handleTypeSelect(eventType)"
+      *ngFor="let eventType of (eventTypesState$ | async).data; let i = index"
+    >{{eventType.name}}</button>
+  </mat-button-toggle-group>
+</mat-card>
+
+<ng-template #loadingView>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <mat-spinner
+      diameter="30"
+      mode="indeterminate">
+    </mat-spinner>
+  </div>
+</ng-template>

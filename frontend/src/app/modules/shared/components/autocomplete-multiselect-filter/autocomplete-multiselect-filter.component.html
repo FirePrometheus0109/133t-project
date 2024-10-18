@@ -1,0 +1,14 @@
+<mat-card>
+  <span class="muliselect-label">{{label}}</span>
+  <mat-form-field>
+    <label>{{ outputCtrl.value.length ? displayAllSelectedItems() : ''}}</label>
+    <input matInput #searchInput [placeholder]="placeholder" [matAutocomplete]="auto" [formControl]="valueCtrl"
+           (input)="onSearchChange($event)">
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectingItem($event)">
+      <mat-option *ngFor="let filteredItem of filteredItems" [value]="filteredItem">
+        <mat-checkbox [checked]="isSelected(filteredItem)"></mat-checkbox>
+        {{filteredItem.name}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</mat-card>

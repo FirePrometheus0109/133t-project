@@ -1,0 +1,62 @@
+subject: |
+    [{{ domain_name }}]: Auto apply report
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Auto apply report</title>
+            <style>
+                td {
+                    padding: 0 20px 0 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Hello {{ user.get_full_name }},</p>
+            <p>Check our regular report on your auto apply statuses:</p>
+            <table>
+                {% for aa in autoapplies %}
+                    <tr valign="top">
+                        <td>
+                            <a href="{{ aa.autoapply_details_url }}">{{ aa.title }}:</a><br>
+                            Status: {{ aa.status }}<br>
+                            Status update: {{ aa.status_update|date:"d/m/Y" }}
+                        </td>
+                        <td>
+                            You've requested {{ aa.number }} applies.<br>
+                            {% if aa.applied_count %}
+                                {{ aa.applied_count }} jobs applied<br>
+                            {% endif %}
+                            {% if aa.new_count %}
+                                {{ aa.new_count }} new jobs found<br>
+                            {% endif %}
+                            {% if aa.need_review_count %}
+                                {{ aa.need_review_count }} jobs waiting for review<br>
+                            {% endif %}
+                            {% if aa.viewed_count %}
+                                {{ aa.viewed_count }} jobs ready to apply (need your review and confirmation)
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td colspan="2">
+                            <p>
+                                {% if aa.status == "In Progress" %}
+                                    Proceed to auto apply page to review application queue.
+                                {% else %}
+                                    Want auto apply to find more jobs for you? Proceed to auto apply page to run it for another 5 days.
+                                {% endif %}
+                            </p>
+                        <hr>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </table>
+            <p>Good luck in finding your best job!</p>
+            <p>
+                Best regards,<br>
+                133T team.
+            </p>
+        </body>
+    </html>

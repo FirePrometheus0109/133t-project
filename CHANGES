@@ -1,0 +1,2271 @@
+Version 0.7.13:
+ - Merge pull request #546 in ONE33T/133t from bugfix/ONE33T-910-location-search to develop
+ - ONE33T-910: fixed location search string
+
+Version 0.7.12:
+ - Merge pull request #545 in ONE33T/133t from bugfix/ONE33T-908-profile-issues to develop
+ - ONE33T-908: fixed profile progressbar and link copying
+
+Version 0.7.11:
+ - Merge pull request #544 in ONE33T/133t from bugfix/ONE33T-901-update-notification-list to develop
+ - Merge pull request #543 in ONE33T/133t from bugfix/ONE33T-881-added-author-filter to develop
+ - ONE33T-901: update all notifications when event was cancelled
+ - ONE33T-901: updated notification list
+ - ONE33T-881: updated author filter
+ - Merge branch 'bugfix/ONE33T-881-added-author-filter' into develop
+ - Merge branch 'develop' into bugfix/ONE33T-881-added-author-filter
+ - ONE33T-881: added author filter
+ - Merge pull request #542 in ONE33T/133t from bugfix/ONE33T-890-location-field-updates to develop
+ - Merge branch 'develop' into bugfix/ONE33T-890-location-field-updates
+ - ONE33T-890: updated location search field: -increased min-width of control -updated displaying location in search control
+ - Add state abbreviation to city for location search
+ - ONE33T-000: fixed build errors
+
+Version 0.7.10:
+ - Merge pull request #541 in ONE33T/133t from bugfix/ONE33T-851-unable-to-make-salary-public to develop
+ - ONE33T-851: added zip for Flat city(Alaska)
+ - Merge pull request #537 in ONE33T/133t from bugfix/ONE33T-886-unable-to-edit-skills to develop
+ - Merge pull request #538 in ONE33T/133t from bugfix/ONE33T-904-unable-to-invite-user to develop
+ - Merge pull request #539 in ONE33T/133t from bugfix/ONE33T-898-problem-with-usa-timezone to develop
+ - Merge pull request #540 in ONE33T/133t from bugfix/883-possibility-to-see-who-viewed-profile to develop
+ - Merge pull request #534 in ONE33T/133t from bugfix/ONE33T-899-salary-view to develop
+ - Merge pull request #536 in ONE33T/133t from bugfix/ONE33T-674-unify-global-search to develop
+ - Merge pull request #535 in ONE33T/133t from bugfix/ONE33T-897-duplicating-questions to develop
+ - Merge pull request #532 in ONE33T/133t from bugfix/ONE33T-901_disable_event_notifications_button to develop
+ - Merge pull request #531 in ONE33T/133t from bugfix/ONE33T-895-disable-purchase-button to develop
+ - Merge pull request #533 in ONE33T/133t from bugfix/ONE33T-881_job_owners_list to develop
+ - Merge pull request #530 in ONE33T/133t from bugfix/ONE33T-890-remove-location-description to develop
+ - ONE33T-886: fixed lint errors
+ - ONE33T-904: fixed lint errors
+ - ONE33T-898: fixed lint errors
+ - Merge branch 'develop' into bugfix/883-possibility-to-see-who-viewed-profile
+ - ONE33T-899: fixed lint errors
+ - ONE33T-851: fixed issue with making salary public for js user
+ - ONE33T-899: updated salary-view pipe
+ - ONE33T-901: fix mistype in error message
+ - ONE33T-899: added salary-view pipe
+ - ONE33T-897: fixed questions duplication
+ - ONE33T-674: added missing global search
+ - ONE33T-886: fixed skills control on edit job page
+ - ONE33T-904: remove possibility to open invite link if user is authorized
+ - ONE33T-898: fixed problem with dates in usa timezones
+ - ONE33T-881: add endpoint for obtaining of company users that posted jobs
+ - ONE33T-901: add attendee status to all attendee event notificaions
+ - ONE33T-890: remove location description in location pipe
+ - ONE33T-895: disable purchase button
+ - ONE133T-883: added possibility to see who viewed profile
+
+Version 0.7.9:
+ - [IMP]: bump version `0.7.8` -> `0.7.8`
+ - Merge pull request #529 in ONE33T/133t from bugfix/880-candidates-button to develop
+ - ONE133T-880: resolve merge conflict with develop branch
+ - Merge pull request #528 in ONE33T/133t from bugfix/896-job-statuses-and-score-cards to develop
+ - Merge pull request #527 in ONE33T/133t from bugfix/stabilisation to develop
+ - ONE133T-880: added candidates count
+ - ONE133T-896: added scorecards on jobs page
+ - ONE33T-891: fix incorrect name for Zip model (ZIP->Zip) in migration
+ - ONE33T-887: remove delete queryset action on PLan admin
+ - ONE33-893: imlement specific method for sending of user generated emails
+ - ONE33T-885: remove education check for manual apply
+ - ONE33T-884: fix manual apply if job clearance wasn't specified
+ - ONE33T-894: add  flag for cancelled event notification
+ - ONE33T-892: add share_job permission to company_user
+ - ONE33T-891: upload non incorporated cities to db
+ - ONE33T-888: fix publishing of saved job if publish date was not saved
+ - ONE133T-896: added 'add new job' button
+ - ONE133T-896: added job status to job preview
+ - Merge pull request #526 in ONE33T/133t from bugfix/000-address-zip-fixes to develop
+ - Merge pull request #525 in ONE33T/133t from bugfix/000-industries-list-fix to develop
+ - Merge pull request #524 in ONE33T/133t from bugfix/000-skill-search-fixes to develop
+ - ONE133T-000: removed zip length hint
+ - ONE133T-000: added search field 'code' for zip
+ - ONE133T-000: disable address zip if city isn't selected
+ - ONE133T-000: fixed industries list
+ - ONE133T-000: fixed skills search
+ - ONE133T-000: fixed skills search
+
+Version 0.7.8:
+ - Merge pull request #529 in ONE33T/133t from bugfix/880-candidates-button to develop
+ - ONE133T-880: resolve merge conflict with develop branch
+ - Merge pull request #528 in ONE33T/133t from bugfix/896-job-statuses-and-score-cards to develop
+ - Merge pull request #527 in ONE33T/133t from bugfix/stabilisation to develop
+ - ONE133T-880: added candidates count
+ - ONE133T-896: added scorecards on jobs page
+ - ONE33T-891: fix incorrect name for Zip model (ZIP->Zip) in migration
+ - ONE33T-887: remove delete queryset action on PLan admin
+ - ONE33-893: imlement specific method for sending of user generated emails
+ - ONE33T-885: remove education check for manual apply
+ - ONE33T-884: fix manual apply if job clearance wasn't specified
+ - ONE33T-894: add  flag for cancelled event notification
+ - ONE33T-892: add share_job permission to company_user
+ - ONE33T-891: upload non incorporated cities to db
+ - ONE33T-888: fix publishing of saved job if publish date was not saved
+ - ONE133T-896: added 'add new job' button
+ - ONE133T-896: added job status to job preview
+ - Merge pull request #526 in ONE33T/133t from bugfix/000-address-zip-fixes to develop
+ - Merge pull request #525 in ONE33T/133t from bugfix/000-industries-list-fix to develop
+ - Merge pull request #524 in ONE33T/133t from bugfix/000-skill-search-fixes to develop
+ - ONE133T-000: removed zip length hint
+ - ONE133T-000: added search field 'code' for zip
+ - ONE133T-000: disable address zip if city isn't selected
+ - ONE133T-000: fixed industries list
+ - ONE133T-000: fixed skills search
+ - ONE133T-000: fixed skills search
+
+Version 0.7.8:
+ - Merge branch 'bugfix/ONE33T-876_user_navigation_to_dashboard_with_expired_subscription' into develop
+ - Merge pull request #521 in ONE33T/133t from bugfix/ONE33T-875_add_pending_on_respose_buttons_in_notifications to develop
+ - Merge pull request #523 in ONE33T/133t from bugfix/ONE33T-873_event_logs to develop
+ - ONE33T-876: [FIX] additional check when user subscription expired. Updating subscription plan. Removed unused imports
+ - ONE33T-873: move saved job seeker fixtures to general fixtures
+ - ONE33T-873: implement logs creatin on save job seeker and schedule event actions
+ - ONE33T-875: [FIX] added pending on buttons to prevent extra requests
+
+Version 0.7.7:
+ - Merge pull request #520 in ONE33T/133t from bugfix/ONE33T-874_add_validator_to_skill_select to develop
+ - ONE33T-874: [FIX] renamed validator and added one to skill select component
+ - Merge pull request #519 in ONE33T/133t from bugfix/ONE33T-764_save_button_at_candidate_profile to develop
+ - Merge branch 'develop' into bugfix/ONE33T-764_save_button_at_candidate_profile
+ - ONE33T-764: [FIX] fixed checkbox alignment in lists
+ - Merge pull request #518 in ONE33T/133t from bugfix/generatedemodata_fix to develop
+ - Merge pull request #517 in ONE33T/133t from bugfix/ONE33T-561_add_job_seeker_info_in_search to develop
+ - Merge pull request #516 in ONE33T/133t from bugfix/ONE33T-872_attendees_list_fix to develop
+ - Merge pull request #514 in ONE33T/133t from bugfix/ONE33T-675_add_already_applied_info_for_job_posting to develop
+ - Merge pull request #513 in ONE33T/133t from bugfix/ONE33T-687_preview_skills_in_job_as_company to develop
+ - Merge pull request #512 in ONE33T/133t from bugfix/ONE33T-639_purchase_subscription_message_issue to develop
+ - Merge pull request #510 in ONE33T/133t from bugfix/ONE33T-821_company_user_permissions_issues to develop
+ - Merge pull request #509 in ONE33T/133t from bugfix/ONE33T-779_hide_buttons_for_js_in_preview_mode to develop
+ - Merge pull request #508 in ONE33T/133t from bugfix/ONE33T-826_access_login_page_issue to develop
+ - ONE33T-764: [FIX] hide save button in candidate profile
+ - ONE33T: add additional job save to force update search vector
+ - Merge pull request #515 in ONE33T/133t from bugfix/generatedemodata_fix to develop
+ - ONE33T-561: [FIX] added job seeker info for js search item
+ - ONE33T-872: fix attendees list validation (event owner should be in attendees list)
+ - ONE33T: add additional job seeker save to force update search vector
+ - ONE33T-675: [FIX] added applied date marker to job preview
+ - Merge pull request #511 in ONE33T/133t from bugfix/ONE33T-768_candidates_quicklist to develop
+ - ONE33T-687: [FIX] added check for job seeker to skills matching
+ - ONE33T-639: [FIX] fixed message for cheaper plan selection
+ - ONE33T-768: fix candidates quick list, use logs for getting of actual candidates instead of workflow steps model
+ - ONE33T-821, ONE33T-822: [FIX] added permissions to company user functionality.
+ - ONE33T-779: [FIX] hide buttons section for js in preview mode
+ - ONE33T-753: [FIX] added navigation from job view page to company page
+ - ONE33T-826: [FIX] fixed acceptance for login users
+
+Version 0.7.6:
+ - Merge pull request #507 in ONE33T/133t from bugfix/ONE33T-856_cancel_button_in_job_creation to develop
+ - ONE33T-856: [FIX] fixed job creation error with cancel button
+ - Merge pull request #506 in ONE33T/133t from bugfix/ONE33T-642_restrictions_on_starter_package to develop
+ - ONE33T-642: [FIX] added restrictions to create job posting according permissions of starter package
+ - Merge pull request #505 in ONE33T/133t from feature/ONE33T-870_add_search_field_in_header to develop
+ - ONE33T-858: [FIX] login with social login. Change flag name on FE to is_password_set
+ - ONE33T-870: [FIX] merge develop
+ - ONE33T-870: [FIX] refactor global search. Implementation of global search for company user
+
+Version 0.7.5:
+ - Merge pull request #495 in ONE33T/133t from bugfix/ONE33T-862-calendar-switch-today-button-issue to develop
+ - Merge pull request #504 in ONE33T/133t from bugfix/remove_selection_from_job_seekers to develop
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-862-calendar-switch-today-button-issue
+ - [FIX] bugfix/ONE33T-862-calendar-switch-today-button-issue: event creation fix in collisison check - rebuilded
+ - Merge pull request #503 in ONE33T/133t from bugfix/ONE33T-867_notifications_error to develop
+ - Merge pull request #502 in ONE33T/133t from bugfix/ONE33T-860-name-in-description-issue to develop
+ - Merge pull request #501 in ONE33T/133t from bugfix/ONE33T-775_add_note_about_hidden_profile to develop
+ - Merge pull request #500 in ONE33T/133t from bugfix/ONE33T-865-calendar-day-incorrect-open-by-tz to develop
+ - Merge pull request #499 in ONE33T/133t from bugfix/ONE33T-496_filters_sorting_issue to develop
+ - Merge pull request #497 in ONE33T/133t from bugfix/ONE33T-864-calendar-doubleclick-on-event-creating-issue to develop
+ - Merge pull request #491 in ONE33T/133t from bugfix/ONE33T-570-candidates-list-location-search-issue to develop
+ - Merge pull request #490 in ONE33T/133t from bugfix/ONE33T-763-js-list-incorrect-sorting to develop
+ - Merge pull request #486 in ONE33T/133t from bugfix/ONE33T-614_unsubscribed_user_behavior to develop
+ - Merge pull request #489 in ONE33T/133t from bugfix/ONE33T-747-graph-display-incorrect-information to develop
+ - ONE33T: [FIX] removed checkboxes and selection from job seekers lists
+ - Merge pull request #498 in ONE33T/133t from bugfix/event_notifications to develop
+ - ONE33T-867: [FIX] check added for event action notifications
+ - ONE33T: add notification on delete event
+ - [FIX] bugfix/ONE33T-860-name-in-description-issue: add name for ACCEPTED attendees in calendar month's day preview
+ - ONE33T-775: [FIX] added note about hidden js profile
+ - ONE33T-496: [FIX] use keys pipe for displaying right order
+ - [FIX] bugfix/ONE33T-865-calendar-day-incorrect-open-by-tz: potential fix for incorrect calendar displaying fix for sharing JS profile routing modify setting of event title for calendar
+ - ONE33T-867: [FIX] fix error when creating new event
+ - Merge branch 'bugfix/event_notifications' into bugfix/ONE33T-867_notifications_error
+ - ONE33T: fix notifications fot invited company user
+ - ONE33T-867: [FIX] implementation of event type notifications
+ - Merge pull request #496 in ONE33T/133t from bugfix/ONE33T-861_events_ordering to develop
+ - [FIX] bugfix/ONE33T-864-calendar-doubleclick-on-event-creating-issue: add on pending hiding of form action controls
+ - Merge pull request #494 in ONE33T/133t from bugfix/multiple_trial_notifications to develop
+ - ONE33T-861: add events ordering by date_from and date_to
+ - [FIX] bugfix/ONE33T-862-calendar-switch-today-button-issue: fixed today button switchDate case
+ - Merge pull request #493 in ONE33T/133t from bugfix/ONE33T-866_another_event to develop
+ - ONE33T: set trial notifications schedule to once an hour
+ - [FIX] bugfix/ONE33T-866_another_event: implement changes in "checkEventTime" method
+ - Merge pull request #492 in ONE33T/133t from bugfix/ONE33T-858_set_password to develop
+ - ONE33T-866: exclude current event from another events check
+ - ONE33T-858: add job seeker attribute that describes whether job seeker password was set after login with social
+ - Merge branch 'develop' into bugfix/ONE33T-570-candidates-list-location-search-issue
+ - Merge branch 'develop' into bugfix/ONE33T-763-js-list-incorrect-sorting
+ - Merge branch 'develop' into bugfix/ONE32T-614_unsubscribed_user_behavior
+ - ONE33T-237 update test json message check on base trial time check
+ - [FIX] bugfix/ONE33T-570-candidates-list-location-search-issue: add losted param to function
+ - [FIX] bugfix/ONE33T-763-js-list-incorrect-sorting: add First and Last Name filters description in sorting system in job-seeker-list-state
+ - [FIX] feature/ONE33T-747-graph-display-incorrect-information: rebuild company report state, fixed data and flow related issues
+ - Merge branch 'bugfix/PaymentData_model_fix' into develop
+ - ONE33T: [FIX] paymentData model import fix
+ - Merge branch 'develop' into bugfix/ONE33T-614_unsubscribed_user_behavior
+ - ONE33T-614: [FIX] added restriction for navigation to select package dashboard page for expired and deleted subscription
+ - ONE33T-614: [FIX] deny navigation from set trial page except logout
+ - ONE33T-614: [FIX] submit only when package selected
+
+Version 0.7.4:
+ - Merge pull request #483 in ONE33T/133t from bugfix/ONE33T-840_navigation_from_static_panel to develop
+ - ONE33T-237 modifiy base trial length from 17 to 30 days
+ - Merge branch 'develop' into bugfix/ONE33T-840_navigation_from_static_panel
+ - Merge pull request #485 in ONE33T/133t from feature/ONE33T-742-share-job to develop
+ - Merge pull request #472 in ONE33T/133t from bugfix/ONE33T-649_fix_change_billing_information_errors to develop
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-742-share-job
+ - Merge pull request #480 in ONE33T/133t from feature/ONE33T-727-calendar-module-integration-fixes to develop
+ - Merge pull request #479 in ONE33T/133t from bugfix/ONE33T-807_correct_sort_of_workflow_on_job_posting to develop
+ - Merge pull request #478 in ONE33T/133t from bugfix/ONE33T-595_add_candidate_static_panel_to_job_view_for_company to develop
+ - Merge pull request #484 in ONE33T/133t from bugfix/download_to_csv_fix to develop
+ - Merge pull request #477 in ONE33T/133t from bugfix/ONE33T-766_add_comments_to_job_sekkers_lists to develop
+ - Merge pull request #474 in ONE33T/133t from bugfix/ONE33T-676_add_description_to_job to develop
+ - Merge pull request #482 in ONE33T/133t from bugfix/add_missing_guid_field to develop
+ - Merge pull request #481 in ONE33T/133t from bugfix/ONE33T-857_internal_error_on_add_plan to develop
+ - [FIX] feature/ONE33T-742-share-job: after merge fix
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-742-share-job
+ - [IMP] feature/ONE33T-742-share-job: implement share-job-control with dialog add fix for js-profile as public, little refactor of BaseRoutes
+ - ONE33T-853: [FIX] fixed params in api service for downloading
+ - ONE33T-840: [FIX] fixed behavior of static panel navigation
+ - Merge pull request #469 in ONE33T/133t from feature/ONE33T-162-download-profile-to-pdf to develop
+ - ONE33T: add missing guid field to job company serializer
+ - ONE33T-857: fix server error on add custom plan action
+ - [FIX] feature/ONE33T-727-calendar-module-integration-fixes: PR fixes and improvements pack 2
+ - ONE33T-807: [FIX] correct sort of workflow on job posting page
+ - ONE33T-595: [FIX] added candidate static panel to job view for company users
+ - [FIX] feature/ONE33T-162-download-profile-to-pdf: PR fixes, print controll on hide tooltip error fix
+ - ONE33T-766: [FIX] added possibility to comment from saved/purchased job seekers list
+ - [FIX] feature/ONE33T-727-calendar-module-integration-fixes: PR fixes and improvements, fixed event-form-selector-with-server-search on lazy loading auto scroll bug add constants with keys for event-form and event-creator states fixed formating in "getHttpParams" api.service method
+ - ONE33T-676: [FIX] added description field to job posting view
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-162-download-profile-to-pdf
+ - ONE33T-649: [FIX] fixed errors. Used ngx-stripe instead @nomadreservations/ngx-stripe. Removed unused imports
+ - [FIX] feature/ONE33T-162-download-profile-to-pdf: after merge fix
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-162-download-profile-to-pdf
+ - [IMP] feature/ONE33T-162-download-profile-to-pdf: fix of ONE33t-852 finish job seeker profile download to PDF, add printing layout by template, setup shadow printing onpage routes, add printing global styles share link bugfixes/improvements
+
+Version 0.7.3:
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into develop
+ - Merge pull request #476 in ONE33T/133t from bugfix/ONE33T-842_user_deletion to develop
+ - Merge pull request #475 in ONE33T/133t from bugfix/ONE33T-530_error_message_for_job_posting to develop
+ - ONE33T-842: replace PROTECT with CASCADE for users relations because of soft delete, fix user deletion in admin section
+ - Merge pull request #468 in ONE33T/133t from bugfix/ONE33T-853_download_to_CSV_issue to develop
+ - Merge pull request #473 in ONE33T/133t from feature/ONE33T-502_update_skills_db to develop
+ - Merge pull request #452 in ONE33T/133t from bugfix/ONE33T-608_facebook_login_window_fix to develop
+ - Merge pull request #471 in ONE33T/133t from bugfix/create_event to develop
+ - ONE33T-853: [FIX] pr fix for getResponseTypeOptions method
+ - Merge pull request #458 in ONE33T/133t from bugfix/ONE33T-834_rewrite_company_jobs_search_FE to develop
+ - Merge branch 'develop' into bugfix/ONE33T-853_download_to_CSV_issue
+ - Merge pull request #457 in ONE33T/133t from bugfix/ONE33T-832_IE_support_of_reports to develop
+ - Merge pull request #466 in ONE33T/133t from bugfix/ONE33T-823_getting_job_seekers_on_init to develop
+ - Merge branch 'develop' into bugfix/ONE33T-608_facebook_login_window_fix
+ - ONE33T-502: fix job_seeker skills creation in job_seeker fixture
+ - ONE33T: fix failed tests
+ - ONE33T: fix event creation when company has no address
+ - ONE33T-502 update tests on usage of non-existing industry get_or_create vs get
+ - Revert "ONE33T-502 update tests on usage of non-existing industry get_or_create vs get"
+ - ONE33T-502 update tests on usage of non-existing industry get_or_create vs get
+ - Merge pull request #463 in ONE33T/133t from feature/ONE33T-848_search_field_component_with_debounce to develop
+ - Merge pull request #470 in ONE33T/133t from bugfix/candidates_fts to develop
+ - Merge pull request #464 in ONE33T/133t from bugfix/ONE33T-851_js_salary_vision_mode to develop
+ - ONE33T-502 fix csv header for industries list
+ - ONE33T-530: [FIX] set correct error message
+ - ONE33T-502 update skills source csv files by data from customer
+ - ONE33T: fix formatting
+ - ONE33T: implement location full text search for candidates
+ - ONE33T-853: [FIX] rewrite download csv mechanism
+ - ONE33T-823: [FIX] check added for loading purchased job seekers on init
+ - Merge branch 'develop' into bugfix/ONE33T-832_IE_support_of_reports
+ - ONE33T-851: fix salary vision mode for job seeker
+ - Merge branch 'develop' into bugfix/ONE33T-834_rewrite_company_jobs_search_FE
+ - ONE33T-834: [FIX] pr fixes
+ - Merge branch 'develop' into bugfix/ONE33T-832_IE_support_of_reports
+ - ONE33T-848:[IMP] extracted debounce search logic to component. Improvements
+ - ONE33T-834:[FIX] rewrite job list for company. Improvements
+ - ONE33T-833:[FIX] fixed issue when select all from list in IE
+ - ONE33T-835:[FIX] added polyfill for url-search-params to navigate
+ - ONE33T-832:[FIX] added scroll events support for IE
+ - ONE33T-832:[FIX] added polyfills for ngx-chart
+ - ONE33T-608:[FIX] set placeholder for list form search component
+ - ONE33T-608:[FIX] added extra params to FacebookLoginProvider
+
+Version 0.7.2:
+ - Merge pull request #467 in ONE33T/133t from bugfix/ONE33T-368_internal_error_on_user_sign_up to develop
+ - ONE33T-368: move sending of email and web notifications to two separated tasks with different timers
+ - Merge pull request #465 in ONE33T/133t from bugfix/sentry_settings to develop
+ - ONE33T: fix SENTRY_ENVIRONMENT_TAG production setting
+ - Merge pull request #462 in ONE33T/133t from feature/ONE33T-843_user_email to develop
+ - Merge pull request #461 in ONE33T/133t from bugfix/ONE33T-656_js_phone_profile_editing to develop
+ - Merge pull request #438 in ONE33T/133t from feature/ONE33T-727-calendar-module-integration to develop
+ - ONE33T-843: fix user email update
+ - Merge pull request #460 in ONE33T/133t from feature/sentry_configuration to develop
+ - ONE33T: fix linter errors
+ - Merge pull request #459 in ONE33T/133t from feature/debug_logs_gunicorn to develop
+ - ONE33T: add missing celery environment configuration
+ - ONE33T: add environment tag for sentry
+ - ONE33T-656:[FIX] improved main info data preparation
+ - Merge pull request #455 in ONE33T/133t from feature/db_indexes to develop
+ - ONE33T: add celery integration
+ - ONE33T: setup Sentry configuration
+ - ONE33T: enable debug logs for gunicorn
+ - Merge branch 'develop' into feature/db_indexes
+ - Merge pull request #454 in ONE33T/133t from feature/jobs_fts_for_company to develop
+ - Merge pull request #456 in ONE33T/133t from feature/gunicorn_nginx_logging to develop
+ - ONE33T: remove unnecessary chmod command
+ - ONE33T: skip test that uses FTS
+ - ONE33T: set permissions for logging folders
+ - ONE33T: add jobs full text search for company user
+ - Merge pull request #453 in ONE33T/133t from feature/gunicorn_nginx_logging to develop
+ - ONE33T: update test running command
+ - ONE33T: precreate logging folders
+ - ONE33T: configure tests running with postgres db
+ - [IMP] feature/ONE33T-727-calendar-module-integration: implement infinite scroll for selector widget fixed last bugs
+ - [IMP] feature/ONE33T-727-calendar-module-integration: implement server search for cities
+ - Merge pull request #450 in ONE33T/133t from feature/add_company_user_id_to_event_owner to develop
+ - ONE33T: add handling of inactive objects
+ - Merge pull request #451 in ONE33T/133t from feature/gunicorn_nginx_logging to develop
+ - Merge branch 'feature/add_company_user_id_to_event_owner' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - ONE33T: add logging options to gunicorn and nginx configurations
+ - ONE33T: add signals handlers for job and job seeker relations update
+ - Merge pull request #448 in ONE33T/133t from bugfix/ONE33T-459_checkboxes_selection_in_full_search to develop
+ - [IMP] feature/ONE33T-727-calendar-module-integration: add attendee status text help fix from dialog blank appearence of pages setup modal
+ - [IMP] feature/ONE33T-727-calendar-module-integration: formating fixes, remove unused, testing with new backend success.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - [IMP] feature/ONE33T-727-calendar-module-integration: release of calendar without onscroll lazy loader in select + server search, tests with new backend fixes
+ - Merge branch 'develop' into feature/db_indexes
+ - Merge pull request #449 in ONE33T/133t from bugfix/add_event_owner_to_colleques_list to develop
+ - ONE33T: add company user id to event owner representation
+ - ONE33T: implement indexex for job seeker model
+ - ONE33T: fix excluding of current user from company users list
+ - ONE33T: started to implement db indexing for full text search
+ - ONE33T-459:[FIX] fixed selected filter removal
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - [IMP] feature/ONE33T-727-calendar-module-integration: finish with form base data logic
+ - [IMP] feature/ONE33T-727-calendar-module-integration: process commit, fixed "ExpressionChangedAfterItHasBeenCheckedError" on applicationBusy$ logic in core advanced form integration, searchable select additional logic
+ - [IMP] feature/ONE33T-727-calendar-module-integration: implementing main part of form controls with options
+ - Merge branch 'feature/delete_timezone_model' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - [IMP] feature/ONE33T-727-calendar-module-integration: datetime picker ready, form integrated with store, custom module control integrated with form system, new components, first start form on edit.
+ - [IMP] feature/ONE33T-727-calendar-module-integration: form improvements.
+ - [IMP] feature/ONE33T-727-calendar-module-integration: process commit rebuild ui and form implementation
+ - [IMP] feature/ONE33T-727-calendar-module-integration: process commit make module and logic refactor, concept testing
+ - Merge branch 'feature/ONE33T-726_calendar_events_crudl' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - [IMP] feature/ONE33T-727-calendar-module-integration: integrate events month calendar view with existing api, additional layout and calendar logic.
+ - Merge branch 'feature/ONE33T-726_calendar_events_crudl' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-727-calendar-module-integration
+ - [IMP] feature/ONE33T-727-calendar-module-integration: company calendar base
+
+Version 0.7.1:
+ - Merge pull request #445 in ONE33T/133t from feature/add_timezone_to_city_serializer to develop
+ - Merge pull request #446 in ONE33T/133t from bugfix/another_event_fix to develop
+ - Merge pull request #447 in ONE33T/133t from bugfix/fix_subscription_issue to develop
+ - [FIX] improve check for redirection to select plan after subscription expiration
+ - ONE33T: fix check whether another event scheduled for particular period of time(allow date_to/date_from to be equal with date_from/date_to of another event)
+ - ONE33T: add timezone to city serializer thar is used for event location
+
+Version 0.7.0:
+ - Merge pull request #425 in ONE33T/133t from bugfix/ONE33T-781_opportunity_to_purchase_subscription_after_expiration to develop
+ - Merge branch 'develop' into bugfix/ONE33T-781_opportunity_to_purchase_subscription_after_expiration
+ - Merge branch 'bugfix/ONE33T-656_saving_phone_number_in_js_profile' into bugfix/ONE33T-781_opportunity_to_purchase_subscription_after_expiration
+ - Merge branch 'bugfix/ONE33T-667_full_search_with_location' into bugfix/ONE33T-781_opportunity_to_purchase_subscription_after_expiration
+ - ONE33T-781: [FIX] pr fixes according latest comments
+ - Merge pull request #442 in ONE33T/133t from bugfix/ONE33T-749_workflow_stats_on_reports_page to develop
+ - Merge pull request #443 in ONE33T/133t from bugfix/ONE33T-607_social_sigin_with_existing_email to develop
+ - Merge pull request #444 in ONE33T/133t from bugfix/ONE33T-648_remove_staticfiles_s3_configuration to develop
+ - Merge branch 'develop' into bugfix/ONE33T-667_full_search_with_location
+ - Merge pull request #437 in ONE33T/133t from bugfix/ONE33T-570_candidates_list_search_fixes to develop
+ - ONE33T-570: [FIX] fixed error in job seeker profile, pr fixes
+ - Merge branch 'develop' into bugfix/ONE33T-570_candidates_list_search_fixes
+ - ONE33T-656: [FIX] moved sorting filter to constants
+ - ONE33T-648: remove s3 configuration for staticfiles
+ - ONE33T-656: [FIX] rewrite report data preparing
+ - ONE33T-607: implement social account creation for existing job_seeker
+ - Merge pull request #423 in ONE33T/133t from feature/ONE33T-344_set_password_for_social_login to develop
+ - Merge pull request #430 in ONE33T/133t from bugfix/ONE33T-406_delete_image_from_JS_profile_FE to develop
+ - Merge pull request #431 in ONE33T/133t from bugfix/full_notification_issue to develop
+ - Merge pull request #439 in ONE33T/133t from feature/ONE33T-828_bulk_upload_skills to develop
+ - Merge branch 'develop' into feature/ONE33T-828_bulk_upload_skills
+ - ONE33T-828: extract csv delimiter into constant
+ - ONE33T-570: [FIX] pr fixes according latest comments
+ - Merge branch 'develop' into feature/ONE33T-828_bulk_upload_skills
+ - Merge pull request #428 in ONE33T/133t from feature/delete_timezone_model to develop
+ - Merge branch 'develop' into bugfix/ONE33T-570_candidates_list_search_fixes
+ - ONE33T-656: [FIX] pr fix: removed commented code
+ - ONE33T-783: [FIX] pr fix according latest comment
+ - Merge branch 'develop' into bugfix/full_notification_issue
+ - ONE33T-406: [FIX] rename job seeker service
+ - Merge branch 'develop' into bugfix/ONE33T-406_delete_image_from_JS_profile_FE
+ - ONE33T-749: [FIX] removed dependency between edit workflow stat on dashboard and widget on reports. Other fixes
+ - Merge pull request #434 in ONE33T/133t from bugfix/ONE33T-530_fix_error_when_filling_publish_date to develop
+ - Merge pull request #435 in ONE33T/133t from bugfix/ONE33T-819_visibility_of_education_and_experience_on_shared_profile to develop
+ - ONE33T-667: [FIX] search candidates page improvements
+ - ONE33T-683: [FIX] fixed request with location state/city on search job posting page
+ - Merge branch 'develop' into bugfix/ONE33T-667_full_search_with_location
+ - ONE33T-656: [FIX] fixes according latest comments
+ - Merge pull request #440 in ONE33T/133t from bugfix/flower_version_update to develop
+ - ONE33T-656: [FIX] PR and code remarks fixes
+ - ONE33T: update redis and flower versions
+ - Merge pull request #426 in ONE33T/133t from bugfix/clickable_job_titles to develop
+ - ONE33T-828: implement bulk upload for skills
+ - Merge pull request #427 in ONE33T/133t from bugfix/ONE33T-698_industry_field_validation to develop
+ - Merge branch 'develop' into bugfix/ONE33T-656_saving_phone_number_in_js_profile
+ - Merge pull request #436 in ONE33T/133t from bugfix/ONE33T-771_restore_candidate to develop
+ - Merge branch 'develop' into bugfix/clickable_job_titles
+ - [FIX] new line PR fix
+ - ONE33T-570: [FIX] fix ts lint error and update candidate list component
+ - ONE33T-570: [FIX] extract prepareNewParams method to GridViewHelper
+ - ONE33T-570: [FIX] changed full search logic on job seekers list page
+ - ONE33T-570: [FIX] changed full search logic on candidates list page
+ - ONE33T-570: [FIX] split candidates list component
+ - ONE33T-570: [FIX] extract search list logic to component and implement it
+ - ONE33T-771: fix move candidate to rejected on job closing
+ - ONE33T-819: [FIX] fixed visibility of education and experience on shared profile
+ - ONE33T-530: [FIX] fixed error with publish date by setting format to moment date
+ - Merge pull request #433 in ONE33T/133t from bugfix/ONE33T-643_manage_candidate_with_starter_package to develop
+ - ONE33T: unify datetimes format in offset validation
+ - Merge pull request #429 in ONE33T/133t from bugfix/ONE33T-820_company_users_permissions to develop
+ - Merge pull request #421 in ONE33T/133t from bugfix/ONE33T-814_negative_salary to develop
+ - ONE33T-643: fix permissions for company users with starter package
+ - ONE33T: rework api tests, implement custom test client for authentication via JWT
+ - ONE33T-656: [FIX] fixed phone number saving
+ - ONE33T-783, ONE33T-794: [FIX] fixed full notification's message parts displaying
+ - ONE33T: remove SessionAuthentication class from base settings, use it only in dev settings for swagger
+ - ONE33T-344: [FIX] PR fixes according latest comments
+ - Merge branch 'develop' into feature/ONE33T-344_set_password_for_social_login
+ - Merge branch 'develop' into bugfix/ONE33T-781_opportunity_to_purchase_subscription_after_expiration
+ - ONE33T-406: [FIX] added opportunity to delete uploaded image
+ - ONE33T-820: fix company user permissions setting
+ - ONE33T-814: fix migration conflict
+ - Merge branch 'develop' into bugfix/ONE33T-814_negative_salary
+ - ONE33T: refactor variable names
+ - Merge branch 'develop' into feature/delete_timezone_model
+ - ONE33T: rework timezones handling
+ - ONE33T-698: [FIX] added validation for custom values to industry field
+ - Merge pull request #416 in ONE33T/133t from bugfix/ONE33T-633_add_extra_item_to_company_balance to develop
+ - Merge pull request #414 in ONE33T/133t from feature/ONE33T-723_button_for_csv_download to develop
+ - ONE33T-560: [FIX] added redirect by clicking on job title from applied jobs
+ - ONE33T-560: [FIX] added redirect by clicking on title from saved jobs
+ - ONE33T-547: [FIX] added redirect to company profile by clicking on company title
+ - ONE33T-781: [FIX] handle deleted subscription
+ - Merge pull request #410 in ONE33T/133t from feature/ONE33T-790_save_search to develop
+ - ONE33T-790: resolve migrations conflict
+ - Merge branch 'develop' into feature/ONE33T-790_save_search
+ - Merge pull request #419 in ONE33T/133t from bugfix/ONE33T-810_event_type_representation to develop
+ - Merge pull request #418 in ONE33T/133t from bugfix/ONE33T-811_letter_templates_event_type to develop
+ - Merge pull request #420 in ONE33T/133t from bugfix/ONE33T-797_remove_view_letter_templates_perm to develop
+ - Merge pull request #422 in ONE33T/133t from bugfix/ONE33T-813_deleted_plans to develop
+ - Merge pull request #417 in ONE33T/133t from bugfix/ONE33T-815_job_position_type_required to develop
+ - Merge pull request #413 in ONE33T/133t from bugfix/ONE33T-659_autoapply_questionnaire to develop
+ - Merge pull request #412 in ONE33T/133t from bugfix/ONE33T-818_deleted_comments to develop
+ - Merge pull request #411 in ONE33T/133t from bugfix/ONE33T-406_delete_photo to develop
+ - ONE33T-781: [FIX] minor improvements
+ - ONE33T-781: [FIX] update error interceptor for subscription expiration
+ - ONE33T-781: [FIX] added check for subscription expiration. Set flag for company dashboard
+ - Merge branch 'develop' into feature/ONE33T-344_set_password_for_social_login
+ - Merge branch 'develop' into bugfix/ONE33T-633_add_extra_item_to_company_balance
+ - Merge branch 'develop' into feature/ONE33T-723_button_for_csv_download
+ - ONE33T-790: fix migrations conflict
+ - Merge branch 'develop' into bugfix/ONE33T-810_event_type_representation
+ - Merge branch 'develop' into bugfix/ONE33T-811_letter_templates_event_type
+ - Merge branch 'develop' into bugfix/ONE33T-797_remove_view_letter_templates_perm
+ - Merge branch 'develop' into bugfix/ONE33T-814_negative_salary
+ - Merge branch 'develop' into bugfix/ONE33T-813_deleted_plans
+ - Merge branch 'develop' into bugfix/ONE33T-815_job_position_type_required
+ - Merge branch 'develop' into bugfix/ONE33T-659_autoapply_questionnaire
+ - Merge branch 'develop' into bugfix/ONE33T-818_deleted_comments
+ - Merge branch 'develop' into bugfix/ONE33T-406_delete_photo
+ - Merge branch 'develop' into feature/ONE33T-790_save_search
+ - Merge pull request #424 in ONE33T/133t from bugfix/skills_tests_fix to develop
+ - ONE33T: fix skills in tests
+ - Merge branch 'develop' into feature/ONE33T-344_set_password_for_social_login
+ - Merge branch 'develop' into feature/ONE33T-723_button_for_csv_download
+ - Merge branch 'develop' into bugfix/ONE33T-810_event_type_representation
+ - Merge branch 'develop' into bugfix/ONE33T-811_letter_templates_event_type
+ - Merge branch 'develop' into bugfix/ONE33T-797_remove_view_letter_templates_perm
+ - Merge branch 'develop' into bugfix/ONE33T-814_negative_salary
+ - Merge branch 'develop' into bugfix/ONE33T-813_deleted_plans
+ - Merge branch 'develop' into bugfix/ONE33T-815_job_position_type_required
+ - Merge branch 'develop' into bugfix/ONE33T-659_autoapply_questionnaire
+ - Merge branch 'develop' into bugfix/ONE33T-818_deleted_comments
+ - Merge branch 'develop' into bugfix/ONE33T-406_delete_photo
+ - Merge branch 'develop' into feature/ONE33T-790_save_search
+ - Merge pull request #415 in ONE33T/133t from bugfix/nullable_owner_in_job_model to develop
+ - ONE33T-344: [IMP] added check for social login. Added set password functionality.
+ - ONE33T-813: return subscription plan with scheduled deletion in all plans list
+ - ONE33T-814: use PositiveIntegerField for salary fields
+ - ONE33T-797: move view_lettertemplate permission to MANAGE_LETTER_TEMPLATE group
+ - ONE33T-811: add missing migration
+ - ONE33T-810: add string representation for EventType model
+ - ONE33T-811: add null=True for event_type in leter template model
+ - ONE33T-224: fix actualize and clean skills initial data
+ - ONE33T-815: update job job required fields
+ - ONE33T-633: [FIX] added extra item to company balance. Logic changes
+ - ONE33T: fix nullable owner in job posting, skip tests related to timezones
+ - ONE33T-723: [IMP] implemented candidates download to csv. New component created.
+ - ONE33T-659: add test for questionnaire for apply
+ - ONE33T-659: add validation for only required questions for autoapply
+ - ONE33T-818: add filter for getting only non-deleted comments
+ - ONE33T-406: remove an empty string
+ - ONE33T-406: implement deletion of job seeker photo and company photo
+ - ONE33T-790: add tests for save search
+ - ONE33T-790: implement saving of seach jobs criteria on each job seeker request
+
+Version 0.6.2:
+ - Merge pull request #401 in ONE33T/133t from bugfix/ONE33T-743-job-posting-log-issue to develop
+ - Merge pull request #403 in ONE33T/133t from feature/ONE33T-161-share-profile-via-url to develop
+ - Merge pull request #409 in ONE33T/133t from bugfix/ONE33T-693_location_ordering to develop
+ - [FIX] feature/ONE33T-161-share-profile-via-url: remove trash code in app-routing.module.ts move link generating code to routes contants remove trash from shouldDisplayData on job-seeker-profile-page-view.component
+ - Merge pull request #408 in ONE33T/133t from bugfix/ONE33T-691_relevance_sorting to develop
+ - Merge pull request #402 in ONE33T/133t from feature/ONE33T-12_manage_reports to develop
+ - ONE33T-693: set correct weigths in location search vector
+ - Merge pull request #404 in ONE33T/133t from feature/ONE33T-812_accept_reject_mechanism_for_calendar_events to develop
+ - Merge pull request #407 in ONE33T/133t from feature/ONE33T-268_set_password_for_social_login to develop
+ - ONE33T-691: skip test for full yext search
+ - ONE33T-691: set sorting by relevance as default
+ - Merge pull request #398 in ONE33T/133t from feature/ONE33T-726_calendar_events_crudl to develop
+ - Merge branch 'develop' into feature/ONE33T-268_set_password_for_social_login
+ - Merge branch 'develop' into feature/ONE33T-12_manage_reports
+ - Merge pull request #405 in ONE33T/133t from bugfix/ONE33T-793_incorrect_link_to_dashboard to develop
+ - ONE33T-268: rename get_social_serializer_wrapper to extend_serializer_for_social_user
+ - ONE33T-812: add correct validation message to attendee status validation
+ - ONE33T-268: add tests for set password for social logined users
+ - ONE33T-268: add is_social_login attribute to user serializer, add set-password endpoint
+ - ONE33T-793: remove unexisting url, fix incorrect dashboard link
+ - Merge branch 'develop' into feature/ONE33T-12_manage_reports
+ - ONE33T-12: add csv filenames
+ - ONE33T-12: add export to csv for job seeker reports, extract general code
+ - ONE33T-812: added tests for event notifications
+ - ONE33T-812: added notifications for events
+ - [FIX] bugfix/ONE33T-743-job-posting-log-issue: move getQueryParamsString method from core.state class to UtilsService
+ - [IMP] feature/ONE33T-161-share-profile-via-url: add route to public profile add public profile fetcher and related logic modify job seeker profile model, add "is_shared" field mofidy job seeker profile page view -> add logic to detect enter from public url and hide profile layout on error or denied access add job link share access controll component remove auth guard on the root routes level for job seekers module
+ - ONE33T-12: use invoices instead of charges for company transaction reports
+ - ONE33T-12: fix linter errors
+ - ONE22T-12: add select_related
+ - ONE22T-12: implement task to sync stripe charges with database (for using in admin reports)
+ - ONE33T-12: extract filters handling to mixin
+ - ONE33T-12: handle nullable values in date filter
+ - ONE33T-12: change transaction reports tempolate
+ - ONE33T-12: remove local changes
+ - ONE33T-12: fix linter errors
+ - Merge branch 'develop' into feature/ONE33T-726_calendar_events_crudl
+ - Merge pull request #400 in ONE33T/133t from feature/ONE33T-798_other_companies_see_company_letter_templates to develop
+ - Merge pull request #397 in ONE33T/133t from bugfix/ONE33T-778_edit_company_address to develop
+ - ONE33T-726: updated branch, fixed conflicts
+ - ONE33T-726: added timezone support
+ - ONE33T-12: create activity reports, company transactions report
+ - [FIX] bugfix/ONE33T-743-job-posting-log-issue: move to using URLSearchParams in getQueryParamsString exclude URL fix candidates statistic displaying for job seeker views.
+ - [FIX] bugfix/ONE33T-743-job-posting-log-issue: remove commented trash
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-743-job-posting-log-issue
+ - Merge pull request #367 in ONE33T/133t from bugfix/ONE33T-734-email-field-is-case-sensitive to develop
+ - Merge pull request #366 in ONE33T/133t from bugfix/ONE33T-713-auth-refresh-token-related-issue to develop
+ - [FIX] bugfix/ONE33T-743-job-posting-log-issue: fixes for issues after refactor
+ - [FIX] bugfix/ONE33T-743-job-posting-log-issue: remove unused code that contains duplicates logic. fix job detail resolver to load only nessesary data for particular case.
+ - ONE33T-798: added filter by company in letter template queryset
+ - ONE33T-12: use decimal field for plan price
+ - [FIX] bugfix/ONE33T-743-job-posting-log-issue: refactor job details view, add flag for candidate stats panel appearing. remove view dublication, extend core.state refirectTo action listner. commented duplicated view and related (DRAFT VERSION, will be removed).
+ - ONE33T-12: implement reports for company and job seeker
+ - Merge pull request #399 in ONE33T/133t from feature/change_webconcurrency to develop
+ - Merge pull request #396 in ONE33T/133t from feature/ONE33T-741_share_job to develop
+ - Merge pull request #395 in ONE33T/133t from bugfix/ONE33T-780_hide_profile to develop
+ - ONE33T: set WEB_CONCURRENCY to 2
+ - Merge branch 'develop' into bugfix/ONE33T-778_edit_company_address
+ - Merge branch 'develop' into feature/ONE33T-741_share_job
+ - Merge branch 'bugfix/ONE33T-780_hide_profile' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-780_hide_profile
+ - Merge branch 'develop' into bugfix/ONE33T-780_hide_profile
+ - Merge branch 'develop' into bugfix/ONE33T-780_hide_profile
+ - ONE33T-726: deleted commented code, deleted unused constants
+ - ONE33T-726: updated branch, fixed conlicts
+ - ONE33T-726: implemented CRUDL events for calendar
+ - [FIX] bugfix/ONE33T-734-email-field-is-case-sensitive: fix auth state selector logic
+ - Merge pull request #394 in ONE33T/133t from bugfix/billing_information_fix to develop
+ - ONE33T-726: fixed invalid dicstrings for swagger
+ - ONE33T-741: refactor tests
+ - ONE33T-726: added enums views for job, company user, and candidate for selecting adding to event
+ - ONE33T-726: added model and view for timezone
+ - ONE33T-778: save company instance on address update
+ - ONE33T-741: add tests for sending email for job sharing
+ - ONE33T-780: fix profile publishing
+ - ONE33T-741: add tests for shared job obtain
+ - ONE33T: add validation for email field on billing information setting
+ - Merge branch 'develop' into feature/ONE33T-741_share_job
+ - Merge pull request #393 in ONE33T/133t from feature/ONE33T_update_subscription_notifications to develop
+ - [REF] support new notifications types. Refactoring full notifications
+ - ONE33T-741: implement share job
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: rewrite "moveGraphTimeLapse" function for company reports state rewrite "phoneMaskDirective" using simple formating lib
+ - [FIX] bugfix/ONE33T-734-email-field-is-case-sensitive: formatting fix
+ - [FIX] bugfix/ONE33T-734-email-field-is-case-sensitive: fix for "Login" action listener typing and data flow
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-713-auth-refresh-token-related-issue
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-713-auth-refresh-token-related-issue
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: fixed "getExpiredInTimeFromNow" function work in "auth.interceptor"
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: modify "minYearAvailableForSelection" to 1956 year remove circular dependencies fix access modifiers for actions classes remove unused action's payload empty spreading extract numeric constant from "auth.interceptor" modify all mentions of debounceDuradion to get values from environment fix liner's "moment" related warnings rename "checkDidReqGoToPublicRoute" -> "checkIsPublicRoute" in "auth.interceptor" remove Math.abs from "getExpiredInTimeFromNow" to make right data flow
+ - [FIX] bugfix/ONE33T-734-email-field-is-case-sensitive: fix my miss to lowerCase method implement credentails formatter
+ - [FIX] bugfix/ONE33T-734-email-field-is-case-sensitive: add credentials formatter(email to lower case) in login-page.state
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: fix typing for auth.actions union.
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: add extractTokenExpirationDate action handler fix.
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: fix for lint errors and bugs.
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: small formating fix.
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: move extracting of expiration date to separate actionHandler auth.intercepter refactoring related on debug, added comments, proivded constant from environment fix for core.error.interceptor to not display empty error messages by technical requests, add validating by messages checking strategy. fixed sending /notifications/short effect, now receive only for authorised users.
+ - [FIX] bugfix/ONE33T-713-auth-refresh-token-related-issue: add "single" quote_type for .editorconfig (for correcting prettier work) modify auth.intercepter to handle finishing of token living, refreshing and other related states. add launching "logout" action on processing some actions that related with auth logut logic but does not implement it. fix auth.actions class properties scope. modify auth.state to process additional auth.intercepter logic.
+
+Version 0.6.1:
+ - Merge pull request #392 in ONE33T/133t from bugfix/candidates_error to develop
+ - ONE33T: add check of applied_at date on candidates view
+ - Merge pull request #389 in ONE33T/133t from feature/ONE33T-726_rename_letter_template_category_to_event_type_FE to develop
+ - Merge pull request #387 in ONE33T/133t from bugfix/ONE33T-554_any_button_in_filters to develop
+ - Merge pull request #391 in ONE33T/133t from feature/run_celery_tasks_every_10_mins to develop
+ - Merge pull request #390 in ONE33T/133t from feature/subscription_notifications to develop
+ - Merge pull request #386 in ONE33T/133t from bugfix/ONE33T-399_duplicated_rows_in_autoapply to develop
+ - ONE33T: set all periodic tasks to run every 10 mins
+ - ONE33T: add plan object to short subsctiption notifications
+ - ONE33T-399: fix actualize jobs list
+ - ONE33T-726: [IMP] renamed category in letter templates to event_type
+ - Merge pull request #388 in ONE33T/133t from bugfix/ONE33T_search_by_company_name_nice_to_have_skills to develop
+ - ONE33T-399: fix incorrect handling of new autoapply jobs, fix duplication by apply status
+ - ONE33T: added search job by company name, by nice to have skills
+ - ONE33T-554: [FIX] fixed any selection behavior on search job page
+ - ONE33T-399: fix duplicated objects in autoapply jobs queryset
+ - ONE33T-554: [FIX] fixed any selection error at candidates list filter
+ - Merge pull request #385 in ONE33T/133t from bugfix/ONE33T-530_fix_publish_date_issue to develop
+ - Merge pull request #382 in ONE33T/133t from bugfix/ONE33T-744_job_deletion_logs to develop
+ - Merge pull request #379 in ONE33T/133t from bugfix/ONE33T-748_error_500_if_profile_does_not_have_address to develop
+ - Merge pull request #384 in ONE33T/133t from bugfix/ONE33T-706_incorrect_aa_progress_calculation to develop
+ - Merge pull request #378 in ONE33T/133t from feature/ONE33T-726_rename_letter_template_category_to_event_type to develop
+ - ONE33T-530: [FIX] fixed problem with selected date from material Datepicker
+ - ONE33T-11: updated branch, fixed conflicts
+ - ONE-706: fix autoapply progress calculation (consider only applied or need review)
+ - ONE33T-11: updated branch, fixed conflicts in leet mixins
+ - Merge pull request #383 in ONE33T/133t from bugfix/ONE33T-703_assign_button_with_candidates to develop
+ - Merge pull request #375 in ONE33T/133t from bugfix/ONE33T-695_search_job_posting_fixes to develop
+ - Merge pull request #381 in ONE33T/133t from feature/ONE33T-251_candidate_to_csv to develop
+ - ONE33T-251: add ordering for education and certification
+ - ONE33T-251: extract reusable code to mixin
+ - ONE33T-251: add temp print to tests
+ - ONE33T-695: [FIX] pr fixes
+ - ONE33T-703: [FIX] fixes with assign button in bind with candidate
+ - ONE33T-744: add logs for job deletion
+ - Merge pull request #380 in ONE33T/133t from bugfix/ONE33T-748_profile_address_zip_improvement to develop
+ - Merge pull request #377 in ONE33T/133t from bugfix/ONE33T-454_deleted_job_posting_issues to develop
+ - Merge pull request #376 in ONE33T/133t from bugfix/ONE33T-656_phone_number_job_seeker_profile to develop
+ - ONE33T-251: fix tests
+ - Merge branch 'develop' into feature/ONE33T-251_candidate_to_csv
+ - ONE33T-251: remove unused code
+ - ONE33T-251: implement export candidates to csv file
+ - ONE33T-748: [FIX] fixed issues with address edit
+ - Merge pull request #374 in ONE33T/133t from bugfix/ONE33T-679_search_job_filter_posted_date_does_not_work to develop
+ - ONE33T-748: added check for None instead hasattr
+ - ONE33T-748: replaced logic for creating or updating addres for model that has address to geo utils
+ - ONE33T-11: added separate  validator for admin page
+ - Merge branch 'develop' into feature/ONE33T-11_letter_templates_crudl_django_admin
+ - ONE33T-726: rename letter_template_category to event_type, created event app
+ - ONE33T-454: [FIX] added deleted status filter
+ - ONE33T-656: [FIX] support phone number in job seeker profile
+ - Merge branch 'develop' into bugfix/ONE33T-695_search_job_posting_fixes
+ - ONE33T-11: deleted instance arg in serializer
+ - ONE33T-679: changed query paramater's name posted_date_within_days on posted_ago
+ - ONE33T-11: fixed pylint errors
+ - ONE33T-677: [FIX] provide deleting salary value
+ - Merge branch 'develop' into feature/ONE33T-11_letter_templates_crudl_django_admin
+ - ONE33T-11: added CRUDL for letter templates to admin page
+ - ONE33T-673: [FIX] prevent extra values of salary filter
+ - ONE33T-666: [FIX] resolved search issue
+ - ONE33T-695: [FIX] fixes with updating params only in state to avoid lost of query params ONE33T-678: [FIX] fixes with updating params only in state to avoid lost of query params
+
+Version 0.6.0:
+ - Merge pull request #369 in ONE33T/133t from bugfix/ONE33T-717_incorrect_sorting_quicklist to develop
+ - Merge pull request #368 in ONE33T/133t from bugfix/ONE33T-734-email-field-is-case-sensitive_be to develop
+ - Merge pull request #361 in ONE33T/133t from feature/ONE33T-141_share_profile_via_url to develop
+ - Merge pull request #372 in ONE33T/133t from bugfix/ONE33T-396_autoapply_jobs_sorting to develop
+ - ONE33T-141: remove unused import
+ - Merge branch 'develop' into feature/ONE33T-141_share_profile_via_url
+ - Merge pull request #371 in ONE33T/133t from bugfix/ONE33T-738_worfflow_stats_permissions to develop
+ - Merge pull request #370 in ONE33T/133t from bugfix/ONE33T-739_change_company_logo_perm to develop
+ - ONE33T-141: move public job seeker serializer to job_seeker module
+ - Merge branch 'develop' into bugfix/ONE33T-396_autoapply_jobs_sorting
+ - Merge branch 'develop' into bugfix/ONE33T-738_worfflow_stats_permissions
+ - Merge branch 'develop' into bugfix/ONE33T-739_change_company_logo_perm
+ - Merge pull request #365 in ONE33T/133t from bugfix/ONE33T-692_travel_opportunities_in_job_seekers to develop
+ - ONE33T-396: fix ordering in autoapply jobs list
+ - Merge pull request #344 in ONE33T/133t from feature/ONE33T-708_letter_templates_fe to develop
+ - ONE33T-738: fix access to workflow stats for company users without permission to view reports
+ - Merge pull request #364 in ONE33T/133t from bugfix/ONE33T-697_deleted_job_handle_FE to develop
+ - ONE33T-708: [FIX] pr fixes
+ - Merge branch 'develop' into feature/ONE33T-708_letter_templates_fe
+ - ONE33T-739: fix import order in comapny tests
+ - ONE33T-739: add change_company_logo permision to edit company profile group
+ - Merge branch 'develop' into bugfix/ONE33T-697_deleted_job_handle_FE
+ - ONE33T-717: updated branch, fixed conflicts in candidate utils
+ - Merge pull request #362 in ONE33T/133t from bugfix/ONE33T-730_numbers_of_candidates_in_edit_score_card to develop
+ - ONE33T-717: added sorting for quick list
+ - Merge pull request #358 in ONE33T/133t from bugfix/ONE33T-373_add_comment_button_issue to develop
+ - Merge pull request #357 in ONE33T/133t from feature/ONE33T-505_update_plan to develop
+ - Merge pull request #363 in ONE33T/133t from bugfix/ONE33T-697_deleted_job_in_autoapply to develop
+ - Merge branch 'feature/ONE33T-505_update_plan' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-505_update_plan
+ - Merge branch 'develop' into feature/ONE33T-505_update_plan
+ - Merge branch 'develop' into bugfix/ONE33T-697_deleted_job_in_autoapply
+ - Merge pull request #360 in ONE33T/133t from bugfix/ONE33T_query_param_all_for_candidates_workflow_stats_front to develop
+ - Merge branch 'bugfix/ONE33T_query_param_all_for_candidates_workflow_stats_front' into bugfix/ONE33T-734-email-field-is-case-sensitive_be
+ - ONE33T-734: fixed email case sensitive for login
+ - Merge branch 'bugfix/ONE33T-733_incorrect_name_hired_and_rejected_options_in_recruiter_activity_section' into bugfix/ONE33T_query_param_all_for_candidates_workflow_stats_front
+ - Merge branch 'develop' into bugfix/ONE33T_query_param_all_for_candidates_workflow_stats_front
+ - Merge branch 'develop' into bugfix/ONE33T-733_incorrect_name_hired_and_rejected_options_in_recruiter_activity_section
+ - Merge pull request #356 in ONE33T/133t from bugfix/ONE33T-735_incorrect_log_when_applied_for_the_job to develop
+ - ONE33T-692: [FIX] fixed TravelOpportunities in all related info of job seeker
+ - ONE33T-697: [FIX] added deleted job item in auto apply queue ONE33T-696: [FIX] added deleted job item in applied jobs list and saved jobs list
+ - Merge branch 'bugfix/ONE33T_query_param_all_for_candidates_workflow_stats_front' into bugfix/ONE33T-730_numbers_of_candidates_in_edit_score_card
+ - ONE33T-505: [FIX] fixed word error
+ - Merge branch 'feature/ONE33T-505_update_plan' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-505_update_plan
+ - ONE33T-505: [IMP] added new price marker for plans
+ - Merge branch 'develop' into feature/ONE33T-505_update_plan
+ - ONE33T: group imports
+ - ONE33T-697: fix deleted job representation (add company)
+ - Merge branch 'bugfix/ONE33T_query_param_all_for_candidates_workflow_stats_front' into bugfix/ONE33T-730_numbers_of_candidates_in_edit_score_card
+ - ONE33T-141: implement sharing job seeker profile via url
+ - ONE33T-730: [FIX] added request for getting all stat with number of candidates for scorecard
+ - ONE33T: added query parameter all
+ - Merge branch 'develop' into bugfix/ONE33T-733_incorrect_name_hired_and_rejected_options_in_recruiter_activity_section
+ - ONE33T-735: updated branch, fixed conflicts in log utils
+ - Merge pull request #352 in ONE33T/133t from bugfix/ONE33T-715_duplicate_candidates_in_quick_list_after_worked_with_candidate to develop
+ - ONE33T-733: added orderdict instead builtindict
+ - ONE33T-733: deleted unused import in candidate serializers
+ - ONE33T-736: [FIX]renamed 'Newest Jobs' to 'Newest Job postings'
+ - Merge branch 'develop' into bugfix/ONE33T-733_incorrect_name_hired_and_rejected_options_in_recruiter_activity_section
+ - ONE33T-733: added mapping for statuses for representation
+ - ONE33T-373: [FIX] make save comment button always active
+ - Merge branch 'develop' into bugfix/ONE33T-715_duplicate_candidates_in_quick_list_after_worked_with_candidate
+ - Merge branch 'develop' into bugfix/ONE33T-735_incorrect_log_when_applied_for_the_job
+ - Merge pull request #354 in ONE33T/133t from bugfix/ONE33T-737_manage_subscription_renew_button to develop
+ - Merge pull request #348 in ONE33T/133t from bugfix/ONE33T-714_reapply_after_applying_for_the_job to develop
+ - Merge pull request #350 in ONE33T/133t from bugfix/ONE33T-705_save_button_in_profile_view_page to develop
+ - Merge pull request #351 in ONE33T/133t from bugfix/ONE33T-720_job_posting_status_in_company_dashboard to develop
+ - ONE33T-505: add new_price and price_apply_date to plan serializer
+ - Merge pull request #353 in ONE33T/133t from bugfix/ONE33T-721_information_about_trial_period_on_dashboard to develop
+ - Merge pull request #345 in ONE33T/133t from bugfix/ONE33T-712_job_does_not_add_to_applied_jobs_page to develop
+ - Merge pull request #355 in ONE33T/133t from bugfix/ONE33T-706_incorrect_aa_progress_calculation to develop
+ - ONE33T-735: delete owner data from log response after apply/reapply
+ - Merge branch 'develop' into bugfix/ONE33T-706_incorrect_aa_progress_calculation
+ - Merge pull request #346 in ONE33T/133t from feature/ONE33T-610-reject_candidates_improvment to develop
+ - Merge branch 'develop' into bugfix/ONE33T-715_duplicate_candidates_in_quick_list_after_worked_with_candidate
+ - ONE33T-715: fixed remarks
+ - Merge branch 'develop' into bugfix/ONE33T-715_duplicate_candidates_in_quick_list_after_worked_with_candidate
+ - Merge branch 'develop' into feature/ONE33T-610-reject_candidates_improvment
+ - Merge pull request #347 in ONE33T/133t from bugfix/ONE33T-725_saved_jobseekers_stat to develop
+ - ONE33T-706: add an empty string to divide logical blocks
+ - ONE33T-737: [FIX] CoreActions.GetCandidateStatuses moved to initial tasks for company user
+ - ONE33T-706: fix progress calculation, add validations of already applied jobs count
+ - ONE33T-737: [FIX] correct flow for Renew process from manage subscription page
+ - ONE33T-721: [FIX] added trial until label to Remain Company Balance on Dashboard
+ - ONE33T-715: refactored get_company_logs func
+ - Merge branch 'develop' into bugfix/ONE33T-715_duplicate_candidates_in_quick_list_after_worked_with_candidate
+ - ONE33T-715: fixed duplicates in quick list
+ - ONE33T-715: added commands for stripe and social account in Makefile
+ - ONE33T-720: [FIX] tslint error fixed
+ - ONE33T-720: [FIX] added job status to newest job on dashboard
+ - ONE33T-705: [FIX] save job seeker button added to jobseeker/candidate profile. Added error validation.
+ - Merge branch 'develop' into bugfix/ONE33T-725_saved_jobseekers_stat
+ - ONE33T-725: rename core_utils to base_utils
+ - Merge branch 'bugfix/ONE33T-725_saved_jobseekers_stat' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-725_saved_jobseekers_stat
+ - ONE33T-714: [FIX] added CoreActions.LoadAppliedJobs action after Apply to detect applied jobs
+ - Merge pull request #342 in ONE33T/133t from feature/ONE33T-505_update_plan to develop
+ - Merge branch 'develop' into feature/ONE33T-505_update_plan
+ - ONE33T-505: update docstrings
+ - ONE33T-725: [FIX] frontend changes according backend improvements
+ - Merge pull request #343 in ONE33T/133t from feature/ONE33T-709_skills_and_industries_in_js_profile_be to develop
+ - ONE33T-709: fixed failed tests, return list of usernanme validators
+ - ONE33T-709: renamed CustomPasswordValidator to BaseCharacterPasswordValidator
+ - Merge branch 'develop' into bugfix/ONE33T-725_saved_jobseekers_stat
+ - ONE33T-715: fixed dublicates values for quick list
+ - ONE33T-725: add notes
+ - ONE33T-610: fixed pylint errors
+ - ONE33T-610: renamed leet models and serializers to base models and serializer
+ - ONE33T-610: added validators for deleted and closed job to restore candidate
+ - ONE33T-610: refactored geo migrations
+ - Merge pull request #341 in ONE33T/133t from feature/ONE33T-707_letter_templates_crudl_be to develop
+ - Merge branch 'develop' into feature/ONE33T-709_skills_and_industries_in_js_profile_be
+ - ONE33T-725: add statistic about created jobs and saved job seekers to company user activity
+ - ONE33T-712: [FIX] added resolver to applied jobs page
+ - ONE33T-708: [FIX] tslint fixes
+ - ONE33T-708: [IMP] added max count to template creation
+ - ONE33T-708: [IMP] added permissions
+ - ONE33T-708: [IMP] added delete letter template functionality
+ - ONE33T-708: [IMP] added edit letter template functionality
+ - ONE33T-708: [IMP] added view component and functionality
+ - Merge pull request #338 in ONE33T/133t from bugfix/profiles_fixes_FE to develop
+ - Merge branch 'develop' into bugfix/profiles_fixes_FE
+ - ONE33T: [FIX] refactoring of prepareAddressData method
+ - Merge branch 'develop' into feature/ONE33T-709_skills_and_industries_in_js_profile_be
+ - ONE33T-708: [IMP] implementation of template creation with actions, states and components
+ - ONE33T-709: refactored job seeker serializers, services
+ - Merge pull request #340 in ONE33T/133t from bugfix/ONE33T-452_percentage_for_city_zip_country_first_name_last_name to develop
+ - Merge pull request #339 in ONE33T/133t from bugfix/ONE33T-573_remove_add_to_saved_question_check_box to develop
+ - ONE33T-505: use get_or_create instead of bulk_create in migrations
+ - ONE33T-505: fix type objects creation in migrations
+ - ONE33T-505: fix migration
+ - ONE33T-505: fix migration
+ - ONE33T-505: add tests for plan update
+ - ONE33T-709: refactored job seeker tests
+ - ONE33T-709: added industries field to job seeker profile
+ - ONE33T-707: delete redundant  statement
+ - ONE33T-707: rename 'letter template category' to 'templae category'
+ - Merge branch 'feature/ONE33T-707_letter_templates_crudl_be' into feature/ONE33T-708_letter_templates_fe
+ - ONE33T-708: [IMP] implemented letter template list item, model and navigation
+ - ONE33T-505: fixed failed tests
+ - ONE33T-505: implement update plan price functionality
+ - ONE33T-708: [IMP] implementation of letter templates page actions and states; sorting, search and pagination
+ - ONE33T-708: [IMP] implementation of letter templates page
+ - ONE33T-707: uncommented pylint
+ - ONE33T-707: fixed failed test, added LetterTemplate to admin
+ - ONE33T-707: implemented base logic for letter templates
+ - ONE33T: [FIX] pr fixes
+ - ONE33T: [FIX] fixed request for saving JS as favorite
+ - ONE33T-505: add notifications for plan deletion, started to implement update plans
+ - ONE33T-562: [FIX] revert changes according specification (not mockup)
+ - ONE33T-452: fixed failed tests
+ - ONE33T-452: fixed pylint errors
+ - Merge branch 'develop' into bugfix/ONE33T-452_percentage_for_city_zip_country_first_name_last_name
+ - ONE33T-452: refactored company serializer
+ - ONE33T-452: added fixture company_draft and company_draft_client
+ - ONE33T-452: refactored tests validator for bad responses
+ - ONE33T-573: [FIX] fixed logic with add to saved questions
+ - ONE33T: [FIX] fixed ordering in general-action.service
+ - Merge branch 'develop' into bugfix/profiles_fixes_FE
+ - ONE33T-562: [FIX] Full time and Part time radio buttons disabled when "Currently work here" unchecked
+ - ONE33T-452: fixed incorrect key name on front end
+ - ONE33T-452: added support calculating percentage of  fields
+ - ONE33T-566: [FIX] information message about reject users after change job status to Draft removed. Only on Close status
+ - Merge branch 'develop' into bugfix/profiles_fixes_FE
+ - ONE33T-572: [FIX] prepare salary values and displaying if null
+ - ONE33T-231: [FIX] prepareAddressData method improved for saving profile address
+ - ONE33T-512: [FIX] fixed location and licence number fields
+ - ONE33T-276: [FIX] updated email validator
+
+Version 0.5.1:
+ - Merge pull request #334 in ONE33T/133t from feature/ONE33T-592_quicklist_for_candidates_FE to develop
+ - Merge pull request #333 in ONE33T/133t from feature/ONE33T-581_full_notification_list_FE to develop
+ - ONE33T-581: updated, branch, fixed conflicts
+ - ONE33T-581: fixed broken commit from backend
+ - Merge pull request #336 in ONE33T/133t from feature/ONE33T-506_delete_plan to develop
+ - Merge branch 'develop' into feature/ONE33T-506_delete_plan
+ - Merge pull request #335 in ONE33T/133t from feature/ONE33T-586_quick_list_for_candidates to develop
+ - ONE33T-586: corrected docstring
+ - ONE33T-586: drop uniquer together for job seeker's profile views
+ - ONE33T-586: renamed serializer
+ - ONE33T-586: updated branch, fixed conflicts
+ - Merge branch 'develop' into feature/ONE33T-592_quicklist_for_candidates_FE
+ - ONE33T-506: fix linter
+ - ONE33T-506: revert incorrect changes
+ - Merge branch 'develop' into feature/ONE33T-506_delete_plan
+ - Merge pull request #331 in ONE33T/133t from feature/ONE33T-583_view_notifications_in_company_console to develop
+ - Merge pull request #332 in ONE33T/133t from bugfix/ONE33T-464_closing_date_task_does_not_work to develop
+ - Merge pull request #327 in ONE33T/133t from feature/ONE33T-582_notification_bell_and_short_list to develop
+ - ONE33T-506: add todo for future discussions
+ - ONE33T-506: add custom plan deletion handling
+ - Merge pull request #330 in ONE33T/133t from feature/ONE33T-446-fe-view-candidate-s-cover-letter to develop
+ - ONE33T-506: add todos for subscription notifications
+ - ONE33T-586: fixed failed tests, added candidatejobidnameserializer instead mixin
+ - ONE33T-506: [FIX] fix tests
+ - ONE33T-506: [FIX] revert incorrect changes
+ - ONE33T-506: [FIX] minor fixes
+ - ONE33T-506: [IMP] add email sending check to tests
+ - ONE33T-586: deleted company field, added group by company for profile views
+ - ONE33T-586: move job field to mixin from serializers
+ - Merge branch 'develop' into feature/ONE33T-506_delete_plan
+ - ONE33T-506: [IMP] add email sending on plan delete/checkout events
+ - Merge branch 'develop' into feature/ONE33T-586_quick_list_for_candidates
+ - ONE33T-586: implemented quick list of candidates for company user
+ - ONE33T-592: [IMP] added navigation. Improved goToCandidateProfileViewPage function
+ - ONE33T-592: [IMP] improved modal component, fill with content. logic implementation
+ - ONE33T-592: [IMP] implemented actions, state and show modal action for quick list
+ - ONE33T-592: [IMP] added quicklist button to the header for company users
+ - Merge branch 'feature/ONE33T-586_quick_list_for_candidates' into feature/ONE33T-592_quicklist_for_candidates_FE
+ - ONE33T-592: [FIX] fixed favorites jobs route
+ - ONE33T-586: added id and name of status to response of quick list
+ - Merge branch 'develop' into feature/ONE33T-592_quicklist_for_candidates_FE
+ - Merge pull request #326 in ONE33T/133t from feature/ONE33T-589-fe-components-for-jobseeker-profile-item-in-jobseeker-list to develop
+ - ONE33T-586: renamed permission migration to 0033
+ - Merge branch 'develop' into feature/ONE33T-586_quick_list_for_candidates
+ - ONE33T-464: added set minute 0 for tasks
+ - Merge branch 'develop' into feature/ONE33T-583_view_notifications_in_company_console
+ - ONE33T-586: base implementation quick list of canidates
+ - Merge pull request #306 in ONE33T/133t from feature/ONE33T-587_save_job_seeker_profile_by_company_user to develop
+ - ONE33T-583: fixed failed tests, changed documentation
+ - ONE33T-582: [FIX] pr fixes
+ - ONE33T-587: updated branch, fixed conflicts
+ - ONE33T-583: updated branch, fixed conflicts
+ - Merge pull request #329 in ONE33T/133t from feature/ONE33T-584_notifications_list_full to develop
+ - ONE33T-583: fixed pylint
+ - Merge branch 'develop' into feature/ONE33T-584_notifications_list_full
+ - ONE33T-583: added setting of notif types to generatedemodata module
+ - ONE33T-583: droped can_disable field, added dynamic filters
+ - ONE33T-506: [IMP] implement plan deletion and checkout on cheaper plan when current plan deleted
+ - Merge branch 'develop' into feature/ONE33T-583_view_notifications_in_company_console
+ - ONE33T-583: fixed failed tests
+ - Merge pull request #328 in ONE33T/133t from feature/ONE33T_cover_letter_on_candidate_details_page to develop
+ - Merge branch 'feature/ONE33T-584_notifications_list_full' into feature/ONE33T-581_full_notification_list_FE
+ - ONE33T-584: renamed notify functions
+ - ONE33T-584: updated branch, fixed conflicts
+ - ONE33T-584: fixed failed tests
+ - ONE33T-583: implemented notifications about end of trial for company user
+ - ONE33T-583: added migrations for company user notifications types and verbs
+ - ONE33T-584: added timestamp to notifications reponses
+ - ONE33T-584: added module imports to apply's views
+ - Merge branch 'develop' into feature/ONE33T-589-fe-components-for-jobseeker-profile-item-in-jobseeker-list
+ - [IMP] ONE33T-445 Candidate view cover letter
+ - ONE33T-584: added module imports to apply's validators
+ - ONE33T-584: added module imports to apply's tasks
+ - Merge branch 'feature/ONE33T-584_notifications_list_full' into feature/ONE33T-581_full_notification_list_FE
+ - ONE33T-584: added module imports to apply's services
+ - ONE33T-584: added module imports to apply's serializers
+ - ONE33T-584: added module imports to apply's permissions
+ - ONE33T-584: renamed leet_models to base_models
+ - ONE33T-584: added module imports to apply's filters
+ - ONE33T-584: added module imports to apply's exceptions
+ - ONE33T-584: added module imports to apply's admin and apps
+ - ONE33T-584: replaced logic of sending notifications to send_autoapply_notifications
+ - ONE33T-581: [IMP] base implementation of full notification list. Added actions, state, resolver
+ - ONE33T-581: [IMP] routing for notifications implemented
+ - ONE33T: added cover_letter to response for candidate details, list
+ - Merge branch 'feature/ONE33T-584_notifications_list_full' into feature/ONE33T-581_full_notification_list_FE
+ - ONE33T-584: fixed pylint
+ - ONE33T-584: added local variable user
+ - ONE33T-584: added paginated response for list of full notifications
+ - Merge branch 'develop' into feature/ONE33T-582_notification_bell_and_short_list
+ - ONE33T-582: [IMP] new notification item component. Notifications and styles improvements
+ - [IMP] ONE33T-589 Implement save job seeker button functionallity
+ - ONE33T-584: fixed pylint, imports, incorect tabs
+ - ONE33T-584: refactored _notify func
+ - Merge branch 'develop' into feature/ONE33T-584_notifications_list_full
+ - ONE33T-584: added rules for apply notifications for unsubscribed users, refactored utils
+ - ONE33T-584: added endpoint for view full versions of notifications
+ - Merge pull request #324 in ONE33T/133t from feature/ONE33T-475-fe-integration-with-be-on-scorecard-data to develop
+ - ONE33T-584: added notificationtype manager
+ - ONE33T-582: [IMP] getting short notifications only for authorized users
+ - Merge branch 'develop' into feature/ONE33T-582_notification_bell_and_short_list
+ - Merge pull request #319 in ONE33T/133t from feature/ONE33T-580_manage_notifications_FE to develop
+ - ONE33T-580 [FIX] pr fixes
+ - Merge branch 'develop' into feature/ONE33T-580_manage_notifications_FE
+ - ONE33T-582: [IMP] implementation of bell and short list notifications with polling request
+ - Merge pull request #322 in ONE33T/133t from feature/ONE33T-380_job_seeker_dashboard_front_end to develop
+ - Merge branch 'feature/ONE33T-587_save_job_seeker_profile_by_company_user' into feature/ONE33T-589-fe-components-for-jobseeker-profile-item-in-jobseeker-list
+ - Merge branch 'develop' into feature/ONE33T-589-fe-components-for-jobseeker-profile-item-in-jobseeker-list
+ - Merge branch 'bugfix/not_allowed_method_post_for_managing_notifications' into feature/ONE33T-475-fe-integration-with-be-on-scorecard-data
+ - ONE33T: renamed url for to fix conflicts with router urls
+ - [IMP] ONE33T-475 : implementation
+ - Merge pull request #323 in ONE33T/133t from bugfix/ONE33T-618_incorrect_balance_calculation to develop
+ - Merge branch 'feature/ONE33T-580_manage_notifications_FE' into feature/ONE33T-582_notification_bell_and_short_list
+ - ONE33T-587: fixed failed permission test
+ - ONE33T-587: fixed invalid view name in urls
+ - ONE33T-587: added logic for moving job seeker's profile from saved to purchased
+ - ONE33T-587: renamed migration, deleted unused permission
+ - Merge branch 'develop' into feature/ONE33T-587_save_job_seeker_profile_by_company_user
+ - ONE33T-587: added saving and removing to/from favorites, refactored list of purchased job seekers' profiles
+ - Merge branch 'develop' into bugfix/ONE33T-618_incorrect_balance_calculation
+ - Merge pull request #320 in ONE33T/133t from feature/ONE33T-575_auto_apply_stats to develop
+ - ONE33T-575: added list instead qs for auto applies stats
+ - ONE33T-575: renamed sqllite to sqlite
+ - ONE33T-575: fixed failed tests for workflow_stats
+ - ONE33T-575: fixed remarks
+ - Merge branch 'develop' into feature/ONE33T-575_auto_apply_stats
+ - Merge pull request #321 in ONE33T/133t from bugfix/fixed_incorrect_view_swagger_docs to develop
+ - ONE33T-618: [IMP] add tests for checking of job status changes
+ - [FIX] company dashboard style fixes
+ - ONE33T-380: [FIX] lint fixes
+ - Merge branch 'develop' into feature/ONE33T-380_job_seeker_dashboard_front_end
+ - Merge branch 'develop' into bugfix/ONE33T-618_incorrect_balance_calculation
+ - ONE33T-479: [IMP] set saved jobs list limit ONE33T-480: [IMP] styles improvements
+ - Merge pull request #310 in ONE33T/133t from feature/ONE33T-489-fe-reports to develop
+ - [IMP] fix pr issues
+ - ONE33T-478: [REF] extract completion progress to shared component completion-spinner
+ - Merge branch 'feature/ONE33T-575_auto_apply_stats' into feature/ONE33T-380_job_seeker_dashboard_front_end
+ - ONE33T-587: fixed conflicts in migrations
+ - ONE33T-587: updated branch, fixed conflicts
+ - Merge branch 'develop' into bugfix/fixed_incorrect_view_swagger_docs
+ - Merge branch 'develop' into feature/ONE33T-575_auto_apply_stats
+ - Merge pull request #317 in ONE33T/133t from feature/ONE33T-577_notification_engine to develop
+ - ONE33T-577: added docstring to view short notifications
+ - ONE33T: fixed incorrect docs in swagger
+ - ONE33T-575: fixed failed tests
+ - ONE33T-575: refactored get_auto_applies_stats
+ - ONE33T-478: [IMP] base implementation of auto apply progress stats on job seeker dashboard
+ - ONE33T-247 [imp] Implementation of purchased list
+ - Merge branch 'feature/ONE33T-575_auto_apply_stats' into feature/ONE33T-380_job_seeker_dashboard_front_end
+ - Merge branch 'develop' into feature/ONE33T-380_job_seeker_dashboard_front_end
+ - Merge branch 'feature/ONE33T-577_notification_engine' into feature/ONE33T-575_auto_apply_stats
+ - Merge branch 'develop' into feature/ONE33T-577_notification_engine
+ - ONE33T-575: fixed failed tests, fixed pylint
+ - Merge pull request #318 in ONE33T/133t from feature/ONE33T-593_view_log_in_job_posting_FE to develop
+ - ONE33T-580: [IMP] change '133T Web' field to '133T'
+ - ONE33T-575: implemented auto apply's stats for job seeker dashboard
+ - Merge branch 'feature/ONE33T-577_notification_engine' into feature/ONE33T-580_manage_notifications_FE
+ - ONE33T-580: [IMP] added view in settings and all functionality of manage notifications
+ - Merge branch 'develop' into feature/ONE33T-589-fe-components-for-jobseeker-profile-item-in-jobseeker-list
+ - ONE33T-589 [IMP] job-seeker item
+ - ONE33T-577: fixed pylint errors
+ - ONE33T-577: renamed viewes to views
+ - Merge branch 'develop' into feature/ONE33T-577_notification_engine
+ - ONE33T-577: moved profile_views template name to constants
+ - Merge branch 'develop' into feature/ONE33T-580_manage_notifications_FE
+ - ONE33T-577: refactored notification center views, added filter fot apply notifications
+ - ONE33T-577: added email notifications about views
+ - Merge pull request #316 in ONE33T/133t from feature/ONE33T-332_logs_in_candidates_profile_FE to develop
+ - Merge branch 'develop' into feature/ONE33T-489-fe-reports
+ - ONE33T-332: [IMP] edit LogsActions.ResetLogState action(PR fix)
+ - Merge branch 'develop' into feature/ONE33T-577_notification_engine
+ - tmp
+ - Merge pull request #314 in ONE33T/133t from bugfix/no_recruiter_activity_information to develop
+ - Merge branch 'develop' into bugfix/no_recruiter_activity_information
+ - ONE33T-577: changed notification to notification_center
+ - Merge branch 'develop' into feature/ONE33T-577_notification_engine
+ - [imp] implementation of jobseekeritem component for list
+ - ONE33T-580: [IMP] base implementation of notification. added new module
+ - Merge pull request #311 in ONE33T/133t from feature/ONE33T-658_newest_job_posting_section_on_dashboard to develop
+ - Merge branch 'develop' into feature/ONE33T-658_newest_job_posting_section_on_dashboard
+ - Merge branch 'develop' into feature/ONE33T-658_newest_job_posting_section_on_dashboard
+ - Merge pull request #309 in ONE33T/133t from feature/ONE33T-476_candidate_activity_log_on_dashboard to develop
+ - Merge pull request #315 in ONE33T/133t from feature/ONE33T-594_view_log_in_job_posting to develop
+ - Merge branch 'develop' into bugfix/no_recruiter_activity_information
+ - Merge pull request #313 in ONE33T/133t from feature/ONE33T-579_manage_notifications to develop
+ - ONE33T-593: [IMP] logs implementation to job page
+ - Merge branch 'feature/ONE33T-594_view_log_in_job_posting' into bugfix/no_recruiter_activity_information
+ - Merge branch 'feature/ONE33T-594_view_log_in_job_posting' into feature/ONE33T-579_manage_notifications
+ - ONE33T: renamed notification to notification_center in generatedemodata
+ - Merge branch 'feature/ONE33T-579_manage_notifications' into bugfix/no_recruiter_activity_information
+ - ONE33T-579: renamed notification to notification_center
+ - Merge branch 'feature/ONE33T-594_view_log_in_job_posting' into feature/ONE33T-593_view_log_in_job_posting_FE
+ - Merge branch 'feature/ONE33T-332_logs_in_candidates_profile_FE' into feature/ONE33T-593_view_log_in_job_posting_FE
+ - Merge branch 'develop' into feature/ONE33T-594_view_log_in_job_posting
+ - ONE33T-332: [IMP] renamed folder logs to logging because of gitignore
+ - ONE33T-332: updated branch, fixed backend conflicts
+ - ONE33T-332: [IMP] logs moved
+ - ONE33T-332: [IMP] base logs implementation
+ - Merge branch 'develop' into feature/ONE33T-579_manage_notifications
+ - ONE33T-577: implemented short notifications for job seeker from actor autoapply
+ - ONE33T-476: [FIX] pr fixes: move time format to date-time.helper. Changed structure
+ - ONE33T-658: [FIX] pr fixes
+ - Merge pull request #307 in ONE33T/133t from feature/ONE33T-645_modify_job_seeker_profile_page to develop
+ - ONE33T-594: added sets for req_skills_new and opt_skills_new attrs, in JobComparer
+ - Merge remote-tracking branch 'remotes/origin/feature/ONE33T-594_view_log_in_job_posting' into feature/ONE33T-593_view_log_in_job_posting_FE
+ - Merge remote-tracking branch 'remotes/origin/develop' into feature/ONE33T-593_view_log_in_job_posting_FE
+ - Merge branch 'bugfix/no_recruiter_activity_information' into feature/ONE33T-489-fe-reports
+ - [IMP] ONE33T-488 [FE] Workflow stats section
+ - ONE33T-332: [IMP] added possibility to view in modal deleted comment. New component created. Clear 'link' class declaration.
+ - ONE33T-594: updated branch, fixed conflicts
+ - Merge branch 'develop' into bugfix/no_recruiter_activity_information
+ - Merge pull request #312 in ONE33T/133t from refactoring/ONE33T_api_endpoint_instead_serializer_field to develop
+ - Merge branch 'develop' into feature/ONE33T-579_manage_notifications
+ - ONE33T-594: updated brnach, fixed conflicts in log views and tests expected
+ - ONE33T-594: implemented supporting for job logs after editing a job
+ - ONE33T: refactored generatedemodata, tests
+ - ONE33T-579: renamed migration in permissions from 0029 to 0030, renamed constants
+ - ONE33T-579: updated branch, fixed conflicts in expected permissions of company user
+ - ONE33T: updated branch, fixed conflicts in log views and expected candidate response in tests
+ - Merge pull request #308 in ONE33T/133t from feature/ONE33T-657_candidates_activities_for_company_dashboard to develop
+ - Merge branch 'develop' into feature/ONE33T-657_candidates_activities_for_company_dashboard
+ - ONE33T-332: [IMP] base implementation of logs in job seeker profile
+ - ONE33T-381 [IMP] Recrutier Panel
+ - Merge branch 'develop' into feature/ONE33T-381-requiruter-activity
+ - ONE33T: deleted unused import from app log in job seeker's serializers
+ - Merge branch 'develop' into feature/ONE33T-579_manage_notifications
+ - ONE33T-579: implemented base manage (subscribe/unsubscribe) notifications engine
+ - ONE33T-381 [IMP] imp of recrutier
+ - ONE33T: added query_param for view certain job_seeker logs
+ - ONE33T-658: [IMP] newest jobs component and styles improvements
+ - ONE33T-587: added 0029_saved_job_seekers_permission migration
+ - ONE33T-587: renamed savedjobseeker permissions from 0028 to 0029
+ - ONE33T-587: updated branch, fixed conflicts in tests and job_seeker's serializers
+ - Merge pull request #304 in ONE33T/133t from feature/ONE33T-601_update_candidate_workflow_to_save_user_that_changed_the_state to develop
+ - ONE33T-601: changed user to owner in factories
+ - ONE33T-658: [IMP] base implementation of newest jobs on company dashboard
+ - Merge branch 'develop' into feature/ONE33T-489-fe-reports
+ - ONE33T-489 [IMP] implementation of graph for reports
+ - Merge remote-tracking branch 'remotes/origin/feature/ONE33T-657_candidates_activities_for_company_dashboard' into feature/ONE33T-476_candidate_activity_log_on_dashboard
+ - ONE33T-601: renamed user field to owner
+ - ONE33T-476: [IMP] logic improved according BE changes. New component implementation and displaying it on dashboard
+ - ONE33T-601: updated branch, fixed conflicts in candidate app, in candidate fixtures
+ - ONE33T-657: fixed failed tests for permissions
+ - ONE33T-657: fixed failed tests, delete pdb in test
+ - Merge remote-tracking branch 'remotes/origin/feature/ONE33T-657_candidates_activities_for_company_dashboard' into feature/ONE33T-476_candidate_activity_log_on_dashboard
+ - ONE33T-657: corrected docstring in login view
+ - ONE33T-657: updated branch, renamed permission migration
+ - Merge branch 'develop' into feature/ONE33T-657_candidates_activities_for_company_dashboard
+ - ONE33T-657: added view for candiadtes activities for company dashboard
+ - ONE33T-476: [IMP] pagination improved
+ - Merge pull request #305 in ONE33T/133t from feature/ONE33T-474_logging to develop
+ - ONE33T-645: [IMP] pr fixes(added default to switch)
+ - ONE33T-645: [IMP] unused code removed
+ - ONE33T-476: [IMP] base implementation of candidate activity
+ - ONE33T-645: [IMP] skills select styles improvements
+ - ONE33T-645: [IMP] skills section in job seeker profile improved
+ - ONE33T-645: [IMP] job seeker profile page improvements
+ - ONE33T-645: [IMP] profile details section improvements. Added enum to profile
+ - ONE33T-645: [IMP] about section improvements
+ - ONE33T-645: [IMP] Address section improvements
+ - ONE33T-645: [IMP] logic improvements with new job seeker profile. Main info section improvement
+ - [FIX]feature/ONE33T-601: Fix conftest imports.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-601_update_candidate_workflow_to_save_user_that_changed_the_state
+ - Merge branch 'develop' into feature/ONE33T-474_logging
+ - [FIX]feature/ONE33T-587: Fix test.
+ - Merge pull request #295 in ONE33T/133t from feature/ONE33T-486_workflof_stats_filters to develop
+ - ONE33T-474: added AUTH_USER_MODEL for owner instead proxyuser
+ - [ADD]feature/ONE33T-587: Disable analysis.
+ - [ADD]feature/ONE33T-587: Extend validation to include case with banned job seeker.
+ - [FIX]feature/ONE33T-601: Prettify test cases.
+ - [ADD]feature/ONE33T-587: Cover saved job seeker logic with tests.
+ - ONE33T-479: [IMP] correct navigation to job page added
+ - ONE33T-479: [IMP] implementation saved jobs section and display it on job seeker dashboard
+ - [ADD]feature/ONE33T-587: Fix failed after changes tests.
+ - [ADD]feature/ONE33T-587: Refactoring common save/remove logic.
+ - ONE33T-474: fixed failed tests, added kwarg job_company instead company
+ - ONE33T-618: [FIX] fix company jobs balance calculation on job status change
+ - ONE33T-474: fixed invalid field for filtering logs, added example response for view logs
+ - [ADD]feature/ONE33T-587: Add validation for save/remove job seeker, display `is_saved` field in job seekers list by company user.
+ - ONE33T-474: added docstring to perform_destroy method of BaseCommentViewSet
+ - ONE33T-474: added docstrings to assign_candidates
+ - ONE33T-474: deleted redundant migration
+ - ONE33T-474: updated branch, fixed conflicts
+ - ONE33T-474: added support logs for creating job
+ - ONE33T-474: added support view logs for certain job seeker
+ - ONE33T-474: added supporting logs for apps for view job seekers logs
+ - ONE33T-474: implemented base logic for logs
+ - [ADD]feature/ONE33T-587: Create model to store saved job seeker, create according permission, add initial implementation of endpoint.
+ - ONE33T-480: [IMP] implementation last views and display it on job seeker dashboard
+ - ONE33T-380: [IMP] base structure and page implementation of job seeker dashboard page
+ - [FIX]feature/ONE33T-486: Update report to see company report endpoint in swagger.
+ - [FIX]feature/ONE33T-601: Reorder function.
+ - [ADD]feature/ONE33T-601: Add migration to store workflow step updater, adjust permissions for swagger, add tests.
+ - Merge develop, resolve merge conflicts.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-486_workflof_stats_filters
+ - [FIX]feature/ONE33T-486: Update candidate workflow steps after changes on backend.
+ - Resolve merge conflicts.
+ - [FIX]feature/ONE33T-486: Simplify workflow stats filter, adjust indents.
+ - [FIX]feature/ONE33T-601: Extend `WorkflowStep` to store user that who updated status, update candidate flow, update company users report activity view.
+ - [FIX]feature/ONE33T-486: Fix error typo.
+ - [ADD]feature/ONE33T-486: Add test for `WorkflowStepsCompanyStatView` filters.
+ - feature/ONE33T-486: Add filterset for workflow steps, refactoring `get_candidate_workflow_steps_stats`: pass queryset directly instead of company, update `WorkflowStepsCompanyStatView`: inherit from generic api view, setup filterset.
+
+Version 0.5.0:
+ - Merge pull request #300 in ONE33T/133t from feature/ONE33T-502_change_industry_logic to develop
+ - Merge pull request #298 in ONE33T/133t from feature/ONE33T-612_frontend_error_handler to develop
+ - Merge branch 'feature/ONE33T-397_skills_industry_model_update' into feature/ONE33T-502_change_industry_logic
+ - Merge branch 'feature/ONE33T-576_edit_navigation_bar' into feature/ONE33T-612_frontend_error_handler
+ - Merge branch 'feature/ONE33T-73_job_seeker_profile_page' into feature/ONE33T-612_frontend_error_handler
+ - Merge branch 'bugfix/stabilization_tumash' into feature/ONE33T-612_frontend_error_handler
+ - ONE33T-397: [FIX] modify gitignore and remove openoffice lockfile
+ - Merge pull request #303 in ONE33T/133t from bugfix/ONE33T-190_apply_without_requred_answers_to_questions to develop
+ - ONE33T-502: [IMP] job, industry and skills models improved
+ - ONE33T-190: added validation for questions that should be answered
+ - Merge branch 'feature/ONE33T-397_skills_industry_model_update' into feature/ONE33T-502_change_industry_logic
+ - ONE33T-190: fixed incorrect error msg from backend for login deleted job_seeker
+ - ONE33T-397: updated branch fixed conflicts
+ - ONE33T-397: fixed failed tests
+ - ONE33T-397: [IMP] Skill and Industry new structure: model update, update csv data sources, API update, test fixes
+ - ONE33T-502: [IMP] removed subindustries, improved skills and industry components.
+ - ONE33T-502: [FIX] display saved industry in company profile on init
+ - [FIX] ONE33T-617 : fix potential problem with set trial packages
+ - ONE33T-612: [Ref] refactoring of control-messages component according new errors model
+ - Merge branch 'develop' into bugfix/stabilization_tumash
+ - [FIX] ONE33T-617 : fix issues
+ - ONE33T-73: [FIX] lint errors fixes
+ - ONE33T-73: [IMP] added possibility to view answers from candidate profile
+ - ONE33T-73: [IMP] added applied on date to candidate profile
+ - ONE33T-612: [IMP] minor improvements. Survey edit fix
+ - ONE33T-612: [IMP] error interceptor improved. User manage response improved
+ - ONE33T-612: [IMP] added error service for building error message from response
+ - ONE33T-612: [IMP] added error snack bar to interceptor. Refactored all states with error snackbar calling
+ - Merge pull request #294 in ONE33T/133t from refactoring/new_error_handler_for_frontend to develop
+ - ONE33T-190: updated branch, fixed conflict in company permissions
+ - Merge pull request #273 in ONE33T/133t from feature/ONE33T-471_company_dashboard_setting_per_user to develop
+ - Merge branch 'develop' into feature/ONE33T-471_company_dashboard_setting_per_user
+ - ONE33T-576: [IMP] navigation for company updated. Refactoring nav-item for nested menu
+ - ONE33T-190: fixed failed test in test_job_seeker
+ - Merge branch 'develop' into refactoring/new_error_handler_for_frontend
+ - ONE33T-190: added tests for base company  user permission, refactored exception handler
+ - ONE33T-190: fixed failed tests
+ - ONE33T-576: [IMP] navigation for job seeker updated
+ - ONE33T-190: uncommented failed test in test_job_seekers
+ - ONE33T-190: uncommented failed test in test_jobs
+ - ONE33T-190: refactored job questions answers tests
+ - Merge pull request #291 in ONE33T/133t from bugfix/ONE33T-190_add_manual_apply_to_find_job to develop
+ - ONE33T-190: deleted redundant serializer for aa query params
+ - Merge pull request #292 in ONE33T/133t from feature/ONE33T-320_viewing_how_many_of_must_have_skills_missing to develop
+ - Merge pull request #293 in ONE33T/133t from bugfix/stabilization_tumash to develop
+ - ONE33T-190: added set_rollback call, deleted unused module exception_handler
+ - ONE33T-190: fixed failed tests in test_jobs.py fixed pylint error
+ - ONE33T-190: added a call missing save balanse method in company service
+ - ONE33T-190: fixed 500 error when js applied for the job
+ - ONE33T-190: added todo to billing information service
+ - ONE33T-190: refactored survey tests
+ - ONE33T-190: refactored subscription tests
+ - ONE33T-190: refactored job_seeker tests
+ - ONE33T-190: refactored job and company tests
+ - ONE33T-190: refactored candidates tests
+ - [FIX] fix problem with company balance
+ - ONE33T-320: [IMP] added message with information about missed must have skills
+ - ONE33T-190: [FIX] added manual apply and reapply to find job page
+ - ONE33T-190: refactored auth tests
+ - ONE33T-190: refactored apply tests
+ - ONE33T-190: added new exception_handler
+ - Merge pull request #289 in ONE33T/133t from bugfix/ONE33T-350_reinvite_company_user to develop
+ - Merge branch 'develop' into feature/ONE33T-471_company_dashboard_setting_per_user
+ - [FIX] Fix issues with showing pemain profille section
+ - [FIX] FIx issues with balance and candidate list
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-350_reinvite_company_user
+ - [FIX] fix permission
+ - [FIX] fix saving job
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-350_reinvite_company_user
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-350_reinvite_company_user
+ - [FIX]bugfix/ONE33T-522: Provide getter to get current user object.
+ - [FIX]bugfix/ONE33T-350: Fix ability to restore company user.
+ - ONE33T-471: updated branch, fixed conflicts
+ - Merge branch 'develop' into feature/ONE33T-471_company_dashboard_setting_per_user
+ - ONE33T-471: fixed conflixts with develop
+ - ONE33T-471: resolved migrations conflict in auth package
+ - ONE33T-471: renamed migration 0026 to 0027 in permission packeage
+ - ONE33T-471: updated branch, fixed conflicts in company permissions
+ - ONE33T-471: updated branch, fixed f=conflicts in candidate utils
+ - ONE33T-471: fixed failed tests in admin and permissions, fixed pylint
+ - ONE33T-471: implemented management of viewed candidates statuses scorecards
+
+Version 0.4.2:
+
+
+Version 0.4.2:
+ - Merge pull request #290 in ONE33T/133t from bugfix/ONE33T-190_stabilization_fe to develop
+ - ONE33T-551: [FIX] temporary use smtp mail backend on qa instead of mailgun
+ - Merge branch 'develop' into bugfix/ONE33T-190_stabilization_fe
+ - Merge pull request #287 in ONE33T/133t from bugfix/stabilization_tumash to develop
+ - ONE33T-190: fixed failed tests
+ - ONE33T-190: added tests for create and update job with closing date
+ - ONE33T-190: fixed 500 error for closing date
+ - ONE33T-190: [FIX] global find job style fixes
+ - [FIX] fix data format
+ - ONE33T-493: [FIX] navigation fixes
+ - Merge branch 'develop' into bugfix/stabilization_tumash
+ - Merge branch 'develop' into bugfix/ONE33T-190_stabilization_fe
+ - [FIX] Fix width of skill component
+ - ONE33T-552: [FIX] social login fix when login form provided
+ - Merge pull request #285 in ONE33T/133t from bugfix/stabilization_tumash to develop
+ - Merge pull request #283 in ONE33T/133t from bugfix/ONE33T-589_candidate_latest_update_date to develop
+ - Merge pull request #279 in ONE33T/133t from bugfix/ONE33T-526_initial_scroll_top_in_every_page to develop
+ - Merge pull request #284 in ONE33T/133t from bugfix/ONE33T-190_manage_candidate_workflow_at_profile_view_page to develop
+ - Merge pull request #282 in ONE33T/133t from refactoring/ONE33T-190_job_seeker_data_for_candidate_details_response to develop
+ - Merge pull request #286 in ONE33T/133t from bugfix/ONE33T-548_find_job_sorting_by_matching to develop
+ - ONE33T-548: added desc ordering instead asc
+ - ONE33T-549: [FIX] correct travel sorting filter on FE
+ - ONE33T-252: [FIX] fixed degree drop-down menu in js education
+ - ONE33T-528: [FIX] button name in Fill your industry section
+ - [FIX] Remove Stripe Postal Code from form
+ - [FIX] fix bugs
+ - ONE33T-548: [FIX] sorting field fixed on FE
+ - ONE33T-190: [FIX] lint fixes
+ - ONE33T-532: [FIX] remove opportunity to rate candidate from the list
+ - ONE33T-190: [FIX] added navigation to job page from candidate widget
+ - ONE33T-190: [FIX] separate candidate widget and assign button
+ - Merge develop, resolve conflicts.
+ - ONE33T-190: [FIX] navigate to correct url for candidate profile
+ - ONE33T-533: [FIX] refactoring candidate profile. implementation of rating and workflow on profile
+ - [FIX]bugfix/ONE33T-262: Add third ordering factor for education and certification, remove redundant sorting since from server side come already right ordered entities.
+ - Merge branch 'refactoring/ONE33T-190_job_seeker_data_for_candidate_details_response' into bugfix/ONE33T-190_manage_candidate_workflow_at_profile_view_page
+ - [FIX]bugfix/ONE33T-245: Setup correct travel opportunity for js profile.
+ - Merge branch 'develop' into refactoring/ONE33T-190_job_seeker_data_for_candidate_details_response
+ - ONE33T-190: added field job_seeker to candidate quick view serializer
+ - [FIX]bugfix/ONE33T-245: Post data from client to server in correct way, add phone validation.
+ - ONE33T-526: [FIX] initial scroll top in every page
+ - ONE33T-190: [FIX] base implementation of candidate workflow on job seeker profile
+ - [FIX]bugfix/ONE33T-245: Add method for `BaseFormComponent` to post only changed data.
+ - Merge branch 'refactoring/candidate_details_for_job_seeker' into bugfix/ONE33T-190_manage_candidate_workflow_at_profile_view_page
+ - ONE33T-190: [FIX] fixed message after survey updated
+ - Merge branch 'develop' into bugfix/ONE33T-190_manage_candidate_workflow_at_profile_view_page
+ - ONE33T-190: [FIX] fixed restore tooltip notification
+ - [FIX]bugfix/ONE33T-538: Add `modified_at` field for job seekers detail view, update tests.
+
+Version 0.4.1:
+
+
+Version 0.4.1:
+
+
+Version 0.4.0:
+ - Merge pull request #276 in ONE33T/133t from refactoring/candidate_details_for_job_seeker to develop
+ - Merge pull request #269 in ONE33T/133t from feature/ONE33T-470_Search_jobs_as_Job_seeker_FE to develop
+ - Merge branch 'develop' into feature/ONE33T-470_Search_jobs_as_Job_seeker_FE
+ - Merge pull request #275 in ONE33T/133t from bugfix/ONE33T-190_jobseeker_edit_profile to develop
+ - ONE33T-190: refactoring reponse data for candidates' views
+ - Merge pull request #272 in ONE33T/133t from bugfix/ONE33T-190_small_backend_bugs to develop
+ - Merge pull request #271 in ONE33T/133t from feature/ONE33T-501_reapply_for_the_job to develop
+ - Merge pull request #270 in ONE33T/133t from bugfix/ONE33T-190_address_fixes_on_city_search to develop
+ - Merge pull request #262 in ONE33T/133t from bugfix/candidate_statuses_fe to develop
+ - ONE33T-470: [FIX] lint error fix
+ - ONE33T-190: renamed migration 0007 to 0008 in auth package
+ - Merge branch 'develop' into feature/ONE33T-470_Search_jobs_as_Job_seeker_FE
+ - ONE33T-470: [FIX] pr fixes
+ - Merge branch 'develop' into bugfix/ONE33T-190_jobseeker_edit_profile
+ - ONE33T-190: [FIX] fixed deletion in autoapply queue
+ - Merge branch 'develop' into bugfix/ONE33T-190_small_backend_bugs
+ - Merge branch 'develop' into feature/ONE33T-501_reapply_for_the_job
+ - Merge pull request #268 in ONE33T/133t from feature/subscription_permission_fe to develop
+ - Merge pull request #264 in ONE33T/133t from feature/ONE33T-483_store_user_status_online_offline to develop
+ - ONE33T-190: [FIX] fixed modal for answer questions from need review section
+ - [FIX]feature/ONE33T-483: Resolve permission migrations collision after merge.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-483_store_user_status_online_offline
+ - ONE33T-190: updated branch, fixed conflicts
+ - ONE33T-501: corrected comment in apply services, part2
+ - ONE33T-501: updated branch, fixed conflicts in candidate utils
+ - ONE33T-190: [FIX] fixed deletion reason modal. Removed deprecated ngModel in form field with FormControlName
+ - ONE33T-501: corrected comment in apply services
+ - Merge pull request #263 in ONE33T/133t from feature/ONE33T-472_candidate_worklow_score_cards to develop
+ - [FIX]feature/ONE33T-483: Resolve migrations conflict after merge.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-483_store_user_status_online_offline
+ - [REF]feature/ONE33T-483: Move user activity logic to auth application to avoid circular dependencies, adjust import, format auth urls.
+ - ONE33T-501: added docstring to WorkflowStepsCompanyStatView
+ - [FIX] fix pr issues
+ - ONE33T-190: change validation rule for closing and publish job's dates
+ - [FIX] fix pr issues
+ - ONE33T: fixed 500 error when salary_min amd salary_max are None
+ - ONE33T-190: fixed errors in command
+ - ONE33T-190: added max_length for delete reason table's field text
+ - ONE33T-190: added max_length for job_seeker profile description
+ - ONE33T-501: refactored workflow stats by company response json
+ - ONE33T-501: fixed failed test in apply, candidate
+ - ONE33T-501: added tests for reapplied rejected candidate workflowstats
+ - ONE33T-472: updated branch, fixed conflicts in leet constants
+ - ONE33T-501: updated branch fixed conflicts
+ - ONE33T-501: deleted redundant annotated value is_rejected
+ - ONE33T-190: [FIX] fixed job preview from auto apply create/edit page
+ - ONE33T-501: added validation for reapply for required skills if apply is autoapply
+ - ONE33T-501: added tests for candidate applied date, previous applied date
+ - ONE33T-190: [FIX] forced closing of confirmation modal on redirect from create to autoapply list
+ - ONE33T-190: [FIX] jobseeker profile experience section fixes
+ - ONE33T-190: [FIX] jobseeker profile education section fixes
+ - Merge pull request #265 in ONE33T/133t from feature/ONE33T-469_search_jobs to develop
+ - ONE33T-469: fixed pylint in company enum view
+ - ONE33T-469: added docstring for company id and name view
+ - ONE33T-190: [FIX] jobseeker profile about section fixes
+ - ONE33T-501: refactored candidate list fields
+ - Merge branch 'develop' into feature/ONE33T-469_search_jobs
+ - ONE33T-501: renamed became_candidate_at to applied_date
+ - ONE33T-501: deleted previous status in candidate model
+ - ONE33T-190: [FIX] fixes with city search in address component
+ - ONE33T-501: fixed incorrect logic for reapply on autuapply page
+ - ONE33T-501: renamed migrations workflow_steps_stats_permissions
+ - Merge branch 'develop' into feature/ONE33T-501_reapply_for_the_job
+ - ONE33T-472: renamed migrations workflow_steps_stats_permissions
+ - Merge branch 'develop' into feature/ONE33T-472_candidate_worklow_score_cards
+ - ONE33T-501: added new logic for reapply for rejected candidates
+ - ONE33T-470: [IMP] global job search implementation for jobseeker. Refactoring
+ - Merge branch 'develop' into bugfix/candidate_statuses_fe
+ - [IMP] Subscription permission implemented in FE
+ - Merge pull request #266 in ONE33T/133t from feature/ONE33T-291_create_plans to develop
+ - Merge branch 'develop' into feature/ONE33T-291_create_plans
+ - ONE33T-470: [REF] search job page component split, some style improvement
+ - ONE33T-470: [IMP] integration full text search to find job page. Improved search-job-form component
+ - ONE33T-291: [IMP] add tests for create plan form
+ - Merge branch 'feature/ONE33T-469_search_jobs' into feature/ONE33T-470_Search_jobs_as_Job_seeker_FE
+ - Merge pull request #260 in ONE33T/133t from feature/ONE33T-481_log_count_job_seeker_profile_views to develop
+ - Merge branch 'develop' into feature/ONE33T-291_create_plans
+ - ONE33T-291: [IMP] implement subscription plans creations by 133T admin
+ - ONE33T-472: renamed local variable in get_candidate_workflow_steps_stats
+ - ONE33T-469: deleted coalesce function, fixed falied tests
+ - ONE33T-469: updated branch, fixed conflicts, fixed failed tests
+ - ONE33T-469: added coalesce function for nullable fields
+ - ONE33T-469: added tests for full text search by job seeker
+ - ONE33T-469: fixed 500 error for ordering
+ - Merge branch 'feature/ONE33T-469_search_jobs' into feature/ONE33T-470_Search_jobs_as_Job_seeker_FE
+ - ONE33T-470: [FIX] lint errors fixed
+ - ONE33T-470: [IMP] final implementation of company filter into job search page
+ - ONE33T-469: added full text search support for list of jobs
+ - [ADD]feature/ONE33T-483: Adjust imports, fix migration name conflict, update middleware, add precaution.
+ - ONE33T-500: [IMP] changes in component after backend improvements
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-483_store_user_status_online_offline
+ - [ADD]feature/ONE33T-483: Add test for company user activity.
+ - ONE33T-469: added tests for salary filters
+ - Merge branch 'feature/ONE33T-469_search_jobs' into feature/ONE33T-470_Search_jobs_as_Job_seeker_FE
+ - ONE33T-472: fixed failed test for permission, fixed remarks, added hassubpscription permission
+ - [FIX]feature/ONE33T-481: Resolve migrations conflict after merge, update imports.
+ - ONE33T-500: [IMP] changes in component according latest improvements in requirements
+ - Resolve merge conflicts.
+ - ONE33T-469: fixed falied tests for company views
+ - ONE33T-472: added permission for workflow steps stats
+ - ONE33T-472: updated branch, fixed conflicts
+ - ONE33T-469: drop pagination for company enum view
+ - ONE33T-469: added filters for salary, base tests
+ - ONE33T-469: added filters for salary, base tests
+ - Merge pull request #259 in ONE33T/133t from feature/ONE33T-466_subscription_permissions to develop
+ - Merge branch 'develop' into feature/ONE33T-466_subscription_permissions
+ - Merge pull request #261 in ONE33T/133t from refactoring/ONE33T_csv_renderer_refactoring to develop
+ - [ADD]feature/ONE33T-481: Remove check for company user.
+ - Merge pull request #257 in ONE33T/133t from feature/ONE33T-467-front to develop
+ - [Prop] Proposionla solution for scrolling
+ - ONE33T-500: [IMP] creation of multiselect component and context
+ - ONE33T-500: [IMP] base implementation of autocomplete multiselect component
+ - [ADD]feature/ONE33T-483: Set up middleware to store user activity, add endpoint to show this information.
+ - ONE33T-466: [REF] move subscription permission to general permission modele
+ - ONE33T-466: [REF] remove redundant code
+ - ONE33T-466: [IMP] rework subscription check mechanism to check it in permissions instead of middleware
+ - ONE33T-469: added filter by posted date
+ - ONE33T-469: added filters by location, added tests
+ - [ADD]feature/ONE33T-481: Fix permissions.
+ - ONE33T-472: fixed pylint, deleted unused import models from leet
+ - ONE33T-472: return unique together to candidate model, drop field is rejected
+ - ONE33T-472: refactored update_workflow_steps function
+ - [FIX] Fix candidate statuse issued by backend changes
+ - [REF]refactoring/ONE33T: Remove alias.
+ - [ADD]feature/ONE33T-481: update job seeker profile view after pagination in candidate quick view, add permissions to view job seeker views, adjust job seeker view serializer, move `select_related` to queryset attribute, update tests.
+ - ONE33T-466: [REF] minor fix
+ - ONE33T-466: [IMP] implement middleware for JWT authentication handling
+ - ONE33T-472: updated branch, fixed conflicts in candidate conftest
+ - ONE33T-472: fixed failed tests
+ - ONE33T-472: added TODO for reapply
+ - ONE33T-472: added scorecards for candidates statuses for company
+ - ONE33T-466: [REF] rename job permissions
+ - ONE33T-466: [REF] remove unused constant
+ - Merge branch 'develop' into feature/ONE33T-466_subscription_permissions
+ - Merge pull request #251 in ONE33T/133t from bugfix/ONE33T-375_number_of_comments_in_candidate_list to develop
+ - ONE33T-466: [REF] rename job mixin
+ - [REF]refactoring/ONE33T: Adjust imports.
+ - ONE33T-466: [REF] remove redundant code
+ - ONE33T-466: [FIX] fix migrations conflict
+ - Merge branch 'develop' into feature/ONE33T-466_subscription_permissions
+ - ONE33T-469: added default filters for job list for job_seeker, added tests
+ - [REF]refactoring/ONE33T: csv renderer refactoring: use built-in labels instead of custom `render` method, adjust imports, remove module and leave bare mixin.
+ - ONE33T-470: [IMP] added salary filter to job list
+ - ONE33T-466: [IMP] use custom permissions for subscription handling
+ - [FIX]bufix/ONE33T-375: Uncomment qs call, adjust imports in comment/serializers.
+ - [ADD]feature/ONE33T-481: Add `job_seeker` profile view through candidate quick view, company serializers refactoring, cover new logic with tests.
+ - ONE33T-470: [IMP] added link in menu to navigate to find job page
+ - ONE33T-466: [REF] remove empty strings
+ - ONE33T-466: [IMP] add company user status to identify disabling by subscription
+ - ONE33T-467 [FIX] fix issues with travel statuses
+ - Merge pull request #256 in ONE33T/133t from bugfix/nullable_fields_for_blank_charfields_for_frontend to develop
+ - ONE33T: renamed migrations
+ - Merge branch 'develop' into bugfix/nullable_fields_for_blank_charfields_for_frontend
+ - ONE33T-466: [REF] move to module imports
+ - ONE33T-466: [IMP] add tests for starter package restrictions
+ - Merge branch 'develop' into feature/ONE33T-470_Search_jobs_as_Job_seeker_FE
+ - ONE33T-470: [IMP] base filters logic implementation
+ - ONE33T-466: [FIX] fix exception type
+ - ONE33T-466: [IMP] add some tests
+ - Merge branch 'develop' into feature/ONE33T-466_subscription_permissions
+ - ONE33T-466: [IMP] implement middleware for subscription check
+ - Merge pull request #253 in ONE33T/133t from feature/ONE33T-324-frontend to develop
+ - Merge pull request #254 in ONE33T/133t from bugfix/ONE33T-226_sign_out_cancel_button_does_not_work to develop
+ - ONE33T-466: [REF] remove redundant code from tests
+ - Merge pull request #258 in ONE33T/133t from fix/ONE33T-450_email_maximum_characters_length to develop
+ - ONE33T-466: [IMP] add job permission mixin
+ - ONE33T-469: refactored company imports
+ - Merge branch 'develop' into bugfix/ONE33T-226_sign_out_cancel_button_does_not_work
+ - ONE33T-469: added company enums and autocomplete for filters
+ - ONE33T-467 [FIX] fix spinner problem
+ - Merge pull request #245 in ONE33T/133t from feature/ONE33T-346_sign_up_with_social_media_account_FE to develop
+ - Merge branch 'develop' into bugfix/ONE33T-226_sign_out_cancel_button_does_not_work
+ - ONE33T-470: [REF] extract filters chip list to shared component
+ - [ADD]feature/ONE33T-481: Add model to track job seeker view, provide endpoint to get a viewer list.
+ - ONE33T-466: [IMP] set subscription permissions to invited company user
+ - ONE33T-466: [FIX] fix tests
+ - Merge branch 'develop' into feature/ONE33T-467-front
+ - ONE33T-467 [IMP] Implemenatiton
+ - ONE33T: fixed faield tests, changed expected fields
+ - Merge pull request #255 in ONE33T/133t from feature/ONE33T-7_prevent_deletion_object_through_admin_panel to develop
+ - [FIX]bugfix/ONE33T-450: Remove faker.
+ - [FIX]bugfix/ONE33T-450: Change email max length, add test.
+ - Merge branch 'develop' into bugfix/nullable_fields_for_blank_charfields_for_frontend
+ - ONE33T-470: [FIX] fixed location displaying in job search view
+ - ONE33T: fixed invalid choice for creating job_seeker education
+ - Merge branch 'develop' into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - ONE33T: add nullable for surey models
+ - ONE33T: add nullable for job_seeker models
+ - ONE33T: add nullable for job models
+ - ONE33T: add nullable for subscription models
+ - ONE33T: add nullable for geo models
+ - ONE33T: add nullable for company models
+ - ONE33T: add nullable for auth models
+ - Merge pull request #250 in ONE33T/133t from feature/ONE33T-322--purch-subsct-frontend to develop
+ - ONE33T-470: [IMP] added sorting by relevance and minor style fixes
+ - ONE33T-466: [IMP] add permissions for subscription checks
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feaute/ONE33T-7_prevent_deletion_object_through_admin_panel
+ - [ADD]feature/ONE33T-7: Exnted skill modelm, prevent deletion skills from admin panael.
+ - ONE33T-226: [FIX] change log out dialog with confirmation service
+ - [ADD]feature/ONE33T-7: Disable `is_active` flag instead of deleting object on the admin panel, adjust fields.
+ - Merge branch 'develop' into feature/ONE33T-324-frontend
+ - ONE33T-324 [IMP] implementation
+ - Merge pull request #252 in ONE33T/133t from feature/ONE33T-314_purchase_profile to develop
+ - [REF]bugfix/ONE33T-7: Override model, remove redundant utils.
+ - ONE33T-466: [IMP] add webhooks signature check
+ - Merge branch 'develop' into feature/ONE33T-314_purchase_profile
+ - Merge pull request #248 in ONE33T/133t from refactoring/ONE33T-473_module_imports to develop
+ - Merge pull request #247 in ONE33T/133t from feature/ONE33T-473_refactoring_candidate to develop
+ - ONE33T-346: [REF] moved logic with provider from component to auth-social.service
+ - ONE33T-346: [REF] Extracted login handler in state to separate method
+ - ONE33T-346: [FIX] changed method name to full
+ - ONE33T-314: [FIX] fix tests
+ - ONE33T-314: [FIX] fix incorrect import in tests
+ - ONE33T-314: [REF] extract purchase profile validation to company module
+ - Merge branch 'develop' into refactoring/ONE33T-473_module_imports
+ - Merge branch 'develop' into feature/ONE33T-473_refactoring_candidate
+ - ONE33T-314: [FIX] fix tests
+ - [ADD]bugfix/ONE33T-375: Display new comments counter.
+ - Merge branch 'feature/ONE33T-346_sign_up_with_social_media_account_FE' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - ONE33T-346: [REF] refactoring according PR comments
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-375_number_of_comments_in_candidate_list
+ - [ADD]bugfix/ONE33T-375: Adjust imports, add base class for comments viewsets, add new comments counter for comments list view based on current user and view object.
+ - Merge branch 'develop' into feature/ONE33T-314_purchase_profile
+ - Merge pull request #249 in ONE33T/133t from feature/ONE33T-323_subscription_and_payments to develop
+ - ONE33T-314: [IMP] add exception for stripe errors handling
+ - ONE33T-346[IMP]: social application ids removed from constants. Changed initialization of library's providers
+ - Merge branch 'feature/ONE33T-323_subscription_and_payments' into feature/ONE33T-314_purchase_profile
+ - ONE33T-323: [REF] rework move jobs to draft logic (use one query instead of save in loop)
+ - ONE33T-314: [IMP] add balance handling to update and create jobs
+ - Merge branch 'feature/ONE33T-323_subscription_and_payments' into feature/ONE33T-322--purch-subsct-frontend
+ - ONE33T-323: [FIX] remove deleted job status
+ - Merge branch 'develop' into feature/ONE33T-322--purch-subsct-frontend
+ - ONE33T-322 [IMP] - implement of navigation between package
+ - Merge branch 'develop' into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - ONE33T-473: updated branch, fixed conflicts in candidate mixins, fixed failed tests
+ - Merge pull request #246 in ONE33T/133t from bugfix/ONE33T-492_view_candidate_list_default_ordering_from_newest_to_oldest to develop
+ - Merge branch 'develop' into bugfix/ONE33T-492_view_candidate_list_default_ordering_from_newest_to_oldest
+ - ONE33T-314: [IMP] implement purchase job seeker profile functionality
+ - ONE33T-323: [IMP] add tests for cancel subscription
+ - ONE33T-473: fixed pylint, fixed failed tests
+ - ONE33T-473: permissions for updating candidate status
+ - ONE33T-473: refactored update candidate status view
+ - ONE33T-473: added module imports to views
+ - ONE33T-473: added module imports to candidate filters, apps, mixins etc
+ - ONE33T-473: deleted unused serializer, deleted redundant fields
+ - ONE33T-473: fixed failed tests
+ - ONE33T-473: added module imports to candidate serializers
+ - ONE33T-473: added module imports to candidate utils
+ - Merge branch 'develop' into feature/ONE33T-473_refactoring_candidate
+ - ONE33T-473: refactored candidate status field
+ - ONE33T-323: [IMP] add unsubscribe and cancel scheduled subscription functionality
+ - Merge pull request #242 in ONE33T/133t from feature/ONE33T-345_sign_up_with_social_media_account to develop
+ - Merge branch 'develop' into feature/ONE33T-345_sign_up_with_social_media_account
+ - ONE33T-492: added default order by became_candidate_at desc
+ - ONE33T-323: [IMP] add payments history endpoint
+ - Merge branch 'develop' of https://git.itransition.com/scm/one33t/133t into develop
+ - [FIX] fix form name in html
+ - Merge branch 'feature/ONE33T-323_subscription_and_payments' into feature/ONE33T-322--purch-subsct-frontend
+ - ONE33T-322[IMP] : add dashboard page
+ - Merge branch 'develop' into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - Merge branch 'develop' into feature/ONE33T-345_sign_up_with_social_media_account
+ - ONE33T-346: fixed linter error in imports
+ - Merge pull request #244 in ONE33T/133t from feature/ONE33T-468_change_credit_card to develop
+ - ONE33T-323: [IMP] add next subscription id
+ - Merge branch 'feature/ONE33T-468_change_credit_card' into feature/ONE33T-323_subscription_and_payments
+ - Merge branch 'develop' into feature/ONE33T-468_change_credit_card
+ - ONE33T-323: [IMP] change purchase subscription logic (payment data aren't needed anymore, use separate url for update of billing information)
+ - Merge branch 'feature/ONE33T-345_sign_up_with_social_media_account' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - ONE33T-345: deleted redundant views
+ - ONE33T-323: [FIX] fix linter errors
+ - ONE33T-323: [IMP] add test for negative case of purchase next subscription
+ - ONE33T-323: [IMP] rework set_balance mechanism
+ - ONE33T-346[IMP]: minor refactoring in state
+ - ONE33T-323: [IMP] started to implement reset balance
+ - ONE33T-468: [FIX] add missing field to subscription serializer
+ - ONE33T-438: [REF] minor refactoring
+ - Merge branch 'feature/ONE33T-345_sign_up_with_social_media_account' into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - ONE33T-346[IMP]: login with social logic implementation
+ - ONE33T-345: fixed pylint, deleted unused import oauth
+ - ONE33T-345: fixed 500 errors add new endpoints for connect to login
+ - ONE33T-468: [FIX] fix sign up email template
+ - ONE33T-468: [IMP] add tests for webhooks
+ - Merge branch 'feature/ONE33T-345_sign_up_with_social_media_account' into feature/ONE33T-346_sign_up_with_social_media_account_FE
+ - ONE33T-346[IMP]: added social icons to project
+ - ONE33T-346[IMP]: implementation of social login via library
+ - Merge branch 'develop' into feature/ONE33T-345_sign_up_with_social_media_account
+ - ONE33T-345: [FIX] updated help message in command
+ - ONE33T-468: [IMP] implement tests for credit cart update
+ - ONE33T-345: fixed failed tests
+ - Merge branch 'develop' into feature/ONE33T-345_sign_up_with_social_media_account
+ - ONE33T-468: [FIX] fix missing comma
+ - ONE33T-468: [IMP] add endpoint for change credit card
+ - ONE33T-322 [IMP] create components
+ - ONE33T-345: [IMP] added social ids for front-end
+ - ONE33T-345: [FIX] fixed failed tests
+ - Merge branch 'develop' into feature/ONE33T-345_sign_up_with_social_media_account
+ - ONE33T-345: [IMP] added environment variables to docker compose files
+ - ONE3#T-345: [FIX] deleted dublicated in requirements
+ - ONE3#T-345: [FIX] fixed pylint, fixed failed tests
+ - ONE3#T-345: [REF] added tests for command, rename command
+ - ONE33T-345: [REF] refactored tests views
+ - ONE33T-345: [UPD] updated branch, ifxed conflicts
+ - ONE33-345: [IMP] added base view and views for social accounts
+ - Merge branch 'feature/ONE33T-302-frontend-set-trial-package' into feature/ONE33T-322--purch-subsct-frontend
+ - Merge branch 'feature/ONE33T-321_purchase_subscription' into feature/ONE33T-322--purch-subsct-frontend
+ - ONE33T-345: [REF] refcatored imports in auth adapters
+ - ONE33T-345: [REF] refcatored imports in auth urls
+ - ONE33T-345: [REF] refcatored imports in auth views
+
+Version 0.3.3:
+ - ONE33T-18[FIX] Fix FE build. Fix issue with packages typescript and angular-compiler cross-compatibility
+ - Merge pull request #243 in ONE33T/133t from feature/ONE33T-463_do_not_rejected_candidates_when_job_posting_status_draft to develop
+ - ONE33T-463: [FIX] deleted unused import constants
+ - Merge branch 'develop' into feature/ONE33T-463_do_not_rejected_candidates_when_job_posting_status_draft
+ - [FIX] Fix unnesseary reference to stripe-angular
+ - Merge pull request #236 in ONE33T/133t from bugfix/ONE33T-190_bug_fix_stabilization to develop
+ - Bugfix/ONE33T-190 merge with development, merge conflict fix
+ - Merge pull request #240 in ONE33T/133t from feature/ONE33T-321_purchase_subscription to develop
+ - ONE33T-321: [FIX] fix admin tests
+ - ONE33T-321: [REF] use first() instead of obtaining by index
+ - Merge branch 'develop' into feature/ONE33T-321_purchase_subscription
+ - Merge pull request #239 in ONE33T/133t from feature/ONE33T-7_test_admin_console to develop
+ - Merge pull request #234 in ONE33T/133t from feature/ONE33T-302-frontend-set-trial-package to develop
+ - ONE33T-321: [FIX] set view_active_subscription to company_user
+ - ONE33T-321: [FIX] fix merge conflicts
+ - ONE33T-321: [REF] remove redundant code
+ - ONE33T-463: [UPD] updated branch, fixed conflicts
+ - Merge pull request #238 in ONE33T/133t from bugfix/ONE33T-423_questionnaire_search_does_not_work to develop
+ - Merge branch 'develop' into feature/ONE33T-463_do_not_rejected_candidates_when_job_posting_status_draft
+ - ONE33T-463: [REF] refactored job constants, services
+ - ONE33T-463: [IMP] deleted rejecting candidates if job has status DRAFT
+ - Merge pull request #241 in ONE33T/133t from bugfix/ONE33T-190_add_saved_jobs_list to develop
+ - Merge branch 'develop' into bugfix/ONE33T-423_questionnaire_search_does_not_work
+ - ONE33T-321: [IMP] add separate permission for obtaining of active subscription, remove outdated permissions
+ - ONE33T-321: [IMP] add separate permission for obtaining of active subscription, remove outdated permissions
+ - ONE33T-190[FIX]: added saved jobs list. New components implementation
+ - ONE33T-321: [FIX] fix linter errors
+ - ONE33T-321: [REF] replace strings with constants
+ - ONE33T-321: [REF] minor change in subscription serializers
+ - ONE33T-321: [FIX] fix conftest.py
+ - Merge branch 'develop' into feature/ONE33T-321_purchase_subscription
+ - ONE33T-321: [REF] refactor imports
+ - ONE33T-321: [IMP] add test for subscription downgrade
+ - Merge pull request #237 in ONE33T/133t from bugfix/update_job_seeker_email to develop
+ - ONE33T-321: [IMP] add test for upgrade subscription
+ - ONE33T-321: [IMP] add test for subscribe after trial
+ - [ADD]feature/ONE33T-7: Adjust expected value for tests.
+ - [ADD]feature/ONE33T-7: Add search fields, adjust user list ordering.
+ - [REF]feature/ONE33T-7: Uncomment tests, adjust imports.
+ - Resolve merge conflicts.
+ - [REF]feature/ONE33T-7: Update tests, fix errors.
+ - ONE33t-423: [FIX] fixed pylint
+ - Merge branch 'develop' into bugfix/ONE33T-190_bug_fix_stabilization
+ - Merge branch 'feature/ONE33T-321_purchase_subscription' into feature/ONE33T-322--purch-subsct-frontend
+ - ONE33T-423[FIX]: renamed search field for server side search
+ - ONE33t-423: [REF] renamed module services to utils
+ - ONE33T-423: [REF] refactored imports im module survey
+ - [ADD]feature/ONE33T-7: Adjust candidates admin.
+ - ONE33T-423: [IMP] added search backend for list of surveys
+ - [ADD]feature/ONE33T-7: Add for jobs admin filter and search.
+ - [ADD]feature/ONE33T-7: Add custom ordering for user's by status, adjust admin fields.
+ - ONE33T [UPD] updated branch, fixed conflicts
+ - ONE33T [FIX] fixed pylint
+ - ONE33T-321: [REF] extract strings to constants
+ - ONE33T: [REF] refactored imports in company validators
+ - ONE33T: [REF] refactored imports in company serializers
+ - ONE33T: add oportunity to update job_seeker email
+ - Merge pull request #232 in ONE33T/133t from bugfix/ONE33T-447_fix_reset_password_link to develop
+ - Merge branch 'bugfix/fix_linter_job_form_error' into bugfix/ONE33T-447_fix_reset_password_link
+ - ONE33T-415[FIX]: fixed error when creating new auto apply in IE
+ - ONE33T-296[FIX]: canDeactivate changesOccurred flag improved
+ - Merge branch 'develop' into bugfix/ONE33T-190_bug_fix_stabilization
+ - ONE33T-405[FIX]: display validation bound with image verification
+ - [FIX] fix missing parameter
+ - ONE33T-321: [IMP] add billing cycle renew handling
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-7_test_admin_console
+ - [FIX]feature/ONE33T-7: Rename comments form, add readonly fields for comments, move admins to related admin/auth folder, add tests for comments.
+ - Merge branch 'develop' into bugfix/ONE33T-447_fix_reset_password_link
+ - Merge pull request #233 in ONE33T/133t from bugfix/ONE33T_can_not_uptdae_job_with_publish_date to develop
+ - ONE33T-460[FIX]: fixed publish profile notification in city and zip section
+ - Merge branch 'develop' into feature/ONE33T-321_purchase_subscription
+ - ONE33T-321: [IMP] implement subscription service
+ - ONE33T-236[FIX]: validation improvements
+ - ONE33T-454[FIX]: added DELETED section to job status filter
+ - Merge pull request #227 in ONE33T/133t from feature/ONE33T-7_admin_console_main_configuration to develop
+ - ONE33T-456[FIX]: added active till to Job posting and View Job posting
+ - ONE-[323] [FIX] Fix full text search
+ - ONE33T-457[FIX]: added correct validation message
+ - [FIX]feature/ONE33T-7: Update public companies list.
+ - Resolve merge conflicts.
+ - [REF]feature/ONE33T-7: Represent user creator class as functions, add `is_owner` fields to `CompanyUserCreationForm`.
+ - Merge pull request #229 in ONE33T/133t from feature/ONE33T-422_full_job_seekers_search to develop
+ - ONE33T-302 [IMP] Set Trial Packages
+ - ONE33T: [FIX] fixed pylint
+ - ONE33T: [REF] added module imports to job serializers
+ - ONE33T: [REF] added module imports to job validators
+ - ONE33T: [FIX] add check to validator for publish_date
+ - ONE33T-236[FIX]: added validation to phone filed on job seeker profile
+ - ONE33T-447:[FIX] fix code review notes
+ - [FIX]feature/ONE33T-7: Retrieve enum loosed by merge.
+ - [FIX]feature/ONE33T-7: Update test auth admin format.
+ - [FIX]feature/ONE33T-7: Add tests for admin user creation form.
+ - [FIX]feature/ONE33T-7: Add tests for auth admin.
+ - ONE33T-447:[FIX] added correct link in reset password e-mail
+ - ONE33T-453[FIX]: changed hint in job seeker profile
+ - ONE33T-449[FIX]: email placeholder validation on forgot password form
+ - ONE33T-450[FIX]: added email length validation on FE
+ - ONE33T-436[FIX]: added validation to prevent custom value in location
+ - Merge branch 'develop' into bugfix/ONE33T-190_bug_fix_stabilization
+ - ONE33T-296[FIX]: confirm when Jobseeker invokes to leave auto apply page without saving changes made to title or searching options
+ - ONE33T-401[FIX]: improved skills select component with filter
+ - [FIX]feature/ONE33T-7: Adjust some constants, fix pytest config.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-7_admin_console_main_configuration
+ - Resolve merge conflicts.
+ - Merge branch 'feature/ONE33T-234-payment-process-only-front' into feature/ONE33T-302-frontend-set-trial-package
+ - Merge pull request #230 in ONE33T/133t from feature/ONE33T-310_company_dashboard to develop
+ - Merge pull request #226 in ONE33T/133t from feature/ONE33T-333_location_search_with_auto_complete to develop
+ - Merge pull request #231 in ONE33T/133t from bugfix/disable_cache_control to develop
+ - ONE33T-333: [FIX] replaced and renamed constan MIN_FTS_WEIGTH
+ - ONE33T: added middleware for disabling cache
+ - ONE33T-422: [UPD] merged branch feature/ONE33T-333_location_search_with_auto_complete
+ - ONE33T-422: [FIX] fixed failed tests
+ - ONE33T-422: [UPD] updated branch, fixed conflicts
+ - [REF]feature/ONE33T-7: Fix pr comments.
+ - ONE33T-310: [FIX] fixed failed tests, delete field from js expected
+ - ONE33T-264[FIX]: improvements in certification, education, experience forms in JS profile
+ - ONE33T-310: [FIX] fixed failed tests
+ - ONE33T-333: [FIX] fixed docstrings
+ - ONE33T-310: [IMP] added ordering by modified_at for jobs list
+ - ONE33T-333: [FIX] fixed filed tests
+ - ONE33T-333: [FIX] fixed pylint added dicstrngs.
+ - ONE33T-333: [UPD], updated branch, fixed conflicts
+ - Merge branch 'develop' into feature/ONE33T-321_purchase_subscription
+ - ONE33T-321: [IMP] implement purchase subscription
+ - Merge pull request #225 in ONE33T/133t from refactoring/extract_enums_into_general_module to develop
+ - [REF]feature/ONE33T-7: Optimize job change form, update display list for `address` model, optimize user queryset.
+ - ONE33T-422 [IMP] final part of location search
+ - ONE33T-264[FIX]: disable licence number when is current checked
+ - ONE33T-422[IMP] locations earch aprt 2
+ - [FIX] change files according to comments
+ - make changes according to comments
+ - [ADD]feature/ONE33T-7: Add todo's, fix errors.
+ - Merge branch 'feature/ONE33T-333_location_search_with_auto_complete' into feature/ONE33T-422_full_job_seekers_search
+ - Merge branch 'feature/ONE33T-422_full_job_seekers_search' of https://git.itransition.com/scm/one33t/133t into feature/ONE33T-422_full_job_seekers_search
+ - ONE33T-422[IMP] implementation of location search
+ - [ADD]feature/ONE33T-7: Add migrations, resolve merge conflict with company migrations.
+ - ONE33T-333: added ordering, replaced location filter for JobSeekerFilterSet
+ - ONE33T-333: [FIX] fixed failed started dev
+ - ONE33T-333: [IMP] implemented full text search by locations
+ - ONE33T-266[FIX]: added restriction to date picker from 1900 to current
+ - ONE33T-261[FIX]: added max count education validation
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-7_admin_console_main_configuration
+ - [ADD]feature/ONE33T-7: Adjust admin panel for geo application, set up optimization for huge queries, optimize querysets on the other admin pages.
+ - Merge branch 'develop' into feature/ONE33T-333_location_search_with_auto_complete
+ - ONE33T-333: [FIX] rename query param
+ - ONE33T-333: [IMP] added filter for location
+ - [FIX] revert incorrect changes
+ - [FIX] revert incorrect changes
+ - [FIX] fix merge conflicts
+ - Merge branch 'develop' into refactoring/extract_enums_into_general_module
+ - [REF] add missing files
+ - [ADD]feature/ONE33T-7: Move `ValidationModelFormMixin` to mixins file, add base inline formset to handle rest_framework errors, update users and job validation.
+ - ONE33T: [REF] extract enums into general module
+ - Merge branch 'feature/ONE33T-333_location_search_with_auto_complete' into feature/ONE33T-422_full_job_seekers_search
+ - ONE33T-422 [IMP] Implement front-end part of full text search
+ - ONE33T-333: [FIX] fixed incorrect url in docstring
+ - ONE33T-333: [IMP] added enums for front-end for job seekers list filters
+ - ONE33T-333: [IMP] added view for location search auto complete
+ - [ADD]feature/ONE33T-7: Set up different user creation form for different user types.
+ - [ADD]feature/ONE33T-7: Set up ban logic for company, sort imports, move filter to separate file.
+ - [ADD]feature/ONE33T-7: Adjust admin for comments.
+ - ONE33T-234 : implement form
+ - [ADD]feature/ONE33T-7: Add job admin view, adjust job manager, add base form for handle rest framework validation errors.
+ - ONE33T-234 : [fix routes]
+ - ONE33T-234 add subscription module
+ - [ADD]feature/ONE33T-7: Resolve merge conflict with migrations, set up admin panel for company and users.
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-7_admin_console_main_configuration
+ - [ADD]feature/ONE33T-7: Extend apply and job serializers with `ban_status`, update `get_published` method for jobs, add tests for banned entities.
+ - [ADD]feature/ONE33T-7: Cover public api with tests.
+ - [ADD]feature/ONE33T-7: Update ban status validation logic, partially cover it with tests.
+ - [ADD]feature/ONE33T-7: Update view filter by ban status.
+ - [ADD]feature/ONE33T-7: Initial filtration of entities by their `ban_status`, add utils methods, update login logic.
+ - [ADD]feature/ONE33T-7: Set up ban status field for required models, add migrations.
+ - [ADD]feature/ONE33T-7: Add abstract model and enum to handle ban status.
+
+Version 0.3.1b:
+ - Merge pull request #208 in ONE33T/133t from feature/ONE33T-328-frontend to develop
+ - Merge branch 'develop' into feature/ONE33T-328-frontend
+ - ONE33T-328 [FIX] fix pr issues
+ - Merge branch 'develop' into feature/ONE33T-328-frontend
+ - ONE33T-326 [IMP] change styling
+ - ONE33T-326[IMP] implementation
+ - ONE33T-326 [IMP] imp feature
+ - Merge branch 'develop' into feature/ONE33T-328-frontend
+ - ONE33T-328 [IMP] Add to form publish date
+
+Version 0.3.1:
+ - Merge pull request #221 in ONE33T/133t from bugfix/ONE33T-190_stabilization_FE_0.3 to develop
+ - ONE33T-351[FIX]: added max length validation
+ - Merge pull request #224 in ONE33T/133t from feature/ONE33T-422_full_job_seekers_search to develop
+ - Merge branch 'develop' into feature/ONE33T-422_full_job_seekers_search
+ - Merge pull request #223 in ONE33T/133t from feature/ONE33T-301_set_trial_package to develop
+ - Merge branch 'develop' into feature/ONE33T-301_set_trial_package
+ - ONE33T-190[FIX]: pr fix in auto apply
+ - ONE33T-301: [IMP] add send subscription notification test
+ - ONE33T-301: change description for manage subscriptions group
+ - ONE33T0-301: [FIX] minor fix
+ - Merge branch 'develop' into bugfix/ONE33T-190_stabilization_FE_0.3
+ - ONE33T-301: add subscription permission test
+ - ONE33T-301: [FIX] fix code review notes
+ - Merge branch 'develop' into feature/ONE33T-422_full_job_seekers_search
+ - ONE33T-422: [FIX] fixed failed test. Temporary solution
+ - ONE33T-422: [FIX] fixed pylint
+ - ONE33T-422: [REF] deelted unused file with fixtures
+ - ONE33T-422: [REF] updated full text search, added enums for filters
+ - ONE33T-388[fix] Fix bug
+ - ONE33T-414 [FIX] fix bug
+ - ONE33T-421 [FIX] : fix bug
+ - ONE33T-434 [FIX] fix bug
+ - ONE33T-435 [FIX] : fix bug
+ - [FIX]  fix issues wit about field in edit job-seeker profile
+ - ONE33T-422: [UPD] updated branch, fixed conflicts
+ - Merge pull request #218 in ONE33T/133t from feature/ONE33T-334-frontend-job-list to develop
+ - ONE33T-422: [IMP] implemented postgres full text search for list of job seekers
+ - Merge branch 'develop' into feature/ONE33T-301_set_trial_package
+ - ONE33T-301: [IMP] add notification about trial expiring
+ - ONE33T-334[FIX] fix tslint
+ - ONE33T-334 [FIX] fix tslint issdues
+ - Merge branch 'develop' into feature/ONE33T-334-frontend-job-list
+ - Merge pull request #205 in ONE33T/133t from feature/ONE33T-326-view-candidate-for-job-posting to develop
+ - Merge pull request #222 in ONE33T/133t from bugfix/fix_stripe_keys to develop
+ - Merge branch 'bugfix/fix_stripe_keys' into feature/ONE33T-301_set_trial_package
+ - [FIX] fix stripe keys for production environment
+ - Merge branch 'develop' into bugfix/ONE33T-190_stabilization_FE_0.3
+ - ONE33T-260[FIX]: validation is_current check box with date_to
+ - ONE33T-301: [IMP] fix migrations conflict
+ - Merge branch 'develop' into feature/ONE33T-301_set_trial_package
+ - ONE33T-301: [IMP] implement trial subscription flow
+ - ONE33T-231[FIX]: address fields in job seeker profile optional
+ - ONE33T-283[FIX]: salary fields optional
+ - ONE33T-304[FIX]: added link to company profile from applied jobs
+ - ONE33T-365[FIX]: new characters don't appear in the field after limit ONE33T-364[FIX]: fixed inputs validation length
+ - ONE33T-366[FIX]: fixed validation and ability to change password
+ - ONE33T-388[FIX]: fixed restriction for displaying candidate phone and email
+ - ONE33T-389[FIX]: implemented workflow. Adapted workflow component
+ - Merge pull request #220 in ONE33T/133t from update/ONE33T_updated_docstrings_in_views to develop
+ - Merge branch 'develop' into update/ONE33T_updated_docstrings_in_views
+ - Merge pull request #214 in ONE33T/133t from feature/ONE33T-338_view_graph_of_profile_completion to develop
+ - Merge pull request #219 in ONE33T/133t from bugfix/fixed_falied_dev_deploy to develop
+ - Merge branch 'develop' into update/ONE33T_updated_docstrings_in_views
+ - ONE33T: added meta options in migrations
+ - ONE33T-389[FIX]: update candidates list after quick view modal closed
+ - ONE33T-389[FIX]: added rating to quick view candidate
+ - ONE33T-338[FIX]: PR fixes according latest comments
+ - ONE33T-398[FIX]: added correct validation message in popup
+ - Merge pull request #215 in ONE33T/133t from feature/ONE33T-333_get_list_job_seekers_with_filters to develop
+ - [ONE-326] : fix pr issues
+ - ONE33T-334[IMP] Renaming
+ - ONE33T-333: [FIX] fixed code-review remarks
+ - ONE33T-334[IMP] REfactoring
+ - ONE33T-333: [FIX] deleted redundant ordering and django filter backends
+ - Merge pull request #217 in ONE33T/133t from feature/ONE33T-341_reset_user_password_FE to develop
+ - Merge branch 'develop' into feature/ONE33T-333_get_list_job_seekers_with_filters
+ - Merge pull request #216 in ONE33T/133t from feature/ONE33T-312_stripe_integration to develop
+ - Merge pull request #212 in ONE33T/133t from feature/ONE33T-8_manage_133t_users_and_permissions to develop
+ - ONE33T-403[FIX]: added validation message in popup
+ - ONE33T-334[IMP] Contaginate with backend
+ - Merge branch 'feature/ONE33T-333_get_list_job_seekers_with_filters' into feature/ONE33T-334-frontend-job-list
+ - ONE33T-407[FIX]: added validator for salary min
+ - Merge branch 'develop' into feature/ONE33T-334-frontend-job-list
+ - ONE33T-334 : [IMP] Add list with filter
+ - [IMP]feature/ONE33T-8: Improve user creation login through admin panel.
+ - ONE33T-410[FIX]: added discard button to company profile
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-8_manage_133t_users_and_permissions
+ - ONE33T-413[FIX]: fixed education validator
+ - Merge branch 'develop' into update/ONE33T_updated_docstrings_in_views
+ - ONE33T-312: [FIX] remove stripe test keys
+ - ONE33T-420[FIX]: added checks for newly created job seekers
+ - ONE33T-423[FIX]: added search on pagination change
+ - ONE33T-428[FIX]: changed notification message
+ - ONE33T-427[FIX]: fixed apply button displaying
+ - ONE33T-312: [REF] move management commands to subscription module
+ - ONE33T-426[FIX]: fixed errors with auto apply start
+ - ONE33T-312: [IMP] remove company email from stripe customer creation
+ - Merge branch 'develop' into feature/ONE33T-341_reset_user_password_FE
+ - ONE33T-312: [FIX] fix permission tests
+ - ONE33T-312: [IMP] add subscription permissions check
+ - [ADD]feature/ONE33T-8: Remove `ugettext_lazy` since we decide to not use it.
+ - Merge pull request #213 in ONE33T/133t from feature/ONE33T-342_reset_password to develop
+ - ONE33T-312: [IMP] add stripe envs variables
+ - ONE33T: [REF] updated docstrings in views, one style
+ - ONE33T-333: [FIX] fixed failed tests
+ - ONE33T-333: [FIX] deleted unused mock datetime in conftest
+ - ONE33T-338[IMP]: implementation profile completion spinner. Some code style fixes
+ - Merge branch 'develop' into feature/ONE33T-333_get_list_job_seekers_with_filters
+ - ONE33T-333: [FIX] fixed pylint
+ - ONE33T-312: [IMP] add todos for the future features
+ - ONE33T-312: [IMP] implement subscribe view, handle customer.subscription.cancel webhook
+ - ONE33T-333: [REF] refactored imports
+ - ONE33T-333: [REF] added relations for job_seeker queryset
+ - ONE33T-333: [IMP] added default filters for job seeker queryset
+ - ONE33T-341[IMP]: implementation of restore user password. New component added.
+ - Merge branch 'develop' into feature/ONE33T-342_reset_password
+ - ONE33T-342: [IMP] add form and serializer for password change with new field naming
+ - ONE33T-341[IMP]: implementation of forgot password. New components added.
+ - Merge branch 'develop' into feature/ONE33T-312_stripe_integration
+ - [ADD]feature/ONE33T-8: Update filtration for users.
+ - [IMP] started to implement base functionality for subscriptions (draft version)
+ - [ADD]feature/ONE33T-8: Add auth models to admin.
+ - [ADD]feature/ONE33T-8: Add custom admin site, register all interested for us models in it, slightly update verbose name for some models.
+ - ONE33T-326 [FIX] remove unused action
+ - ONE33T-326[IMP] delete unsused action
+ - ONE33T-326 [FIX] fix styling
+ - ONE33T-326 [IMP] : implement
+ - Merge branch 'develop' into feature/ONE33T-326-view-candidate-for-job-posting
+ - ONE33T-326 [IMP] add company view dasboard
+
+Version 0.3.0:
+ - Merge pull request #209 in ONE33T/133t from feature/ONE33T-348_reapply_for_the_job_FE to develop
+ - Merge branch 'develop' into feature/ONE33T-348_reapply_for_the_job_FE
+ - Merge pull request #202 in ONE33T/133t from bugfix/ONE33T_auto_apply_bugfix_FE to develop
+ - Merge branch 'develop' into bugfix/ONE33T_auto_apply_bugfix_FE
+ - Merge pull request #206 in ONE33T/133t from feature/ONE33T-340_FE_changes_according_latest_address_changes to develop
+ - Merge pull request #210 in ONE33T/133t from feature/ONE33T-342_reset_password to develop
+ - Merge pull request #207 in ONE33T/133t from feature/ONE33T-337_view_graph_of_profile_completion_backend to develop
+ - ONE33T-337: [FIX] fixed remarks
+ - Merge branch 'develop' into feature/ONE33T-337_view_graph_of_profile_completion_backend
+ - ONE33T-348[FIX]: changes according PR comments
+ - ONE33T[FIX]: set clear name to function
+ - ONE33T-340[FIX]: created new component for address profile view
+ - ONE33T-340[FIX]: fixed copy auto apply. Some code style fixes.
+ - ONE33T-340[FIX]: search improvements
+ - ONE33T-340[FIX]: correct location saving and displaying in auto apply result
+ - Merge branch 'develop' into feature/ONE33T-340_FE_changes_according_latest_address_changes
+ - ONE33T-340[FIX]: new search logic implementation in auto apply
+ - Merge pull request #211 in ONE33T/133t from feature/add_location_field_to_autoapply to develop
+ - [IMP] add location field to Autoapply
+ - ONE33T-342:[IMP] fix code review notes
+ - ONE33T-342:[IMP] write test for reset password negative case
+ - ONE33T-342: [IMP] implement password reset confirm mechanism, write tests
+ - ONE33T[FIX]: PR comments fixes
+ - ONE33T-348[IMP]: implementation reapply in auto apply
+ - ONE33T-348[IMP]: implementation reapply in manual apply
+ - ONE33T-340[IMP]: changes in apply serializer for job location
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into feature/ONE33T-342_reset_password
+ - Merge branch 'develop' into feature/ONE33T-337_view_graph_of_profile_completion_backend
+ - ONE33T-337: [REF] renamed args, added AttributeError in func get_from_nested_sructure
+ - ONE33T-337: [FIX] deleted unused and redundant methods in model JobSeeker
+ - ONE33T-337: [IMP] added field profile_completion, added rules for completion
+ - Merge pull request #204 in ONE33T/133t from feature/ONE33T-327_set_job_posting_closed_date to develop
+ - ONE33T-340[IMP]: fixed requiredFieldsToPublishProfile according new address structure.
+ - ONE33T-340[IMP]: fixed address data view in templates according new address structure.
+ - ONE33T-340[IMP]: added new city and zip components. Base implementation of new address structure.
+ - ONE33T-342:[IMP]: customize serializer for password reset view
+ - ONE33T-327: [FIX] rename close_jobs to close_expired_jobs
+ - Merge branch 'develop' into feature/ONE33T-340_FE_changes_according_latest_address_changes
+ - ONE33T-327: [REF] renamed constants, added subject check in test
+ - ONE33T-327: [UPD] updated branch, fixed conflicts
+ - ONE33T-327: [IMP] added task for sending emails about closing date
+ - Merge pull request #203 in ONE33T/133t from feature/ONE33T-329-frontend to develop
+ - Merge pull request #198 in ONE33T/133t from feature/ONE33T-355-clone-frontend to develop
+ - ONE33T-[FIX]: tslint fixes after merge
+ - Merge branch 'develop' into bugfix/ONE33T_auto_apply_bugfix_FE
+ - ONE33T-340[IMP]: changed geo service, fixed Address model
+ - Merge branch 'feature/ONE33T-355-clone-frontend' of https://git.itransition.com/scm/one33t/133t into feature/ONE33T-355-clone-frontend
+ - ONE33T-355[FIX] fix pr issues
+ - ONE33T-327: [IMP] added celery task for closing jobs
+ - ONE33T-329 [FIX] fix pr issues
+ - ONE33T-329 [FIX] fix data type method
+ - Merge branch 'develop' into feature/ONE33T-329-frontend
+ - ONE33T-329 : implementation, move Edit Job for multi-file component
+ - Merge pull request #196 in ONE33T/133t from refactoring/ONE33T-233_FE_code_style_fixes to develop
+ - ONE33T-327: [IMP] added fields closing_date, validations,
+ - ONE33T-233[FIX]: removed sonar rules
+ - Merge branch 'develop' into feature/ONE33T-355-clone-frontend
+ - ONE33T-297[FIX]: added notification, when job in queue is stopped
+ - Merge pull request #201 in ONE33T/133t from feature/ONE33T-325_job_candidates to develop
+ - ONE33T-325; [FIX] fixed redundant logic, fixed remarks in test
+ - Merge branch 'develop' into feature/ONE33T-325_job_candidates
+ - ONE33T-325: [upd] upated branch, fixed conflicts
+ - Merge pull request #200 in ONE33T/133t from feature/ONE33T-339_geo_module_refactoring to develop
+ - Merge branch 'develop' into feature/ONE33T-339_geo_module_refactoring
+ - ONE33T-339: [REF] merge geo migrations
+ - ONE33T-325: [UPD] updated branch, fixed conflicts
+ - Merge branch 'develop' into feature/ONE33T-329-frontend
+ - Merge pull request #171 in ONE33T/133t from feature/ONE33T-347_reapply_for_the_job to develop
+ - ONE33T-325: deleted empty string
+ - ONE33T-339: [FIX] remove filter by job location
+ - ONE33T-339: [FIX] fix tests
+ - ONE33T-339: [FIX] fix incorrect type of filter field
+ - ONE33T-339: [REF] change filter field names
+ - ONE33T-339: [IMP] add filtration of states by country id
+ - ONE33T-339: [IMP] add url for obtaining of states with filtration by name
+ - ONE33T-355 [FIX] Linter fo new file
+ - ONE33T-329 : change confirmation message
+ - ONE33T-339: [FIX] resolve migrations conflict
+ - Merge branch 'develop' into feature/ONE33T-339_geo_module_refactoring
+ - ONE33T-347: [FIX] returned docstrings with double quotes
+ - ONE33T-347: [UPD] updated branch, fixed conflicts
+ - ONE33T-325: [UPD] updated branch, fixed conflicts
+ - ONE33T-325: [UPD] updeted branch, fixed conflicts
+ - Merge pull request #197 in ONE33T/133t from feature/ONE33T-330_move_candidate_to_rejected to develop
+ - ONE33T-339: [FIX] fix incorrect use of country id
+ - ONE33T-330: [UPD] updated branch, fixed conflicts
+ - ONE33T-330: [REF] move logic of rejected candidates to separate function
+ - ONE33T-347: [REF] refactored reaaply methods
+ - ONE33T-402[FIX]: update view for auto apply item. Added link to company profile
+ - ONE33T-347: [FIX] fixed remarks
+ - ONE33T-347: [UPD] updated branch, fixed conflicts
+ - ONE33T-402[FIX]: applied on date added to item in applied section
+ - ONE33T-339: [FIX] minor fix
+ - ONE33T-394[FIX]: start/stop only for jobs from applied list
+ - ONE33T-339: [FIX] fix incorrect formatting
+ - ONE33T-325: [IMP] added count of candidates of job on each status
+ - ONE33T-339: [FIX] fix generatedemodata script
+ - ONE33T-339: [IMP] add validation for zip
+ - ONE33T-393[FIX]: added info icon with info about job matching to usual job queue
+ - Merge branch 'develop' into feature/ONE33T-339_geo_module_refactoring
+ - ONE33T-339: [IMP] update job posting csv headers
+ - ONE33T-395[FIX]: added saving functionality, when auto apply started
+ - Merge pull request #168 in ONE33T/133t from feature/ONE33T-211_candidates_list to develop
+ - ONE33T-392[FIX]: added info about number of jobs in queue
+ - ONE33T-335 : [IMP] sort import
+ - ONE33T-130 : [IMP] sort import
+ - ONE33T-325: [IMP] added new job candidates view with supporting filters
+ - Merge branch 'feature/ONE33T-355-clone-frontend' of https://git.itransition.com/scm/one33t/133t into feature/ONE33T-355-clone-frontend
+ - ONE33T-355 : fix conflix
+ - Merge branch 'refactoring/ONE33T-233_FE_code_style_fixes' into feature/ONE33T-355-clone-frontend
+ - ONE33T-355: [FIX] fix unique username tests fail
+ - ONE33T-335: [FIX] fix backend tests
+ - Merge branch 'feature/ONE33T-211_candidates_list' into feature/ONE33T-355-clone-frontend
+ - ONE33T-355[FIX] - fix test
+ - ONE33T-355[FIX] - fix tests
+ - Merge branch 'develop' into feature/ONE33T-355-clone-frontend
+ - ONE33T-330: [FIX] fixed failed tests
+ - ONE33T-330: [UPD] updated branch, fixed conflicts
+ - ONE33T-355[FIX] - fix tests
+ - ONE33T-355 : add filters
+ - ONE33T-330: [IMP] implemented removing candidates to rejected
+ - ONE33T-233[REF]: added info about code style into readme
+ - ONE33T-233[REF]: fixed Select naming in states
+ - ONE33T-233[REF]: imports in modules are grouped(only in modules) and sorted
+ - ONE33T-233[REF]: tslint fixes according latest config
+ - ONE33T-339: [REF] change location handling, fix tests
+ - ONE33T-233[REF]: new tslint rules implementation
+ - Merge branch 'develop' into feature/ONE33T-339_geo_module_refactoring
+ - Merge branch 'develop' into feature/ONE33T-211_candidates_list
+ - [FIX] develop: tslit issues and max count of subindustries
+ - ONE33T-211: [FIX] fix tests
+ - Merge branch 'develop' into feature/ONE33T-211_candidates_list
+ - Merge branch 'develop' into feature/ONE33T-355-clone-frontend
+ - ONE33T-347: [FIX] fixed remarks
+ - ONE33T-347: [FIX] fixed failed tests
+ - ONE33T-347: [REF] renamed permissions migrations
+ - ONE33T-347: [UPD] updated branch, fixed conflicts
+ - ONE33T-339: [REF] refactor goe module, fix tests
+ - ONE33T-347: [UPD] added documentation for swagger
+ - ONE33T-347: [REF] refactoring mathching for validation
+ - Merge branch 'develop' into feature/ONE33T-347_reapply_for_the_job
+ - ONE33T-347: [REF] refactored apply service
+ - ONE33T-347: [IMP] added previous applied date to candidate models
+ - ONE33T-347: [IMP] added opportunity todo answers again for reapply
+ - ONE33T-347: [IMP] added reapply view for the job, added tests, permissions
+ - ONE33T-355[imp] add radi \o button filters
+ - ONE33T-355 [imp] radio filter item
+ - ONE33T-211: [IMP] add city filtration by state_id, add tests
+ - Merge branch 'feature/ONE33T-211_candidates_list' into feature/ONE33T-355-clone-frontend
+ - ONE33T-355 [imp] add actions
+ - ONE33T-211: [IMP] add search by experience
+ - ONE33T-211: [IMP] add about field to Job Seeker model, add Search field to Candidates
+
+Version 0.2.5:
+ - Merge branch 'bugfix/ONE33T-190_stabilization' into develop
+ - Merge branch 'develop' into bugfix/ONE33T-190_stabilization
+ - Merge pull request #194 in ONE33T/133t from bugfix/auto_apply_job_list_FE to develop
+ - [FIX] bugfix/ONE33T-190_stabilization: fixed widget JS and assign button availability
+ - Merge branch 'bugfix/fix_autoapply_job_list' into bugfix/auto_apply_job_list_FE
+ - ONE33T[FIX]: changed request for job list in existing autoApply
+ - [FIX] add distinct for questions
+ - [FIX] fix incorrect number of Autoapply jobs, add filtration by params
+ - [FIX] develop:  == should be ===
+
+Version 0.2.4:
+ - Merge branch 'bugfix/ONE33T-190_stabilization' into develop
+ - [FIX] bugfix/ONE33T-190_stabilization: update status candidate on ui after restore status
+ - [FIX] bugfix/ONE33T-190_stabilization: lint errors Shadowed name: 'data'
+ - [FIX] bugfix/ONE33T-190_stabilization: clean unused code
+ - Merge pull request #190 in ONE33T/133t from bugfix/ONE33T-281-create-job-posting-job-details to develop
+ - [FIX] bugfix/ONE33T-190_stabilization: permissions flush after logout and fixed skills component
+ - Merge pull request #189 in ONE33T/133t from bugfix/ONE33T-374_comment_sorting to develop
+ - ONE33T-281 : [FIX] fix bug
+ - ONE33T-374: [FIX] fix comments sorting
+ - Merge pull request #188 in ONE33T/133t from bugfix/ONE33T-295_autoapply_unique_message to develop
+ - Merge pull request #187 in ONE33T/133t from bugfix/ONE33T-388-purchase-profile-phone-number-does-not-display-after-purchase to develop
+ - ONE33T-295: [FIX] fix incorrect autoapply title uniqueness validation message
+ - ONE33T-388[FIX] fix layout
+ - ONE33T-388 [FIX] fix bug
+ - Merge pull request #185 in ONE33T/133t from bugfix/ONE33T-379-create-job-there-is-400-error- to develop
+ - Merge pull request #186 in ONE33T/133t from bugfix/skills_perfomance to develop
+ - [FIX] set skills expected tests value as any list
+ - [IMP] add skills endpoint with filters by industry, subindustry and skill name
+ - ONE33T-378[FIX] formatting
+ - ONE33T-378 [FIX] remove unnessery line
+ - ONE33T-378 [FIX] fix bug
+
+Version 0.2.3:
+ - Merge branch 'feature/ONE33T-224_skills_db' of ssh://git.itransition.com:7999/one33t/133t into develop
+ - ONE33T-224: [REF] return common logic for queryset, fixed swagger
+ - Merge branch 'feature/ONE33T-224_skills_db' into develop
+ - [FIX] feature/ONE33T-224_skills_db: fixed tests with expected results
+ - [FIX] fix tests
+ - Merge branch 'bugfix/fix_candidate_restore' into feature/ONE33T-224_skills_db
+ - [FIX] fix restore candidate view
+ - Merge branch 'develop' into feature/ONE33T-224_skills_db
+ - Merge branch 'bugfix/ONE33T-190_stabilization' into develop
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-190_stabilization
+ - Merge branch 'bugfix/comments_issues' into develop
+ - Merge pull request #172 in ONE33T/133t from bugfix/ONE33T_added_try_except_for_emails to develop
+ - Merge pull request #183 in ONE33T/133t from bugfix/ONE33T-363_manage_company_users_account_with_new_status to develop
+ - Merge pull request #184 in ONE33T/133t from bugfix/ONE33T-295_validation_error_when_AutoApply_name_is_not_unique to develop
+ - Merge branch 'bugfix/ONE33T-351' into develop
+ - [FIX] bugfix/ONE33T-351: revert layout of code after Pavel
+ - [FIX] bugfix/ONE33T-351: revert layout
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-351
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/comments_issues
+ - Merge pull request #182 in ONE33T/133t from bugfix/cover_letter_issuies to develop
+ - Merge pull request #174 in ONE33T/133t from feature/ONE33T-214_quick_view_for_candidates to develop
+ - [IMP] bugfix/ONE33T-190_stabilization: added restoring status feature
+ - ONE33T-295[FIX]: validation popup added to incorrect creation of auto apply
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into bugfix/ONE33T-190_stabilization
+ - [FIX] bugfix/ONE33T-377_workflow_set_not_saved:
+ - ONE33T-224: [REF] remove commented code, rename some variables
+ - ONE33T-224: [REF] added faster algorithm for migration skills
+ - ONE33T-363[FIX]: fixed saving data for company user with status new
+ - Merge branch 'develop' into feature/ONE33T-214_quick_view_for_candidates
+ - Merge branch 'develop' into bugfix/cover_letter_issuies
+ - ONE33T-224: [FIX] fix tests
+ - ONE33T-376[FIX]: correct number of comments in candidate profile. Bind comments to job seeker instead candidate
+ - Merge pull request #178 in ONE33T/133t from bugfix/fix_company_profile_moving to develop
+ - ONE33T-351 [FIXT] - fix test
+ - ONE33T-356[FIX]: refactoring creation cover letter with existing title
+ - Merge pull request #179 in ONE33T/133t from bugfix/ONE33T-378 to develop
+ - ONE33T-351 [FIX] - fix but
+ - ONE33T-359 [FIX] fix bug
+ - ONE33T-378 : fix test
+ - [FIX] Remove Declaration from candidateId
+ - ONE33T-378 : [fix] fix bug
+ - Merge pull request #176 in ONE33T/133t from bugfix/add_missing_candidate_created_at to develop
+ - Merge pull request #170 in ONE33T/133t from feature/ONE33T-188_preview_jobseeker_profile to develop
+ - [FIX] fix bug with navigation to company profile
+ - Merge pull request #173 in ONE33T/133t from bugfix/restore_candidate to develop
+ - ONE33T-224: [IMP] add new skills from csv file
+ - Merge pull request #175 in ONE33T/133t from bugfix/ONE33T-369 to develop
+ - Add frontend for created_at
+ - [FIX] bugfix/ONE33T-190_stabilization: case when files not created
+ - [FIX] bugfix/ONE33T-190_stabilization: revert import sorting
+ - [FIX] bugfix/ONE33T-190_stabilization: fixed lint errors
+ - ONE33T-357[FIX]: added restriction length to cover letter body input ONE33T-358[FIX]: added restriction length to cover letter name input ONE33T[FIX]: fixes with 404 error on getting cover letter at job detail view page.
+ - [IMP] bugfix/ONE33T-190_stabilization: added VERSION/CHANGELOG for Project with frontend view
+ - ONE33T-369 [fix] fix bug
+ - [FIX] add assignment date
+ - Merge branch 'develop' into feature/ONE33T-214_quick_view_for_candidates
+ - ONE33T-214[IMP]: move components to shared module to reuse ones in candidate quick view. Quick view component improvement
+ - ONE33T: [IMP] add opportunity to restore rejected users, add validation for statuse
+ - ONE33T-214[IMP]: added carousel functionality to quick view widget
+ - [IMP] develop: enable S3 for production
+ - ONE33T: [REF] add flag fail_silently
+ - ONE33T: [FIX] fixed 500 error if email does not send
+ - ONE33T-214[IMP]: identify limit for current candidate in table for quick view
+ - [FIX] develop: enable Mailgun for DEV/QA servers.
+ - ONE33T-214[IMP]: quick view state and actions implementation
+ - ONE33T-214[IMP]: existing logic improvements(added setter for current sorting). Added button for quick view.
+ - ONE33T-188[IMP]: added functionality to preview js profile in modal
+ - ONE33T-188[IMP]: added preview button to js profile edit page
+
+Version 0.2.2:
+ - Merge branch 'develop' of ssh://git.itransition.com:7999/one33t/133t into develop
+ - [FIX] develop: pip redis to 2.x version due to new version broken celery
+ - Merge pull request #169 in ONE33T/133t from feature/ONE33T-182-view-list-of-all-candidates-of-my-company to develop
+ - ONE33T-182[fix] fix lining
+ - Merge pull request #167 in ONE33T/133t from bugfix/ONE33T-362_incorrect_file_name to develop
+ - ONE33T-182 [IMP] : add list to menu and fix workflow
+ - [FIX] develop: CHANGELOG merged
+ - ONE33T-362: [FIX] added new filename
+
+Version 0.2.1:
+ - Merge pull request #165 in ONE33T/133t from feature/ONE33T-182-view-list-of-all-candidates-of-my-company to develop
+ - Merge branch 'develop' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - Merge pull request #146 in ONE33T/133t from bugfix/ONE33T-298_add_max_length_on_email to develop
+ - Merge pull request #154 in ONE33T/133t from bugfix/ONE33T-280_education_field_requirement_according_strict_option to develop
+ - Merge pull request #163 in ONE33T/133t from feature/ONE33T-218_comment_candidates_profile to develop
+ - ONE33T-298: [IMP] updated branch, fixed conflicts
+ - Merge pull request #161 in ONE33T/133t from bugfix/ONE33T-274_add_company_name_field_in_company_profile to develop
+ - ONE33T-182[imp] add workflow to list
+ - Merge pull request #162 in ONE33T/133t from bugfix/ONE33T-284_skills_max_count_restriction to develop
+ - Merge pull request #156 in ONE33T/133t from bugfix/ONE33T_fixed_500_error_for_rating to develop
+ - Merge pull request #159 in ONE33T/133t from bugfix/ONE33T-319_max_salary_value to develop
+ - Merge pull request #164 in ONE33T/133t from bugfix/ONE33T_answers_are_not_deleted_after_changed_questions_in_job to develop
+ - [IMP] bugfix/ONE33T-280_education_field_requirement_according_strict_option: deleted `No selection` - will be implemented for all in separate pull request.
+ - Merge branch 'develop' into bugfix/ONE33T-280_education_field_requirement_according_strict_option
+ - ONE33T-298: [FIX] added pattern attr and tests
+ - Merge branch 'develop' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - Merge branch 'feature/ONE33T-186_purchase_profile' into develop
+ - Merge branch 'develop' into bugfix/ONE33T-298_add_max_length_on_email
+ - ONE33T-298: [IMP] added max email length and email regex for ini settings view
+ - ONE33T-182[imp] add href
+ - ONE33T: [FIX] added removing relation instead deleting questions for job
+ - Merge branch 'develop' into bugfix/ONE33T-319_max_salary_value
+ - Merge branch 'develop' into feature/ONE33T-186_purchase_profile
+ - [ADD] feature/ONE33T-210_manage_candidates_in_workflow: added `WorkflowCadidateComponent`
+ - ONE33T-218[IMP]: implementation comment for candidate in candidates list
+ - Merge branch 'feature/ONE33T-134_comment_job_posting' into feature/ONE33T-218_comment_candidates_profile
+ - Merge branch 'develop' into feature/ONE33T-218_comment_candidates_profile
+ - Merge branch 'develop' into feature/ONE33T-218_comment_candidates_profile
+ - Merge pull request #157 in ONE33T/133t from feature/ONE33T-182-view-list-of-all-candidates-of-my-company to develop
+ - Merge branch 'feature/ONE33T-111_comment_job_posting' into feature/ONE33T-218_comment_candidates_profile
+ - ONE33T-292[FIX]: Must Have Skills and Nice To Have Skills forms are optional
+ - ONE33T-284[FIX]: added restriction for max count of skills
+ - ONE33T-274[FIX]: added company name field with validation
+ - ONE33T-182[IMP] - add rating and permission
+ - ONE33T-319: [FIX] fixed pylint
+ - ONE33T-319: [FIX] added max value validation for salary
+ - Merge branch 'develop' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - ONE33T-182[FIX] - fix pr issue
+ - Merge branch 'develop' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - ONE33T-182[FIX] -fix lining
+ - ONE33T: [FIX] added defaults to update rating
+ - ONE33T-182[FIX] - fix test
+ - ONE33T-182[FIX] - fix from profile page
+ - ONE33T-182: [IMP] Add sorting field. Refactor
+ - ONE33T-280[FIX]: fixed required validator for education in strict mode.Added new Validator
+ - ONE33T-278[FIX]: added no selection item to Education, Years of experience, Clearance, Benefits dropdowns
+ - Merge branch 'develop' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - Merge branch 'feature/ONE33T-211_candidates_list' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - ONE33T-182 : add checkboxes
+ - ONE33T-298: [UPD] corrcted error message
+ - ONE33T-298: [IMP] added max_length 256 and error message for email field
+ - ONE33T-182[imp]: fix test
+ - ONE33T-182 [imp] : fix bug
+ - ONE33T-182 [imp] : add assigne button
+ - Merge branch 'feature/ONE33T-211_candidates_list' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - ONE33T-182:[imp} simple list
+ - ONE33T-182 : implement simple list
+ - Merge branch 'feature/ONE33T-206-frontend-assign-profile-candidate-to-job-posting' into feature/ONE33T-182-view-list-of-all-candidates-of-my-company
+ - ONE33T-182: [imp] Add Files And Actions to list
+ - Merge branch 'develop' into feature/ONE33T-134_comment_job_posting
+ - ONE33T-134[IMP]:added added permissions related to comments for job/job seeker
+ - ONE33T-134[IMP]:added validation to inputs length for comments
+ - ONE33T-134[IMP]:resolving some pagination and getting data issues
+ - ONE33T-134[IMP]:implementation comments in modal at job list page
+ - ONE33T-134[IMP]:implementation comments in job view page
+ - ONE33T-134[IMP]:implementation multiple usage of comments(state and services adapted)
+ - Merge branch 'feature/ONE33T-218_comment_candidates_profile' into feature/ONE33T-134_comment_job_posting
+ - ONE33T-218[IMP]:comment integration to job seeker view page. Comments logic improved.
+ - ONE33T-218[REF]:moved implemented comment logic from company to common components module
+ - ONE33T-218[IMP]: base implementation of comments components
+ - ONE33T-218[IMP]: comment actions, state, service implementation. Comment model added
+
+Version 0.2.0:
+ - [IMP] master: added `.prospector.yaml` to SCM
+ - [ADD] master: added test django settings
+ - [FIX] master: fixed all tslint errors
+ - [ADD] master: `teamcity.txt` reqquirements file
+ - [IMP] master: added `tslint-teamcity-reporter`
+ - add sign up and verify email views to further cosutomizing
+ - remove deprecated celery and redis settings
+ - separate urlconf for dev
+ - add factories, forbid @ in username
+ - add custom user model
+ - add base model; add checkdb manage.py command
+ - define namespaces for urlpatterns
+ - restructure backend
+ - backend requirements versions updated to lates
+ -  sctipr added
+ - Base api services in frontend part implemented.
+ - Swagger integration finished
+ - Backend part structure changed. Start working on swagger implementation.
+ - Frontend part structure refactored
+ - Initial Commit

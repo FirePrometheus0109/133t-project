@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>
+    Newest Job postings
+  </mat-card-title>
+  <mat-card-content>
+    <div class="newest-jobs-container">
+      <app-job-preview *ngFor="let jobItem of (newestJobs$ | async)"
+                       [jobItem]="jobItem"
+                       [enums]="enums$ | async"
+                       [isDashboard]="true"
+                       [isCompanyUser]="isCompanyUser$ | async"
+                       (goToDetails)="navigateToJob($event)"></app-job-preview>
+      <div align="end">
+        <button type="button" mat-raised-button color="primary" (click)="navigateToJobsList()">
+          See more
+          <mat-icon matSuffix>navigate_next</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

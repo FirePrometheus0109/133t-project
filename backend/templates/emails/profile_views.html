@@ -1,0 +1,24 @@
+subject: |
+    [{{ domain_name }}]: Your profile was viewed
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Profile views</title>
+        </head>
+        <body>
+            Hello {{ first_name }} {{ last_name }}!
+            <p>
+                Check who viewed your profile:
+                {% for company_name, company_url in companies %}
+                <div>
+                    <a href="{{ company_url }}">{{ company_name }}</a>
+                </div>
+                {% endfor %}
+            </p>
+            <p>
+                Thank you fot using 133T!
+            </p>
+        </body>
+    </html>

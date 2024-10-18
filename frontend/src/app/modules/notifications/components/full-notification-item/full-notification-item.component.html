@@ -1,0 +1,29 @@
+<mat-card>
+  <mat-card-content>
+    <div>{{date}}</div>
+    <div *ngIf="isClickableNotification()">
+      <div *ngIf="notificationType === FullNotificationTypes.autoApply">
+        <span>{{messageParts?.firstPart}}</span>
+        <span class="link" (click)="navigateToAutoApply.emit(fullItem.data.autoapply.id)">
+        {{fullItem.data.autoapply.title}}
+      </span>
+        <span>{{messageParts?.lastPart}}</span>
+      </div>
+      <div *ngIf="notificationType === FullNotificationTypes.plan">
+        <span>{{messageParts?.firstPart}}</span>
+        <span class="link" (click)="navigateToDashboard.emit()">
+        Dashboard
+      </span>
+        <span>{{messageParts?.lastPart}}</span>
+      </div>
+    </div>
+    <div *ngIf="isEventNotification()">
+      <app-event-notification-item [eventNotification]="fullItem.data[notificationType]"
+                                   (respondToInvitation)="respondToInvitation.emit($event)">
+      </app-event-notification-item>
+    </div>
+    <div *ngIf="!isClickableNotification() && !isEventNotification()">
+      {{fullItem.data[notificationType].description}}
+    </div>
+  </mat-card-content>
+</mat-card>

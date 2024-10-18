@@ -1,0 +1,9 @@
+-r local.txt
+
+# TeamCity depencies
+astroid==2.0.4
+pylint==2.1.1
+pylint-django==2.0.2
+pylint-celery==0.3
+pylint-plugin-utils==0.4
+# teamcity-messages==1.21

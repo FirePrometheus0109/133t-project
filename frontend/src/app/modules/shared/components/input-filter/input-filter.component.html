@@ -1,0 +1,8 @@
+<mat-card>
+  <form [formGroup]="form">
+    <mat-form-field>
+      <input *ngIf="isNumeric" matInput placeholder="{{placeholder}}" formControlName="{{controlName}}" type="number">
+      <input *ngIf="!isNumeric" matInput placeholder="{{placeholder}}" formControlName="{{controlName}}">
+    </mat-form-field>
+  </form>
+</mat-card>

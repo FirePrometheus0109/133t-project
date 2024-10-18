@@ -1,0 +1,5 @@
+@import '../../../../../theme';
+
+.active {
+  background-color: mat-color($app-primary, 50);
+}

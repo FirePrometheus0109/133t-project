@@ -1,0 +1,58 @@
+version: '3'
+
+volumes:
+  production_postgres_data: {}
+  production_postgres_data_backups: {}
+  static_volume: {}
+  media_volume: {}
+  logs: {}
+
+services:
+  django: &django
+    build:
+      context: .
+      dockerfile: ./compose/production/django/Dockerfile
+    image: "reg133t.azurecr.io/0.8.0-django-${ENV_NAME}:latest"
+    depends_on:
+      - redis
+    environment:
+      SERVICE: wsgi
+    volumes:
+      - static_volume:/staticfiles
+      - media_volume:/app/media
+    command: /start
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./compose/production/nginx/Dockerfile
+    image: "reg133t.azurecr.io/0.8.0-nginx-${ENV_NAME}:latest"
+    depends_on:
+      - django
+    volumes:
+      - static_volume:/app_static/static
+      - media_volume:/app_media/media
+    ports:
+      - "0.0.0.0:80:80"
+      - "0.0.0.0:443:443"
+
+  redis:
+    image: redis:3.2
+
+  filebeat:
+    build:
+      dockerfile: ./compose/production/filebeat/Dockerfile
+      context: .
+    image: "reg133t.azurecr.io/0.8.0-filebeat-${ENV_NAME}:latest"
+    volumes:
+      - logs:/app/nginx
+    depends_on:
+      - django
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 10.103.0.1/16

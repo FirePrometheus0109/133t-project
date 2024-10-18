@@ -1,0 +1,62 @@
+@import 'theme.scss';
+
+$foreground: map-get($app-theme, foreground);
+
+.cal-open-day-events {
+  .cal-open-day-item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    .cal-open-day-item-main {
+      .cal-event {
+        margin-right: 10px;
+        margin-bottom: 3px;
+      }
+    }
+    .cal-open-day-item-secondary-widget {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      .inline-label {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.cal-event-day-view {
+  overflow: overlay;
+  height: 100%;
+  .cal-event-title-container {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: mat-color($foreground, text);
+    height: 100%;
+  }
+  &:hover {
+    .cal-event-body {
+      display: inherit;
+    }
+  }
+  .cal-event-body {
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px -5px;
+    max-width: 33vw;
+    padding: 10px 16px;
+    min-height: 48px;
+    transform-origin: center;
+    color: rgba(255,255,255,.7);
+    background: #323232;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    z-index: 999;
+  }
+}
+

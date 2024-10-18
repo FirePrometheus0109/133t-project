@@ -1,0 +1,51 @@
+@media screen {
+  :host {
+    display: none;
+  }
+}
+@media print {
+  :host {
+    display: block;
+  }
+}
+.page-break-protected {
+  page-break-inside: avoid;
+}
+.block {
+  margin-bottom: 10px;
+  &.skills {
+    div {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 7px 12px;
+      margin: 4px;
+      border-radius: 16px;
+      background-color: #e0e0e0;
+      color: rgba(0, 0, 0, 0.87);
+    }
+  }
+  &.half-block {
+    margin-bottom: unset;
+  }
+  &.extra-indent {
+    margin-bottom: 1.33em !important;
+  }
+  div {
+    margin-bottom: 5px;
+  }
+}
+.half-block {
+  display: inline-block;
+  width: 50%;
+  max-width: 50%;
+}
+.color-secondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+.color-secondary strong {
+  color: #000;
+}
+.color-primary {
+  color: #000;
+}

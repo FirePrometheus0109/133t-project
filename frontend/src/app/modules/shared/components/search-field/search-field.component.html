@@ -1,0 +1,12 @@
+<mat-form-field>
+  <input matInput #searchInput
+         [readonly]="isDisabled"
+         [matAutocomplete]="autocompleteProp"
+         [matAutocompleteDisabled]="isMatAutocompleteDisabled"
+         placeholder="{{placeholder}}"
+         [formControl]="formCtrl"
+         [value]="initialValue"
+         (input)="onSearchChanged($event.target.value)"
+         (focus)="focused.emit()"
+         (click)="focused.emit()">
+</mat-form-field>

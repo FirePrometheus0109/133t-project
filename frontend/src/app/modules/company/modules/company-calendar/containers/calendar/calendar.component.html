@@ -1,0 +1,130 @@
+<mat-card>
+  <div fxLayout="column">
+    <h1 fxLayoutGap="10px">Calendar</h1>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <cc-event-creator (eventCreated)="onCreateEvent()"></cc-event-creator>
+    <cc-calendar-event-filter-select [value]="filter$ | async" (change)="onFilterChanged($event)"></cc-calendar-event-filter-select>
+  </div>
+  <mat-grid-list cols="1" rowHeight="50"></mat-grid-list>
+  <div fxLayout="row" fxLayoutAlign="space-between center">
+    <div fxFlex="20" fxLayoutAlign="start">
+      <cc-calendar-date-changer (change)="switchViewDate($event)"></cc-calendar-date-changer>
+    </div>
+    <div fxFlex="60" fxLayoutAlign="center">
+      <h2>{{viewDate$ | async | date:(viewDateAsTitleFormat$ | async):(settings$ | async).locale}}</h2>
+    </div>
+    <div fxFlex="20" fxLayoutAlign="end">
+      <cc-calendar-view-switch [view]="view$ | async" (change)="changeCalendarView($event)"></cc-calendar-view-switch>
+    </div>
+  </div>
+  <mat-grid-list cols="1" rowHeight="50"></mat-grid-list>
+  <div [ngSwitch]="view$ | async">
+    <mwl-calendar-month-view
+      *ngSwitchCase="CalendarView.Month"
+      [viewDate]="viewDate$ | async"
+      [events]="events$ | async"
+      [refresh]="events$"
+      [activeDayIsOpen]="activeDayIsOpen$ | async"
+      [locale]="(settings$ | async)?.locale"
+      [excludeDays]="(settings$ | async)?.excludeDays"
+      [weekendDays]="(settings$ | async)?.weekendDays"
+      [openDayEventsTemplate]="monthOpenDayTemplate"
+      [eventTitleTemplate]="dayViewEventTitleTemplate"
+      (dayClicked)="onDayClicked($event.day)"
+      (eventClicked)="handleEventClick($event.event)"
+    >
+    </mwl-calendar-month-view>
+    <mwl-calendar-day-view
+      *ngSwitchCase="CalendarView.Day"
+      [viewDate]="viewDate$ | async"
+      [events]="events$ | async"
+      [locale]="(settings$ | async)?.locale"
+      [dayStartHour]="(settings$ | async)?.dayStartHour"
+      [dayEndHour]="(settings$ | async)?.dayEndHour"
+      [eventSnapSize]="(settings$ | async)?.eventSnapSize"
+      [eventWidth]="(settings$ | async)?.eventWidth"
+      [hourSegmentHeight]="(settings$ | async)?.hourSegmentHeight"
+      [eventTitleTemplate]="dayViewEventTitleTemplate"
+      (eventClicked)="handleEventClick($event.event)"
+    >
+    </mwl-calendar-day-view>
+  </div>
+</mat-card>
+
+<ng-template
+  #monthOpenDayTemplate
+  let-events="events"
+  let-eventClicked="eventClicked"
+  let-isOpen="isOpen"
+>
+  <div class="cal-open-day-events" [@collapse] *ngIf="isOpen">
+    <div
+      class="cal-open-day-item-container"
+      *ngFor="let event of events; trackBy: trackByEventId"
+      mwlDraggable
+      dragActiveClass="cal-drag-active"
+      [ngClass]="event?.cssClass"
+      [class.cal-draggable]="event.draggable"
+      [dropData]="{ event: event }"
+      [dragAxis]="{ x: event.draggable, y: event.draggable }"
+    >
+      <div class="cal-open-day-item-main">
+        <span
+          class="cal-event"
+          [style.backgroundColor]="event.color?.primary"
+        >
+        </span>
+        <mwl-calendar-event-title
+          [event]="event"
+          view="month"
+          (mwlClick)="eventClicked.emit({ event: event })"
+        >
+        </mwl-calendar-event-title>
+        <mwl-calendar-event-actions
+          [event]="event"
+          [customTemplate]="eventActionsTemplate"
+        >
+        </mwl-calendar-event-actions>
+      </div>
+      <div class="cal-open-day-item-secondary-widget">
+        <span class="inline-label">Attendees:</span>
+        <mat-chip-list>
+          <mat-chip
+            color="primary"
+            fxLayoutGap="5px"
+            *ngFor="let attendee of event.attendees"
+            [matTooltip]="attendee.user?.name"
+          >
+            <mat-icon *ngIf="attendee.status === attendeeStatuses.ACCEPTED">done</mat-icon>
+            <mat-icon *ngIf="attendee.status === attendeeStatuses.REJECTED" color="warn">remove_circle_outline</mat-icon>
+            <span>{{getShortName(attendee.user?.name)}}</span>
+          </mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #dayViewEventTitleTemplate let-event="event" let-view="view">
+  <div class="cal-event-day-view">
+    <div class="cal-event-title-container">
+      <span
+        class="cal-event-title"
+        [innerHTML]="event.title | calendarEventTitle: view:event"
+      >
+      </span>
+    </div>
+    <div class="cal-event-body">
+      <h3>Attendees:</h3>
+      <mat-chip-list>
+        <mat-chip
+          color="primary"
+          *ngFor="let attendee of event.attendees"
+        >
+          <span>{{attendee.user?.name}}</span>
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+  </div>
+</ng-template>

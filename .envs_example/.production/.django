@@ -1,0 +1,68 @@
+# General
+# ------------------------------------------------------------------------------
+# DJANGO_READ_DOT_ENV_FILE=True
+DJANGO_SETTINGS_MODULE=leet.settings.production
+DJANGO_SECRET_KEY=
+DJANGO_ADMIN_URL=
+DJANGO_ALLOWED_HOSTS=
+
+# Security
+# ------------------------------------------------------------------------------
+# TIP: better off using DNS, however, redirect is OK too
+DJANGO_SECURE_SSL_REDIRECT=False
+
+# Email
+# ------------------------------------------------------------------------------
+MAILGUN_API_KEY=
+DJANGO_SERVER_EMAIL=
+MAILGUN_DOMAIN=
+
+# AWS
+# ------------------------------------------------------------------------------
+USE_AWS_INFRASTRUCTURE=False
+DJANGO_AWS_ACCESS_KEY_ID=
+DJANGO_AWS_SECRET_ACCESS_KEY=
+DJANGO_AWS_STORAGE_BUCKET_NAME=
+
+# django-allauth
+# ------------------------------------------------------------------------------
+DJANGO_ACCOUNT_ALLOW_REGISTRATION=True
+
+# Gunicorn
+# ------------------------------------------------------------------------------
+WEB_CONCURRENCY=2
+
+# Sentry
+# ------------------------------------------------------------------------------
+SENTRY_DSN=
+SENTRY_ENVIRONMENT_TAG=
+
+
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+
+# Flower
+CELERY_FLOWER_USER=
+CELERY_FLOWER_PASSWORD=
+
+HTTP_SCHEME=https
+
+# Stripe
+# ------------------------------------------------------------------------------
+STRIPE_PUBLIC_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_LIVE_MODE=
+WEBHOOKS_SIGNING_SECRET=
+
+# Social Accounts
+# ------------------------------------------------------------------------------
+SOCIAL_FACEBOOK_NAME=
+SOCIAL_AUTH_FACEBOOK_APP_ID=
+SOCIAL_AUTH_FACEBOOK_SECRET=
+SOCIAL_GOOGLE_NAME=
+SOCIAL_AUTH_GOOGLE_APP_ID=
+SOCIAL_AUTH_GOOGLE_SECRET=

@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+  <mat-form-field>
+    <input matInput placeholder="Location" [matAutocomplete]="auto" formControlName="location">
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let location of filteredLocationItems"
+                  [value]="location"
+                  (onSelectionChange)="onSelectionChange($event)">
+        <span *ngIf="location.state">{{ location.name }} ({{location.state.abbreviation}})</span>
+        <span *ngIf="!location.state">{{ location.name }}</span>
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <app-control-messages [form]="form" [control]="f.location" [submitted]="isSubmitted" [errors]="errors">
+  </app-control-messages>
+</form>

@@ -1,0 +1,49 @@
+<mat-card>
+  <mat-card-title>
+    <div class="jsp-view-section-title">
+      <h4>Profile details</h4>
+      <button mat-icon-button color="primary" (click)="changeToEditMode.emit(true)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+    <div class="profile-details">
+      <div class="column">
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.POSITION_TYPE"
+            [profileDetailValue]="enums.PositionTypes[initialData?.position_type]">
+        </app-vjsp-profile-detail-value>
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.EDUCATION"
+            [profileDetailValue]="enums.EducationTypes[initialData?.education]">
+        </app-vjsp-profile-detail-value>
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.YEARS_OF_EXPERIENCE"
+            [profileDetailValue]="enums.ExperienceTypes[initialData?.experience]">
+        </app-vjsp-profile-detail-value>
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.TRAVEL_OPPORTUNITIES"
+            [profileDetailValue]="enums.JSTravelOpportunities[initialData?.travel]">
+        </app-vjsp-profile-detail-value>
+      </div>
+      <div class="column">
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.SALARY"
+            [profileDetailValue]="
+              (initialData.salary_min | salaryView) +
+              ' - ' +
+              (initialData.salary_max | salaryView)">
+        </app-vjsp-profile-detail-value>
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.CLEARANCE"
+            [profileDetailValue]="enums.ClearanceTypes[initialData?.clearance]">
+        </app-vjsp-profile-detail-value>
+        <app-vjsp-profile-detail-value
+            [profileDetailName]="JobSeekerProfileDetailsEnum.BENEFITS"
+            [profileDetailValue]="enums.Benefits[initialData?.benefits]">
+        </app-vjsp-profile-detail-value>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

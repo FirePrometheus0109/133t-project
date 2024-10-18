@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-title>
+    <div class="jsp-view-section-title">
+      <h4>Skills</h4>
+      <button mat-icon-button color="primary" (click)="changeToEditMode.emit(true)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+    <app-skills-view-component [skillsToDisplay]="initialData" [isProfileMode]="true">
+    </app-skills-view-component>
+  </mat-card-content>
+</mat-card>

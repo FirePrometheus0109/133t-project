@@ -1,0 +1,9 @@
+<mat-chip-list>
+  <mat-chip *ngFor="let filter of selectedFilters">
+    <span>{{ filter.data.title}}: {{filter.value.value}}</span>
+    <button type="button" mat-button (click)="removeFilter(filter)">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-chip>
+  <mat-chip *ngIf="selectedFilters.length" (click)="clearFilters.emit()"> Clear Filters</mat-chip>
+</mat-chip-list>

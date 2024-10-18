@@ -1,0 +1,29 @@
+<div class="manage-notifications-grid">
+  <div class="column">
+    <div></div>
+    <div *ngFor="let type of (notificationsTypeNames$ | async)">
+      {{type}}
+    </div>
+  </div>
+  <div class="column-toggle">
+    <div>133T</div>
+    <div *ngFor="let type of (notificationsTypes$ | async)['133T']">
+      <mat-slide-toggle (change)="changeNotification(type.id)"
+                        [checked]="type.checked">
+      </mat-slide-toggle>
+    </div>
+  </div>
+  <div class="column-toggle">
+    <div>Email</div>
+    <div *ngFor="let type of (notificationsTypes$ | async).Email">
+      <mat-slide-toggle (change)="changeNotification(type.id)"
+                        [checked]="type.checked">
+      </mat-slide-toggle>
+    </div>
+  </div>
+</div>
+<mat-action-row>
+  <button type="button" mat-raised-button color="primary" (click)="saveNotificationsSettings()">
+    Save
+  </button>
+</mat-action-row>

@@ -1,0 +1,28 @@
+<mat-card>
+  <mat-card-title>Letter templates</mat-card-title>
+  <mat-card-content>
+    <app-sorting-field class="sorting-field" [sortingFilter]="templatesSortingFilter$ | async"
+                       (sortingFilterSelect)="onSortingFilterSelect($event)"></app-sorting-field>
+    <mat-form-field>
+      <mat-icon matPrefix>search</mat-icon>
+      <input matInput placeholder="Search letter template" (input)="provideSearch($event)">
+    </mat-form-field>
+    <button type="button" mat-raised-button color="primary"
+            *ngxPermissionsOnly="['add_lettertemplate']"
+            [disabled]="isCreateButtonDisabled()"
+            (click)="provideLetterTemplateCreation()">
+      Create new template
+    </button>
+    <mat-paginator [length]="count$ | async"
+                   [pageSize]="pageSize$ | async"
+                   [pageSizeOptions]="pageSizeOptions$ | async"
+                   (page)="onPageChanged($event)">
+    </mat-paginator>
+    <app-letter-template-list-item *ngFor="let letterItem of (letterTemplatesList$ | async)"
+                                   [letterTemplateItem]="letterItem"
+                                   (deleteLetterTemplate)="provideLetterTemplateDeletion($event)"
+                                   (editLetterTemplate)="provideEditLetterTemplate($event)"
+                                   (viewLetterTemplate)="provideViewLetterTemplate($event)">
+    </app-letter-template-list-item>
+  </mat-card-content>
+</mat-card>

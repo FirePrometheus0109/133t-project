@@ -1,0 +1,32 @@
+<div mat-dialog-title>Quicklist</div>
+<div mat-dialog-content>
+  <div align="center">
+    <mat-button-toggle-group (change)="statusChanged($event)">
+      <mat-button-toggle value="" checked="true">All</mat-button-toggle>
+      <mat-button-toggle *ngFor="let status of (CandidateStatuses$ | async)" [value]="status.id">
+        {{status.name}}
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+  <div class="search-form">
+    <form [formGroup]="searchForm" (ngSubmit)="onSearchSubmit()">
+      <mat-form-field>
+        <mat-icon matPrefix>search</mat-icon>
+        <input matInput placeholder="Candidate name or Job title" formControlName="search">
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">
+        <span>Search</span>
+      </button>
+    </form>
+  </div>
+  <app-quick-list-item *ngFor="let quickListItem of (candidatesQuickList$ | async)"
+                       [quickListItem]="quickListItem"
+                       [enums]="enums$ | async"
+                       (change)="onChangeCandidate($event)"
+                       (navigateToJob)="navigateToJobPage($event)"
+                       (navigateToProfile)="navigateToCandidateProfile($event)">
+  </app-quick-list-item>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]>Close</button>
+</div>

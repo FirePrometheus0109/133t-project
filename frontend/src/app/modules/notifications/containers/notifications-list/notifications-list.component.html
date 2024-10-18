@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-card-title>Notifications</mat-card-title>
+  <mat-card-content>
+    <mat-paginator [length]="count$ | async"
+                   [pageSize]="pageSize$ | async"
+                   [pageSizeOptions]="pageSizeOptions$ | async"
+                   (page)="onPageChanged($event)">
+    </mat-paginator>
+    <div *ngIf="!(fullNotificationList$ | async).length">No notifications</div>
+    <app-full-notification-item *ngFor="let fullItem of (fullNotificationList$ | async)"
+                                [fullItem]="fullItem"
+                                (navigateToAutoApply)="navigateToAutoApply($event)"
+                                (navigateToDashboard)="navigateToDashboard()"
+                                (respondToInvitation)="respondToInvitation($event)">
+    </app-full-notification-item>
+  </mat-card-content>
+</mat-card>

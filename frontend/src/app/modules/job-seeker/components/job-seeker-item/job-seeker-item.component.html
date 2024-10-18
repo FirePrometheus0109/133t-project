@@ -1,0 +1,66 @@
+<mat-card class="content-container">
+  <div *ngIf="editable" class="checkbox-container">
+    <mat-checkbox value="{{jobSeekerItem.id}}" [name]="checkBoxName"></mat-checkbox>
+  </div>
+  <div class="job-seeker-container">
+    <mat-card-content class="job-seeker-main-container">
+      <button mat-button (click)="goToJobSeekerProfilePage(jobSeekerItem.id)">
+        <u>{{jobSeekerItem.user?.first_name}} {{jobSeekerItem.user?.last_name}}</u>
+      </button>
+    </mat-card-content>
+    <mat-card-content class="job-seeker-detail-container">
+      <div class="profile-info">
+        <div>
+          <app-profile-address-view [addressData]="jobSeekerItem?.address"></app-profile-address-view>
+        </div>
+        <div *ngIf="currentJob">
+          {{currentJob?.job_title}} at {{currentJob?.company}}
+        </div>
+      </div>
+      <div class="profile-details">
+        <div class="column">
+          <app-vjsp-profile-detail-value [profileDetailName]="'Position type'"
+                                         [profileDetailValue]="enums.PositionTypes[jobSeekerItem?.position_type]">
+          </app-vjsp-profile-detail-value>
+          <app-vjsp-profile-detail-value [profileDetailName]="'Education'"
+                                         [profileDetailValue]="enums.EducationTypes[jobSeekerItem?.education]">
+          </app-vjsp-profile-detail-value>
+        </div>
+        <div class="column">
+          <app-vjsp-profile-detail-value [profileDetailName]="'Years of experience'"
+                                         [profileDetailValue]="enums.ExperienceTypes[jobSeekerItem?.experience]">
+          </app-vjsp-profile-detail-value>
+          <app-vjsp-profile-detail-value [profileDetailName]="'Travel opportunities'"
+                                         [profileDetailValue]="enums.JSTravelOpportunities[jobSeekerItem?.travel]">
+          </app-vjsp-profile-detail-value>
+        </div>
+        <div class="column">
+          <app-vjsp-profile-detail-value [profileDetailName]="'Update on'"
+                                         [profileDetailValue]="getDateFormatted(jobSeekerItem?.modified_at)">
+          </app-vjsp-profile-detail-value>
+        </div>
+      </div>
+      <mat-chip-list>
+        <mat-chip *ngFor="let skill of jobSeekerItem?.skills  | slice:0:3">{{ skill.name }}</mat-chip>
+      </mat-chip-list>
+    </mat-card-content>
+  </div>
+  <div class="action-container">
+    <app-job-seeker-favorites-button [id]="jobSeekerItem?.id" [isFavorite]="jobSeekerItem.saved_at">
+    </app-job-seeker-favorites-button>
+    <app-purchase-profile-button *ngxPermissionsOnly="['is_company_user']"
+                                 [id]="jobSeekerItem?.id"
+                                 [first_name]="jobSeekerItem.user?.first_name"
+                                 [last_name]="jobSeekerItem.user?.last_name"
+                                 [compactMode]="true">
+    </app-purchase-profile-button>
+    <app-assign-candidate-button [assignedUser]="[jobSeekerItem]"></app-assign-candidate-button>
+    <div *ngIf="isCommentsAvailable">
+      <ng-template [ngxPermissionsOnly]="['view_jobseekercomment']">
+        <button mat-button (click)="commentJobSeeker.emit(jobSeekerItem.id)">
+          <mat-icon matSuffix>comment</mat-icon>
+        </button>
+      </ng-template>
+    </div>
+  </div>
+</mat-card>

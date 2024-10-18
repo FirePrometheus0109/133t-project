@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>
+      <span>{{modalData.title}}&nbsp;-&nbsp;
+        <span class="link" (click)="navigateToUser.emit(modalData.user.company_user.id)">
+          {{modalData.user.name}}
+        </span>
+      </span>
+  </mat-card-title>
+  <mat-card-subtitle>
+    <span>{{modalData.submit_date | date}}</span>
+  </mat-card-subtitle>
+  <mat-dialog-content>
+    <mat-card-content>
+      <span>{{modalData.comment}}</span>
+    </mat-card-content>
+  </mat-dialog-content>
+</mat-card>
+<mat-dialog-actions align="end">
+  <button mat-raised-button color="accent" matDialogClose>
+    <mat-icon matSuffix>close</mat-icon>
+    Close
+  </button>
+</mat-dialog-actions>

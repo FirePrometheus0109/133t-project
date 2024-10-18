@@ -1,0 +1,15 @@
+<h4>Recruiter Activity</h4>
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let user of data$ | async">
+    <mat-expansion-panel-header>
+      <button [ngClass]="{'is-online': user.is_online, 'online-chip': true}" mat-mini-fab></button>
+      <span class="user-name">{{user.user.name}}</span>
+    </mat-expansion-panel-header>
+    <div class="stats-container" *ngFor="let statItem of user.stats">
+      <div class="stat-item" *ngFor="let stat of statItem | keys">
+        <span> {{stat.key}} </span>
+        <span> {{stat.value}} </span>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

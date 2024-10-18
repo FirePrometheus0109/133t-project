@@ -1,0 +1,8 @@
+export enum NumericEducationEnum {
+  HIGH_SCHOOL,
+  CERTIFICATION,
+  ASSOCIATES_DEGREE,
+  BACHELORS_DEGREE,
+  MASTERS_DEGREE,
+  PHD,
+}

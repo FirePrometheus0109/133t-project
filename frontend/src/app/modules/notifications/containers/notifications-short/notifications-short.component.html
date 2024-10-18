@@ -1,0 +1,16 @@
+<app-notification-short-item *ngFor="let notification of (shortNotificationList$ | async)"
+                             [notificationItem]="notification"
+                             (navigateToAutoApply)="navigateToAutoApply($event)"
+                             (navigateToDashboard)="navigateToDashboard()">
+</app-notification-short-item>
+<mat-card *ngIf="!(shortNotificationCount$ | async)">
+  <mat-dialog-content>
+    <span>No notifications</span>
+  </mat-dialog-content>
+</mat-card>
+<div class="button-section">
+  <button mat-raised-button color="primary" (click)="navigateToNotifications()">
+    See more
+    <mat-icon>navigate_next</mat-icon>
+  </button>
+</div>

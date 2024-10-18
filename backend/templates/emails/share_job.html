@@ -1,0 +1,33 @@
+subject: |
+    [{{ domain_name }}]: {{ user.first_name }} {{ user.last_name }} shared a job posting with you
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css"> {{ user.first_name }} {{ user.last_name }} shared a job posting with you</title>
+            <style>
+                td {
+                    padding: 0 20px 0 20px;
+                }
+            </style>
+        </head>
+        <body>
+            <p>Hello!</p>
+            <p>
+                {{ user.first_name }} {{ user.last_name }} has just share a job posting with you:
+            </p>
+            <table>
+                <tr>
+                    <td colspan="2"><a href="{{ url }}">{{ job.title }}</a></td>
+                </tr>
+                <tr>
+                    <td>{{ company_name }}</td><td>{{ location }}</td>
+                </tr>
+            </table>
+
+            <p>
+                133T team.
+            </p>
+        </body>
+    </html>

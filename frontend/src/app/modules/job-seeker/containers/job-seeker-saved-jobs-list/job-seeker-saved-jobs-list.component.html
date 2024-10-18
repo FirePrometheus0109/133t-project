@@ -1,0 +1,17 @@
+<mat-paginator *ngIf="!isDashboard"
+               [length]="favoriteJobsCount$ | async"
+               [pageSize]="favoriteJobsPageSize$ | async"
+               [pageSizeOptions]="pageSizeOptions$ | async"
+               (page)="onPageChanged($event)">
+</mat-paginator>
+<div *ngFor="let jobItem of favoriteJobs$ |async">
+  <app-saved-job *ngIf="!jobItem.is_deleted"
+                 [jobItem]="jobItem"
+                 [enums]="enums$ | async"
+                 [isDashboard]="isDashboard"
+                 (goToJobPage)="goToJobPage($event)"
+                 (goToCompanyProfile)="goToCompanyProfile($event)">
+  </app-saved-job>
+  <app-deleted-job-view *ngIf="jobItem.is_deleted" [deletedJob]="jobItem">
+  </app-deleted-job-view>
+</div>

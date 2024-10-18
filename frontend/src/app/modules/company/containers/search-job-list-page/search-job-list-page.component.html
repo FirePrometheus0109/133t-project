@@ -1,0 +1,72 @@
+<mat-card>
+  <mat-paginator [length]="count$ | async"
+                 [pageSize]="pageSize$ | async"
+                 [pageSizeOptions]="pageSizeOptions$ | async"
+                 (page)="onPageChanged($event)">
+  </mat-paginator>
+  <div class="top-search-section">
+    <app-search-list-form [form]="jobSearchForm"
+                          [locationSearchFilter]="locationSearchFilter"
+                          [placeholder]="'Job title, company, keyword'"
+                          (searchChanged)="onFullTextSearchChanged($event)"
+                          (selectedLocation)="onSelectLocationFilter($event)"
+                          (submitted)="onSubmitSearch($event)">
+    </app-search-list-form>
+    <button mat-raised-button color="primary" (click)="onToggleFilter()"> Filters</button>
+  </div>
+  <app-filters-chip-list [selectedFilters]="(selectedFilters$ | async)"
+                         (clearFilters)="clearFilters()"
+                         (removeFilterAction)="removeFilter($event)">
+  </app-filters-chip-list>
+  <mat-card class="filter-card" *ngIf="showFilter$ | async">
+    <app-autocomplete-filter (searchElement)="onSkillSearchChange($event)"
+                             (selectingElement)="onSelectSkillFilter($event)" [filteredItems]="skillsFiltered$ | async"
+                             [filterData]="skillSearchFilter">
+    </app-autocomplete-filter>
+
+    <div class="radio-filter-container">
+      <app-radio-filter *ngFor="let filter of radioFilterData" [filterData]="filter"
+                        (radioFilterSelect)="onRadioFilterSelect($event)" [selectedFilters]="selectedFilters$ | async"
+                        (radioFilterDelete)="removeFilter($event)"></app-radio-filter>
+    </div>
+
+    <div class="filter-group">
+      <app-input-filter [placeholder]="salaryMinFilter.title"
+                        [controlName]="salaryMinFilter.param"
+                        [isNumeric]="true"
+                        [form]="salaryMinFilterForm"
+                        (valueChanged)="onSalaryMinChanged($event)">
+      </app-input-filter>
+      <app-input-filter [placeholder]="salaryMaxFilter.title"
+                        [controlName]="salaryMaxFilter.param"
+                        [isNumeric]="true"
+                        [form]="salaryMaxFilterForm"
+                        (valueChanged)="onSalaryMaxChanged($event)">
+      </app-input-filter>
+    </div>
+    <div class="filter-group">
+      <app-autocomplete-multiselect-filter [filteredItems]="(companiesInclude$ | async)"
+                                           [label]="companyFilter.title"
+                                           [placeholder]="'Start typing company'"
+                                           [searchParam]="companiesIncludeSearch$ | async"
+                                           (selectingElement)="onCompanyChanged($event)"
+                                           (searchElement)="searchCompanyInclude($event)">
+      </app-autocomplete-multiselect-filter>
+      <app-autocomplete-multiselect-filter [filteredItems]="(companiesExclude$ | async)"
+                                           [label]="companyExcludeFilter.title"
+                                           [placeholder]="'Start typing company'"
+                                           [searchParam]="companiesExcludeSearch$ | async"
+                                           (selectingElement)="onCompanyExcludeChanged($event)"
+                                           (searchElement)="searchCompanyExclude($event)">
+      </app-autocomplete-multiselect-filter>
+    </div>
+  </mat-card>
+  <app-sorting-field [sortingFilter]="jobSortingFilters$ | async"
+                     (sortingFilterSelect)="onSortingFilterSelect($event)"></app-sorting-field>
+  <app-search-job-list-job-view *ngFor="let jobItem of (results$ | async)"
+                                [jobItem]="jobItem"
+                                [enums]="enums$ | async"
+                                [statuses]="jobStatusEnum$ | async"
+                                [isEditable]="false">
+  </app-search-job-list-job-view>
+</mat-card>

@@ -1,0 +1,73 @@
+from leet import enums
+
+
+JOBS_DATA_FOR_TESTING_FILTERS_BY_JOB_SEEKER = (
+    {
+        'title': 'senior developer',
+        'location': 'new_york',
+        'industry': 'manufacturing',
+        'position_type': enums.PositionTypesEnum.CONTRACT.name,
+        'education': enums.EducationTypesEnum.ASSOCIATES_DEGREE.name,
+        'salary_min': 100,
+        'salary_max': 200,
+        'clearance': enums.ClearanceTypesEnum.CONFIDENTIAL.name,
+        'experience': enums.ExperienceEnum.FROM_1_TO_2.name,
+        'benefits': enums.BenefitsEnum.FOUR_OH_ONE_KEY.name,
+        'travel': enums.TravelOpportunitiesEnum.NO_TRAVEL.name,
+        'required_skills': 'group1',
+        'optional_skills': '',
+        'company': 1,
+        'description': 'full text search is cool, senior dev'
+    },
+    {
+        'title': 'junior developer',
+        'location': 'new_york',
+        'industry': 'manufacturing',
+        'position_type': enums.PositionTypesEnum.PART_TIME.name,
+        'education': enums.EducationTypesEnum.HIGH_SCHOOL.name,
+        'salary_min': 100,
+        'salary_max': 200,
+        'clearance': enums.ClearanceTypesEnum.UNCLASSIFIED.name,
+        'experience': enums.ExperienceEnum.FROM_1_TO_2.name,
+        'benefits': enums.BenefitsEnum.FOUR_OH_ONE_KEY.name,
+        'travel': enums.TravelOpportunitiesEnum.NO_TRAVEL.name,
+        'required_skills': 'group1',
+        'optional_skills': '',
+        'company': 1,
+        'description': 'can cook, work in restaurant, patterns'
+    },
+    {
+        'title': 'middle developer',
+        'location': 'ashville',
+        'industry': 'manufacturing',
+        'position_type': enums.PositionTypesEnum.CONTRACT.name,
+        'education': enums.EducationTypesEnum.ASSOCIATES_DEGREE.name,
+        'salary_min': 100,
+        'salary_max': 200,
+        'clearance': enums.ClearanceTypesEnum.CONFIDENTIAL.name,
+        'experience': enums.ExperienceEnum.MORE_THAN_10.name,
+        'benefits': enums.BenefitsEnum.VISION.name,
+        'travel': enums.TravelOpportunitiesEnum.TWENTY_FIVE_OR_LESS.name,
+        'required_skills': 'group1',
+        'optional_skills': '',
+        'company': 1,
+        'description': 'from ashville'
+    },
+    {
+        'title': 'project manager',
+        'location': 'packwood',
+        'industry': 'construction',
+        'position_type': enums.PositionTypesEnum.CONTRACT.name,
+        'education': enums.EducationTypesEnum.BACHELORS_DEGREE.name,
+        'salary_min': 100,
+        'salary_max': 200,
+        'clearance': enums.ClearanceTypesEnum.TOP_SECRET.name,
+        'experience': enums.ExperienceEnum.MORE_THAN_10.name,
+        'benefits': enums.BenefitsEnum.FOUR_OH_ONE_KEY.name,
+        'travel': enums.TravelOpportunitiesEnum.NO_TRAVEL.name,
+        'required_skills': 'group3',
+        'optional_skills': 'group2',
+        'company': 1,
+        'description': 'no description'
+    },
+)

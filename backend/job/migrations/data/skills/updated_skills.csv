@@ -1,0 +1,1643 @@
+skill;description;type
+Work Ethic;Soft Skill;Soft Skill
+Problem Solving;Soft Skill;Soft Skill
+Creativity;Soft Skill;Soft Skill
+Teamwork;Soft Skill;Soft Skill
+Critical Thinking;Soft Skill;Soft Skill
+Analytical Skills;Soft Skill;Soft Skill
+Public Speaking;Soft Skill;Soft Skill
+Self Starter;Soft Skill;Soft Skill
+Communication;Soft Skill;Soft Skill
+Time Management;Soft Skill;Soft Skill
+Interpersonal Skills;Soft Skill;Soft Skill
+Adaptability;Soft Skill;Soft Skill
+Friedliness;Soft Skill;Soft Skill
+Listening;Soft Skill;Soft Skill
+Empathy;Soft Skill;Soft Skill
+Respect;Soft Skill;Soft Skill
+Confidence;Soft Skill;Soft Skill
+Clarity;Soft Skill;Soft Skill
+Active Listening;Soft Skill;Soft Skill
+Delegation;Soft Skill;Soft Skill
+Cooperation;Soft Skill;Soft Skill
+Collaboration;Soft Skill;Soft Skill
+Idea Exchange;Soft Skill;Soft Skill
+Conflict Management;Soft Skill;Soft Skill
+Organization;Soft Skill;Soft Skill
+Curiosity;Soft Skill;Soft Skill
+Self Management;Soft Skill;Soft Skill
+Calmness;Soft Skill;Soft Skill
+Optimisim;Soft Skill;Soft Skill
+Open Mindedness;Soft Skill;Soft Skill
+Self Confident;Soft Skill;Soft Skill
+Motivated;Soft Skill;Soft Skill
+Persistence;Soft Skill;Soft Skill
+Observation;Soft Skill;Soft Skill
+Persuasion;Soft Skill;Soft Skill
+Brainstorming;Soft Skill;Soft Skill
+Decision Making;Soft Skill;Soft Skill
+Initiative;Soft Skill;Soft Skill
+Analysis;Soft Skill;Soft Skill
+Lateral Thinking;Soft Skill;Soft Skill
+Logical Reasoning;Soft Skill;Soft Skill
+Responsibility;Soft Skill;Soft Skill
+Discipline;Soft Skill;Soft Skill
+Commitment;Soft Skill;Soft Skill
+Integrity;Soft Skill;Soft Skill
+Selflessness;Soft Skill;Soft Skill
+Agility;Soft Skill;Soft Skill
+Humility;Soft Skill;Soft Skill
+Cultural Intelligence;Soft Skill;Soft Skill
+Authentcity;Soft Skill;Soft Skill
+Versatility;Soft Skill;Soft Skill
+Generosity;Soft Skill;Soft Skill
+Trust;Soft Skill;Soft Skill
+Scheduling;Soft Skill;Soft Skill
+Critical Observation;Soft Skill;Soft Skill
+Memory;Soft Skill;Soft Skill
+Acuity;Soft Skill;Soft Skill
+Recall;Soft Skill;Soft Skill
+Questioning;Soft Skill;Soft Skill
+Introspection;Soft Skill;Soft Skill
+Prioritzation;Soft Skill;Soft Skill
+Stress Management;Soft Skill;Soft Skill
+Chkdsk;Command Line Tool;Command Line Tool
+ComSpec;Command Line Tool;Command Line Tool
+Ipconfig;Command Line Tool;Command Line Tool
+Netsh;Command Line Tool;Command Line Tool
+QBasic;Command Line Tool;Command Line Tool
+Netstat;Command Line Tool;Command Line Tool
+Regsvr32;Command Line Tool;Command Line Tool
+Win32 Console;Command Line Tool;Command Line Tool
+Windows Script Host;Command Line Tool;Command Line Tool
+Xcopy;Command Line Tool;Command Line Tool
+Cmd.exe;Command Line Tool;Command Line Tool
+Net Send;Command Line Tool;Command Line Tool
+Bash;Command Line Tool;Command Line Tool
+Powershell;Command Line Tool;Command Line Tool
+Batch File;Command Line Tool;Command Line Tool
+Shell;Command Line Tool;Command Line Tool
+AIaaS (Artificial Intelligence as a Service);XaaS;XaaS
+AaaS (API as a Service);XaaS;XaaS
+BaaS (Backend as a Service);XaaS;XaaS
+BaaS (Banking as a Service);XaaS;XaaS
+BPaaS (Business Process as a Service);XaaS;XaaS
+CaaS (Content as a Service);XaaS;XaaS
+CPaaS (Communications as a Service);XaaS;XaaS
+DaaS (Data as a Service);XaaS;XaaS
+DaaS (Desktop as a Service);XaaS;XaaS
+DaaS (Drone as a Service);XaaS;XaaS
+DBaaS (Database as a Service);XaaS;XaaS
+ESaaS (Energy storage as a Service);XaaS;XaaS
+EVaaS (Electric Vechicle as a Service);XaaS;XaaS
+FaaS (Function as a Service);XaaS;XaaS
+FaaS (Farming as a Service);XaaS;XaaS
+GaaS (Games as a Service);XaaS;XaaS
+HaaS (Hadoop as a Service);XaaS;XaaS
+HaaS (Housing as a Service);XaaS;XaaS
+IaaS (Infrastructure as a Service);XaaS;XaaS
+IDaaS (Identity as a Service);XaaS;XaaS
+ITaaS (IT as a Service);XaaS;XaaS
+LaaS (Logging as a Service);XaaS;XaaS
+MaaS (Mobile Backend as a Service);XaaS;XaaS
+MaaS (Mobility as a Service);XaaS;XaaS
+MaaS (Monitoring as a Service);XaaS;XaaS
+MaaS (Metal as a Service);XaaS;XaaS
+NaaS (Network as a Service);XaaS;XaaS
+PaaS (Payments as a Service);XaaS;XaaS
+PaaS (Platform as a Service);XaaS;XaaS
+RaaS (Recovery as a Service);XaaS;XaaS
+RaaS (Robot as a Service);XaaS;XaaS
+SaaS (Search as a Service);XaaS;XaaS
+SaaS (Security as a Service);XaaS;XaaS
+SaaS (Storage as a Service);XaaS;XaaS
+TaaS (Transportation as a Service);XaaS;XaaS
+UCaaS (Unified Communications as a Service);XaaS;XaaS
+SaaS (Software as a Service);XaaS;XaaS
+SODA (Service Oriented Device Architecture);Service Oriented;Service Oriented
+SOI (Service Oriented Infrastructure);Service Oriented;Service Oriented
+SOP (Service Oriented Provisioning);Service Oriented;Service Oriented
+SOSE (Service Oriented Software Engineering);Service Oriented;Service Oriented
+SODA (Service Oriented Development of Applications);Service Oriented;Service Oriented
+SODA (Service Oriented Distributed Applications);Service Oriented;Service Oriented
+SOM (Service Oriented Modeling);Service Oriented;Service Oriented
+SOT (Service Oriented Transformation);Service Oriented;Service Oriented
+HIT (Healthcare Information Technology);Medical Skill;Medical Skill
+EMR (Electronic Medical Record);Medical Skill;Medical Skill
+Healthcare Management;Medical Skill;Medical Skill
+EHR Products;Medical Skill;Medical Skill
+Healthcare Experience;Medical Skill;Medical Skill
+Hospitals;Medical Skill;Medical Skill
+Clinic Experience;Medical Skill;Medical Skill
+Receptionist Experience;Medical Skill;Medical Skill
+Patient Care;Medical Skill;Medical Skill
+Injections;Medical Skill;Medical Skill
+Patient Preparation;Medical Skill;Medical Skill
+EKG (Electrocardiogram);Medical Skill;Medical Skill
+Electronic Medical Records;Medical Skill;Medical Skill
+Medical Terminology;Medical Skill;Medical Skill
+CPR (Cardiopulmonary Resuscitation);Medical Skill;Medical Skill
+Vital Signs Measurement;Medical Skill;Medical Skill
+Appointment Setting;Medical Skill;Medical Skill
+Bedside Manner;Medical Skill;Medical Skill
+Inventory Management;Medical Skill;Medical Skill
+Professionalism;Medical Skill;Medical Skill
+Medical Devices;Medical Skill;Medical Skill
+Resource Management;Medical Skill;Medical Skill
+Medicine;Medical Skill;Medical Skill
+Patient Safety;Medical Skill;Medical Skill
+Radiology;Medical Skill;Medical Skill
+Digital Imaging;Medical Skill;Medical Skill
+DICOM (Digital Imaging and Communications in Medicine);Medical Skill;Medical Skill
+HIM (Health Information Management);Medical Skill;Medical Skill
+EMIX (Electronic Medical Information Exchange);Medical Skill;Medical Skill
+PHR (Personal Health Record);Medical Skill;Medical Skill
+RIS (Radiology Information System);Medical Skill;Medical Skill
+CDI (Clinical documentation improvement);Medical Skill;Medical Skill
+ZERPRS Zcore;Medical Skill;Medical Skill
+ClearHealth;Medical Skill;Medical Skill
+CottageMed;Medical Skill;Medical Skill
+FreeMED;Medical Skill;Medical Skill
+ERPNext;Medical Skill;Medical Skill
+GaiaEHR;Medical Skill;Medical Skill
+GNUmed;Medical Skill;Medical Skill
+GNU Heatlh;Medical Skill;Medical Skill
+Hospital OS;Medical Skill;Medical Skill
+HOSxP;Medical Skill;Medical Skill
+MedinTux;Medical Skill;Medical Skill
+OpenEMR;Medical Skill;Medical Skill
+Open Dental;Medical Skill;Medical Skill
+OpenHospital;Medical Skill;Medical Skill
+OpenMRS;Medical Skill;Medical Skill
+OSCAR McMaster;Medical Skill;Medical Skill
+PopHealth;Medical Skill;Medical Skill
+Spinnaker;Medical Skill;Medical Skill
+THIRRA;Medical Skill;Medical Skill
+Construction Management;Construction Hard Skill;Construction Hard Skill
+Construction;Construction Hard Skill;Construction Hard Skill
+Contract Management;Construction Hard Skill;Construction Hard Skill
+Project Planning;Construction Hard Skill;Construction Hard Skill
+Engineering;Construction Hard Skill;Construction Hard Skill
+Oil and Gas;Construction Hard Skill;Construction Hard Skill
+Commissioning;Construction Hard Skill;Construction Hard Skill
+Petroleum;Construction Hard Skill;Construction Hard Skill
+Energy;Construction Hard Skill;Construction Hard Skill
+Electrical;Construction Hard Skill;Construction Hard Skill
+Pipelines;Construction Hard Skill;Construction Hard Skill
+Project Engineering;Construction Hard Skill;Construction Hard Skill
+Telecommunications;Construction Hard Skill;Construction Hard Skill
+Accident Investigation;Construction Hard Skill;Construction Hard Skill
+Supervisory Skills;Construction Hard Skill;Construction Hard Skill
+Stafety Management Systems;Construction Hard Skill;Construction Hard Skill
+Inspection;Construction Hard Skill;Construction Hard Skill
+Industrial Safety;Construction Hard Skill;Construction Hard Skill
+Project Estimation;Construction Hard Skill;Construction Hard Skill
+Contract Neogotiation;Construction Hard Skill;Construction Hard Skill
+Procurement;Construction Hard Skill;Construction Hard Skill
+BIM (Building Information Modeling);Construction Hard Skill;Construction Hard Skill
+Team Building;Construction Hard Skill;Construction Hard Skill
+Asset Management;Construction Hard Skill;Construction Hard Skill
+Construction Consulting;Construction Hard Skill;Construction Hard Skill
+Construction Project Management;Construction Hard Skill;Construction Hard Skill
+Renovation;Construction Hard Skill;Construction Hard Skill
+Real Estate;Construction Hard Skill;Construction Hard Skill
+Subcontracting;Construction Hard Skill;Construction Hard Skill
+Change Orders;Construction Hard Skill;Construction Hard Skill
+Piping;Construction Hard Skill;Construction Hard Skill
+Energy Consercation;Construction Hard Skill;Construction Hard Skill
+Gas;Construction Hard Skill;Construction Hard Skill
+Risk Management;Construction Hard Skill;Construction Hard Skill
+Procore;Construction Hard Skill;Construction Hard Skill
+Interior Fit-Out;Construction Hard Skill;Construction Hard Skill
+Retail;Construction Hard Skill;Construction Hard Skill
+Anagular.js;Programming Language;Programming Language
+Vue ;Programming Language;Programming Language
+React;Programming Language;Programming Language
+Ember;Programming Language;Programming Language
+HTML5;Programming Language;Programming Language
+ASP.NET MVC;Programming Language;Programming Language
+AJAX;Programming Language;Programming Language
+JSON;Programming Language;Programming Language
+CSS;Programming Language;Programming Language
+JQuuery;Programming Language;Programming Language
+XML;Programming Language;Programming Language
+RESTful;Programming Language;Programming Language
+PHP;Programming Language;Programming Language
+ABAP;Programming Language;Programming Language
+ActionScript;Programming Language;Programming Language
+Ada;Programming Language;Programming Language
+ALGOL;Programming Language;Programming Language
+Alice;Programming Language;Programming Language
+ASP.NET;Programming Language;Programming Language
+ASP Primer;Programming Language;Programming Language
+Awk;Programming Language;Programming Language
+BBC Basic;Programming Language;Programming Language
+COBOL;Programming Language;Programming Language
+Delphi;Programming Language;Programming Language
+Fortran;Programming Language;Programming Language
+Go;Programming Language;Programming Language
+Haskell;Programming Language;Programming Language
+HTML (Programming Language;Programming Language;Programming Language
+IDL ;Programming Language;Programming Language
+Intercal;Programming Language;Programming Language
+Javascript;Programming Language;Programming Language
+Node.js;Programming Language;Programming Language
+Bootstrap;Programming Language;Programming Language
+Labview;Programming Language;Programming Language
+Lisp;Programming Language;Programming Language
+Logo;Programming Language;Programming Language
+MetaQuotes ;Programming Language;Programming Language
+ML;Programming Language;Programming Language
+OCaml;Programming Language;Programming Language
+PL/SQL;Programming Language;Programming Language
+Pure Data;Programming Language;Programming Language
+Ruby on Rails;Programming Language;Programming Language
+S-Plus;Programming Language;Programming Language
+Scala;Programming Language;Programming Language
+Sed;Programming Language;Programming Language
+SGML;Programming Language;Programming Language
+SMIL;Programming Language;Programming Language
+SNOBOL;Programming Language;Programming Language
+Stata;Programming Language;Programming Language
+Swift;Programming Language;Programming Language
+Tcl/Tk;Programming Language;Programming Language
+LaTex;Programming Language;Programming Language
+Tex;Programming Language;Programming Language
+UML;Programming Language;Programming Language
+Verilog;Programming Language;Programming Language
+VHDL;Programming Language;Programming Language
+Visual FoxPro;Programming Language;Programming Language
+VRML;Programming Language;Programming Language
+XSL;Programming Language;Programming Language
+ADO.NET;Programming Language;Programming Language
+AI Programming;Programming Language;Programming Language
+ASCII;Programming Language;Programming Language
+Backbone.js;Programming Language;Programming Language
+CGI;Programming Language;Programming Language
+Cocoa;Programming Language;Programming Language
+Codelighter;Programming Language;Programming Language
+XP;Programming Language;Programming Language
+GATE Tools;Programming Language;Programming Language
+ImageMagick;Programming Language;Programming Language
+JSON;Programming Language;Programming Language
+Entity Framework;Programming Language;Programming Language
+.Net Framework;Programming Language;Programming Language
+PL/SQL (Programming Langauge);Programming Language;Programming Language
+Cosmos Framework;Programming Language;Programming Language
+Spring MVC;Programming Language;Programming Language
+Vertias;Programming Language;Programming Language
+Veeam;Programming Language;Programming Language
+Acronis;Programming Language;Programming Language
+Backup and Restore;Programming Language;Programming Language
+Backup PC;Programming Language;Programming Language
+Carbonite;Programming Language;Programming Language
+Macrium Reflect;Programming Language;Programming Language
+NetBackup;Programming Language;Programming Language
+Cobian Backup;Programming Language;Programming Language
+Backblaze;Programming Language;Programming Language
+Google Drive;Programming Language;Programming Language
+Backup4all;Programming Language;Programming Language
+VBA (Visual Basic for Applications);Programming Language;Programming Language
+SAS;Programming Language;Programming Language
+DHCP (Dynamic Host Configuration Protocol);Protocol;Protocol
+BGP (Border Gateway Protocol);Protocol;Protocol
+FTP (File Transfer Protocol);Protocol;Protocol
+SSH (Secure Shell);Protocol;Protocol
+Telnet;Protocol;Protocol
+SMTP (Simple Mail Transfer Protocol);Protocol;Protocol
+TFTP (Trivial File Transfer Protocol);Protocol;Protocol
+HTTP (Hyper Text Transfer Protocol);Protocol;Protocol
+POP3 (Post Office Protocol);Protocol;Protocol
+NNTP (Network News Transfer Protocol);Protocol;Protocol
+NTP (Network Time Protocol);Protocol;Protocol
+NetBIOS (Network Basic Input/Output System);Protocol;Protocol
+LDAP (Lightweight Directory Access Protocol);Protocol;Protocol
+SNMP (Simple Network Management Protocol);Protocol;Protocol
+TLS (Transport Layer Security);Protocol;Protocol
+RTP (Real-Time Transport Protocol);Protocol;Protocol
+HTTPS (Hyper Text Transfer Protocol);Protocol;Protocol
+IMAP (Internet Message Access Protocol);Protocol;Protocol
+ARP (Address Resolution Protocol);Protocol;Protocol
+IRC (Internet Relay Chat);Protocol;Protocol
+SLP (Session Location Protocol);Protocol;Protocol
+SDP (Session Description Protocol);Protocol;Protocol
+RDP (Remote Desktop Protocol);Protocol;Protocol
+SMB (Server Message Protocol);Protocol;Protocol
+SFTP (Secure File Transfer Protocol);Protocol;Protocol
+IGMP (Internet Group Management Protocol);Protocol;Protocol
+RAP (Route Access Protocol);Protocol;Protocol
+RLP (Resource Location Protocol);Protocol;Protocol
+HNSP (Host Name Server Protocol);Protocol;Protocol
+ICMP (Internet Control Messages Protocol);Protocol;Protocol
+RDAS (Remote Directory Access Protocol);Protocol;Protocol
+LPP (Lightweight Presentation Protocol);Protocol;Protocol
+RPC (Remote Procedure Call Protocol);Protocol;Protocol
+NAT (Network Address Translation);Protocol;Protocol
+MADP (Microsoft Active Directory Protocol);Protocol;Protocol
+CAP (Calendar Access Protocol);Protocol;Protocol
+L2TP (Layer Two Tunneling Protocol);Protocol;Protocol
+PPTP (Point to Point Tunneling Protocol);Protocol;Protocol
+TCP (Transmission Control Protocol);Protocol;Protocol
+IPV4 (Internet Protocol Version 4);Protocol;Protocol
+IPV6 (Internet Protocol Version 6);Protocol;Protocol
+ECN (Explicit Congestion Notification);Protocol;Protocol
+IPsec (Internet Protocol Security);Protocol;Protocol
+Wi-Fi Networks;Protocol;Protocol
+DSL (Digitial Subscriber Line);Protocol;Protocol
+IDSN (Intergrated Services Digital Network);Protocol;Protocol
+FDDI (Fiber Distributed Data Interface);Protocol;Protocol
+SCTP (Stream Control Transmission Protocol);Protocol;Protocol
+IP (Internet Protocol);Protocol;Protocol
+IPsec (Internet Protocol Security);Protocol;Protocol
+CouchDB;Database;Database
+MongoDB;Database;Database
+PostgreSQL;Database;Database
+Cassandra;Database;Database
+Elasticsearch;Database;Database
+MariaDB;Database;Database
+NoSQL;Database;Database
+DBase;Database;Database
+Informix;Database;Database
+Ingres;Database;Database
+InterBase;Database;Database
+4th Dimension;Database;Database
+Adabas D;Database;Database
+Alpha Five;Database;Database
+Aster Data;Database;Database
+Altibase;Database;Database
+CA Datacom;Database;Database
+CA IDMS;Database;Database
+Clarion;Database;Database
+ClickHouse;Database;Database
+Clustrix;Database;Database
+CSQL;Database;Database
+CUBRID;Database;Database
+DataEase;Database;Database
+Dataphor;Database;Database
+Derby;Database;Database
+Empress;Database;Database
+Exasol;Database;Database
+EnterpriseDB;Database;Database
+ExtremeDB;Database;Database
+Firebird;Database;Database
+Frontbase;Database;Database
+Google Fusion Tables;Database;Database
+Greenplum;Database;Database
+GroveSite;Database;Database
+H2;Database;Database
+Helix;Database;Database
+HSQLDB;Database;Database
+IBM Lotus Approach;Database;Database
+Infobright;Database;Database
+InterSystems Cache;Database;Database
+Linter;Database;Database
+MaxDB;Database;Database
+MemSQL;Database;Database
+Microsoft Jet Database Engine;Database;Database
+Mimer SQL;Database;Database
+MonetDB;Database;Database
+MSQL;Database;Database
+Netezza;Database;Database
+NexusDB;Database;Database
+NonStop SQL;Database;Database
+NuoDB;Database;Database
+Omnis Studio;Database;Database
+Openbase;Database;Database
+OpenLink;Database;Database
+OpenOffice Base;Database;Database
+Panorama;Database;Database
+Paradox;Database;Database
+Pervasive PSQL;Database;Database
+Polyhedra;Database;Database
+Sand CDBMS;Database;Database
+SQL Anywhere;Database;Database
+SolidDB;Database;Database
+SQLBase;Database;Database
+SQream DB;Database;Database
+Tibero;Database;Database
+TimesTen;Database;Database
+Trafodion;Database;Database
+TxTSQL;Database;Database
+Unisys RDMS;Database;Database
+UniData;Database;Database
+UniVerse;Database;Database
+Vectorwise;Database;Database
+Vertica;Database;Database
+VoltDB;Database;Database
+SSIS (SQL Server Integration Services);Database;Database
+SSRS (SQL Server Reporting Services);Database;Database
+Transact-SQL;Database;Database
+ETL (Extract Transform Load);Database;Database
+SQL;Database;Database
+PL/SQL (Programming Langauge);Database;Database
+IBM AIX;Database;Database
+IBM Mainframe;Database;Database
+InnoDB;Database;Database
+NewSQL;Database;Database
+SQL/XML;Database;Database
+EXIST-DB;Database;Database
+Service Now;Ticketing System;Ticketing System
+Zendesk;Ticketing System;Ticketing System
+Remedy;Ticketing System;Ticketing System
+Trellis Desk;Ticketing System;Ticketing System
+Open Ticket Request System;Ticketing System;Ticketing System
+Redmine;Ticketing System;Ticketing System
+Freshdesk;Ticketing System;Ticketing System
+Salesforce Service Cloud;Ticketing System;Ticketing System
+Zoho Desk;Ticketing System;Ticketing System
+Oracle Service Cloud;Ticketing System;Ticketing System
+Heat;Ticketing System;Ticketing System
+AnyDesk;Ticketing System;Ticketing System
+ConnectWise;Ticketing System;Ticketing System
+Samanage;Ticketing System;Ticketing System
+Incident Monitor;Ticketing System;Ticketing System
+Kayako;Ticketing System;Ticketing System
+Happyfox;Ticketing System;Ticketing System
+Jira Serice Desk;Ticketing System;Ticketing System
+LiveAgent;Ticketing System;Ticketing System
+Nextiva;Ticketing System;Ticketing System
+IBM Service Desk Cloud;Ticketing System;Ticketing System
+Mantis;Ticketing System;Ticketing System
+AzureDesk;Ticketing System;Ticketing System
+Nectar Desk;Ticketing System;Ticketing System
+LiveChat;Ticketing System;Ticketing System
+MSP Anywhere;Ticketing System;Ticketing System
+Dixa;Ticketing System;Ticketing System
+ProProfs Help Desk;Ticketing System;Ticketing System
+Xsellco Helpdesk;Ticketing System;Ticketing System
+Vision Helpdesk;Ticketing System;Ticketing System
+TeamSupport;Ticketing System;Ticketing System
+Techinline FixMe.IT;Ticketing System;Ticketing System
+ManageEngine ServiceDesk;Ticketing System;Ticketing System
+Front;Ticketing System;Ticketing System
+Freshservice;Ticketing System;Ticketing System
+Edesk;Ticketing System;Ticketing System
+Hubspot;Ticketing System;Ticketing System
+Spoke;Ticketing System;Ticketing System
+OSTicket;Ticketing System;Ticketing System
+HelpScout;Ticketing System;Ticketing System
+Advertising;Marketing Hard Skill;Marketing Hard Skill
+Brand Management;Marketing Hard Skill;Marketing Hard Skill
+Channel Marketing;Marketing Hard Skill;Marketing Hard Skill
+Competitive Analysis;Marketing Hard Skill;Marketing Hard Skill
+Copywriting Corporate Identity;Marketing Hard Skill;Marketing Hard Skill
+Image Development;Marketing Hard Skill;Marketing Hard Skill
+Logo Development;Marketing Hard Skill;Marketing Hard Skill
+Market Research & Analysis;Marketing Hard Skill;Marketing Hard Skill
+Marketing Communication;Marketing Hard Skill;Marketing Hard Skill
+Marketing Plan;Marketing Hard Skill;Marketing Hard Skill
+Marketing promotions;Marketing Hard Skill;Marketing Hard Skill
+Media Buying;Marketing Hard Skill;Marketing Hard Skill
+Evaluation;Marketing Hard Skill;Marketing Hard Skill
+Media Relations;Marketing Hard Skill;Marketing Hard Skill
+Merchandising;Marketing Hard Skill;Marketing Hard Skill
+New Product Development;Marketing Hard Skill;Marketing Hard Skill
+Online Marketing;Marketing Hard Skill;Marketing Hard Skill
+Packaging;Marketing Hard Skill;Marketing Hard Skill
+Pricing;Marketing Hard Skill;Marketing Hard Skill
+Product Launch;Marketing Hard Skill;Marketing Hard Skill
+Email Marketing;Marketing Hard Skill;Marketing Hard Skill
+Social Media Marketing;Marketing Hard Skill;Marketing Hard Skill
+Strategy;Marketing Hard Skill;Marketing Hard Skill
+Marketing Strategy;Marketing Hard Skill;Marketing Hard Skill
+Digital Marketing;Marketing Hard Skill;Marketing Hard Skill
+Strategic Planning;Marketing Hard Skill;Marketing Hard Skill
+Online Marketing;Marketing Hard Skill;Marketing Hard Skill
+Public Speaking;Marketing Hard Skill;Marketing Hard Skill
+Social Media;Marketing Hard Skill;Marketing Hard Skill
+Sales;Marketing Hard Skill;Marketing Hard Skill
+Marketing;Marketing Hard Skill;Marketing Hard Skill
+Research;Marketing Hard Skill;Marketing Hard Skill
+Public Relations;Marketing Hard Skill;Marketing Hard Skill
+Event Planning;Marketing Hard Skill;Marketing Hard Skill
+Intergrated Marketing;Marketing Hard Skill;Marketing Hard Skill
+Strategic Partnerships;Marketing Hard Skill;Marketing Hard Skill
+Product Marketing;Marketing Hard Skill;Marketing Hard Skill
+Digital Media;Marketing Hard Skill;Marketing Hard Skill
+Social Media Platform Management;Marketing Hard Skill;Marketing Hard Skill
+Coordination;Marketing Hard Skill;Marketing Hard Skill
+Facebook Management;Marketing Hard Skill;Marketing Hard Skill
+Twitter Management;Marketing Hard Skill;Marketing Hard Skill
+Instagram Management;Marketing Hard Skill;Marketing Hard Skill
+SnapChat Management;Marketing Hard Skill;Marketing Hard Skill
+Data Analysis;Marketing Hard Skill;Marketing Hard Skill
+Blogging;Marketing Hard Skill;Marketing Hard Skill
+Test Automation;Marketing Hard Skill;Marketing Hard Skill
+Test Planning;Marketing Hard Skill;Marketing Hard Skill
+Team Leadership;Marketing Hard Skill;Marketing Hard Skill
+Sales;Marketing Hard Skill;Marketing Hard Skill
+Sales Enablement;Marketing Hard Skill;Marketing Hard Skill
+Storytelling;Marketing Hard Skill;Marketing Hard Skill
+Storyboarding;Marketing Hard Skill;Marketing Hard Skill
+Story Writing;Marketing Hard Skill;Marketing Hard Skill
+Story Structure;Marketing Hard Skill;Marketing Hard Skill
+Story Editing;Marketing Hard Skill;Marketing Hard Skill
+SAP Sales and Distribution;Marketing Hard Skill;Marketing Hard Skill
+Short Sales;Marketing Hard Skill;Marketing Hard Skill
+Sales Management;Marketing Hard Skill;Marketing Hard Skill
+Sales Operations;Marketing Hard Skill;Marketing Hard Skill
+Direct Sales;Marketing Hard Skill;Marketing Hard Skill
+Sales Process;Marketing Hard Skill;Marketing Hard Skill
+Pre-Sales;Marketing Hard Skill;Marketing Hard Skill
+Retail Sales;Marketing Hard Skill;Marketing Hard Skill
+International Sales;Marketing Hard Skill;Marketing Hard Skill
+Sales Presentations;Marketing Hard Skill;Marketing Hard Skill
+POS (Point of Sales);Marketing Hard Skill;Marketing Hard Skill
+Facebook Management;Marketing Hard Skill;Marketing Hard Skill
+Twitter Management;Marketing Hard Skill;Marketing Hard Skill
+Instagram Management;Marketing Hard Skill;Marketing Hard Skill
+SnapChat Management;Marketing Hard Skill;Marketing Hard Skill
+Product Marketing;Marketing Hard Skill;Marketing Hard Skill
+Digital Media;Marketing Hard Skill;Marketing Hard Skill
+Social Media Platform Management;Marketing Hard Skill;Marketing Hard Skill
+Product Marketing;Marketing Hard Skill;Marketing Hard Skill
+Digital Media;Marketing Hard Skill;Marketing Hard Skill
+CRM (Customer Relationship Management);Marketing Hard Skill;Marketing Hard Skill
+AI (Artificial Intelligence);Technical;Technical
+GCP (Google Cloud Platform);Technical;Technical
+TFS (Team Foundation Server);Technical;Technical
+STIG (Security Technical Implementation Guides);Technical;Technical
+CMIC (Common Mapping Interface Control);Technical;Technical
+CMIC (CPU Management Interface Controller);Technical;Technical
+CMIC (Configuration Management Information Center);Technical;Technical
+TFS (Team Foundation Server);Technical;Technical
+SODA (Service Oriented Device Architecture);Technical;Technical
+SOI (Service Oriented Infrastructure);Technical;Technical
+SOP (Service Oriented Provisioning);Technical;Technical
+SOSE (Service Oriented Software Engineering);Technical;Technical
+SODA (Service Oriented Development of Applications);Technical;Technical
+SODA (Service Oriented Distributed Applications);Technical;Technical
+SOM (Service Oriented Modeling);Technical;Technical
+SOT (Service Oriented Transformation);Technical;Technical
+DCL (Data Control Language);Technical;Technical
+DDL (Data Definition Langauge);Technical;Technical
+DML (Data Manipulation Language);Technical;Technical
+DQL (Data Query Language);Technical;Technical
+OQL (Object Query Lanuage);Technical;Technical
+DTS (Data Transformation Services);Technical;Technical
+RAMS (Reliability Availibility Maintainability Saftey) ;Technical;Technical
+MDX (Multidimensional Expressions);Technical;Technical
+DBMS (Database Management System);Technical;Technical
+CRM (Customer Relationship Management);Technical;Technical
+SOA (Service Oriented Architecture);Technical;Technical
+VLDB (Very Large Database);Technical;Technical
+SSIS (SQL Server Integration Services);Technical;Technical
+SSRS (SQL Server Reporting Services);Technical;Technical
+EDM (Enterprise Data Management);Technical;Technical
+JSP (Java Server Pages);Technical;Technical
+Eclipse Modeling Framework;Technical;Technical
+MVC (Model View Controller);Technical;Technical
+SOA (Service Oriented Architecture);Technical;Technical
+EDM (Enterprise Data Management);Technical;Technical
+OSI Model (Open Systems Interconnection Model);Technical;Technical
+GRE (Generic Routing Encapsulation);Technical;Technical
+VXLAN (Virtual Extensible LAN);Technical;Technical
+SCTP (Stream Control Transmission Protocol);Technical;Technical
+Wi-Fi;Technical;Technical
+DSL (Digitial Subscriber Line);Technical;Technical
+IDSN (Intergrated Services Digital Network);Technical;Technical
+FDDI (Fiber Distributed Data Interface);Technical;Technical
+Domain Name System (DNS);Technical;Technical
+Internet Protocol Suite (TCP/IP);Technical;Technical
+Dynamic Host Configuration Protocol (DHCP);Technical;Technical
+Mac Systems;Technical;Technical
+System Center Configuration Manager (SCCM);Technical;Technical
+Computerized Speech Research Enviorment (CSRE);Technical;Technical
+VLBD (Very Large Databases);Technical;Technical
+HIT (Healthcare Information Technology);Technical;Technical
+Client Server Model;Technical;Technical
+IIS (Internet Information Services);Technical;Technical
+Active Directory;Technical;Technical
+DPM (System Center Data Protection Manager);Technical;Technical
+VoIP (Voice Over IP);Technical;Technical
+SSO (Single Sign On);Technical;Technical
+BIM (Building Information Modeling);Technical;Technical
+ITIL Practices;Technical;Technical
+Avionics;Technical;Technical
+Avionics Design;Technical;Technical
+Avionics Intergration;Technical;Technical
+AV (Audio Visual Systems);Technical;Technical
+Problem Solving;Hard Skill;Hard Skill
+Resume;Hard Skill;Hard Skill
+Written Communication;Hard Skill;Hard Skill
+Multi-Tasking;Hard Skill;Hard Skill
+Corperate Credit;Hard Skill;Hard Skill
+Bilingual;Hard Skill;Hard Skill
+Interpersonal Skills;Hard Skill;Hard Skill
+Translation;Hard Skill;Hard Skill
+Onboarding;Hard Skill;Hard Skill
+HR (Human Resources);Hard Skill;Hard Skill
+R&D (Research and Development);Hard Skill;Hard Skill
+HRIS (Human Resoucres Information Systems);Hard Skill;Hard Skill
+Entity Framework;Hard Skill;Hard Skill
+Logo Design;Hard Skill;Hard Skill
+Art Direction;Hard Skill;Hard Skill
+Typography;Hard Skill;Hard Skill
+Branding & Identity;Hard Skill;Hard Skill
+Audio Engineering;Hard Skill;Hard Skill
+Home Automation;Hard Skill;Hard Skill
+AV (Audio Visual Systems);Hard Skill;Hard Skill
+Digital Signage;Hard Skill;Hard Skill
+Fitness;Hard Skill;Hard Skill
+Nutrition;Hard Skill;Hard Skill
+HR (Human Resources);Hard Skill;Hard Skill
+Onboarding;Hard Skill;Hard Skill
+Affordable Housing;Hard Skill;Hard Skill
+Ecommerce ;Hard Skill;Hard Skill
+Customer Service;Hard Skill;Hard Skill
+New Home Sales;Hard Skill;Hard Skill
+Hospital Sales;Hard Skill;Hard Skill
+Automotive Sales;Hard Skill;Hard Skill
+Technical Recruiting;Hard Skill;Hard Skill
+Teamwork;Hard Skill;Hard Skill
+Photography;Hard Skill;Hard Skill
+Editing;Hard Skill;Hard Skill
+Blogging;Hard Skill;Hard Skill
+Coordination;Hard Skill;Hard Skill
+Quantitative Research;Hard Skill;Hard Skill
+Quantitative Reports;Hard Skill;Hard Skill
+BI (Business Inteligence);Hard Skill;Hard Skill
+Finance;Hard Skill;Hard Skill
+Scheduling;Hard Skill;Hard Skill
+CAPA (Corrective and Preventive Action);Hard Skill;Hard Skill
+GMP (Good Manufacturing Practice);Hard Skill;Hard Skill
+SOP (Standard Operating Procedure);Hard Skill;Hard Skill
+SOP Document Creation;Hard Skill;Hard Skill
+Software Documentation;Hard Skill;Hard Skill
+LIMS (Laboratory Information Management System);Hard Skill;Hard Skill
+LIS (Laboratory Information System);Hard Skill;Hard Skill
+Sample Management;Hard Skill;Hard Skill
+HACCP (Hazard Analysis and Critical Control Points);Hard Skill;Hard Skill
+HARPC (Hazard Analysis and Risk-based);Hard Skill;Hard Skill
+PDCA (Plan Do Check Act);Hard Skill;Hard Skill
+Root Cause Analysis;Hard Skill;Hard Skill
+Commitments;Hard Skill;Hard Skill
+Resolving Issues;Hard Skill;Hard Skill
+Meters;Hard Skill;Hard Skill
+24x7 Production Support;Hard Skill;Hard Skill
+Online Research;Hard Skill;Hard Skill
+Provisioning;Hard Skill;Hard Skill
+Telephony;Hard Skill;Hard Skill
+Fire Safety;Hard Skill;Hard Skill
+Contractors;Hard Skill;Hard Skill
+Music;Hard Skill;Hard Skill
+Best Practices;Hard Skill;Hard Skill
+Claims Management;Hard Skill;Hard Skill
+Uptime;Hard Skill;Hard Skill
+Micro Focus;Hard Skill;Hard Skill
+Managed Services;Hard Skill;Hard Skill
+Hedge Funds;Hard Skill;Hard Skill
+Error Analysis;Hard Skill;Hard Skill
+Procure to Pay;Hard Skill;Hard Skill
+E Procurement Catalogs;Hard Skill;Hard Skill
+Onshore Operations;Hard Skill;Hard Skill
+Manufacturing;Hard Skill;Hard Skill
+Financial Reporting;Hard Skill;Hard Skill
+General Ledger;Hard Skill;Hard Skill
+Reconnaissance;Hard Skill;Hard Skill
+Surveillance;Hard Skill;Hard Skill
+Interviewing;Hard Skill;Hard Skill
+Polygraph;Hard Skill;Hard Skill
+Sentinel;Hard Skill;Hard Skill
+Construction Management;Hard Skill;Hard Skill
+Construction;Hard Skill;Hard Skill
+Contract Management;Hard Skill;Hard Skill
+Project Planning;Hard Skill;Hard Skill
+Engineering;Hard Skill;Hard Skill
+Oil and Gas;Hard Skill;Hard Skill
+Commissioning;Hard Skill;Hard Skill
+Petroleum;Hard Skill;Hard Skill
+Energy;Hard Skill;Hard Skill
+Electrical;Hard Skill;Hard Skill
+Pipelines;Hard Skill;Hard Skill
+Procurement;Hard Skill;Hard Skill
+Aviation;Hard Skill;Hard Skill
+Application Support;IT Hard Skill;IT Hard Skill
+Multi-tenancy;IT Hard Skill;IT Hard Skill
+Software Installation;IT Hard Skill;IT Hard Skill
+Release Management;IT Hard Skill;IT Hard Skill
+Big Data;IT Hard Skill;IT Hard Skill
+Machine Learning;IT Hard Skill;IT Hard Skill
+Failover;IT Hard Skill;IT Hard Skill
+Readiness;IT Hard Skill;IT Hard Skill
+System Deployment;IT Hard Skill;IT Hard Skill
+Optimization;IT Hard Skill;IT Hard Skill
+Business Process Management;IT Hard Skill;IT Hard Skill
+Business Process;IT Hard Skill;IT Hard Skill
+Programming;IT Hard Skill;IT Hard Skill
+Incident Management;IT Hard Skill;IT Hard Skill
+Problem Management;IT Hard Skill;IT Hard Skill
+Customer Satisfaction;IT Hard Skill;IT Hard Skill
+Data Architeture;IT Hard Skill;IT Hard Skill
+Scripting;IT Hard Skill;IT Hard Skill
+Query Writing;IT Hard Skill;IT Hard Skill
+Patch Management;IT Hard Skill;IT Hard Skill
+Permissions;IT Hard Skill;IT Hard Skill
+System Configuration;IT Hard Skill;IT Hard Skill
+System Engineering;IT Hard Skill;IT Hard Skill
+Database Security;IT Hard Skill;IT Hard Skill
+Schema;IT Hard Skill;IT Hard Skill
+Sustainabilty;IT Hard Skill;IT Hard Skill
+Database Servers;IT Hard Skill;IT Hard Skill
+Production Systems;IT Hard Skill;IT Hard Skill
+On Call Support;IT Hard Skill;IT Hard Skill
+Logic Programming;IT Hard Skill;IT Hard Skill
+Algorithms;IT Hard Skill;IT Hard Skill
+Database Triggers;IT Hard Skill;IT Hard Skill
+Query Tuning;IT Hard Skill;IT Hard Skill
+Powershell;IT Hard Skill;IT Hard Skill
+SQL Tuning;IT Hard Skill;IT Hard Skill
+Configuration Management;IT Hard Skill;IT Hard Skill
+Stored Proceedures;IT Hard Skill;IT Hard Skill
+Replication;IT Hard Skill;IT Hard Skill
+Public Policy;IT Hard Skill;IT Hard Skill
+Disaster Recovery;IT Hard Skill;IT Hard Skill
+Database Systems;IT Hard Skill;IT Hard Skill
+Indexing;IT Hard Skill;IT Hard Skill
+Cubes;IT Hard Skill;IT Hard Skill
+Oracle Database Administration;IT Hard Skill;IT Hard Skill
+Database Administration;IT Hard Skill;IT Hard Skill
+IBM Mainframe;IT Hard Skill;IT Hard Skill
+Aviation;IT Hard Skill;IT Hard Skill
+Data Migration;IT Hard Skill;IT Hard Skill
+Data Recovery;IT Hard Skill;IT Hard Skill
+Requirements Analysis;IT Hard Skill;IT Hard Skill
+Data Warehousing;IT Hard Skill;IT Hard Skill
+Salesforce Administration;IT Hard Skill;IT Hard Skill
+Databases;IT Hard Skill;IT Hard Skill
+Database Design;IT Hard Skill;IT Hard Skill
+Database Administration;IT Hard Skill;IT Hard Skill
+Performance Tuning;IT Hard Skill;IT Hard Skill
+Joint Ventures;IT Hard Skill;IT Hard Skill
+Labour Relations;IT Hard Skill;IT Hard Skill
+Merger & Acquisitions;IT Hard Skill;IT Hard Skill
+Multi-sites Management;IT Hard Skill;IT Hard Skill
+Negotiation;IT Hard Skill;IT Hard Skill
+Profit & Loss;IT Hard Skill;IT Hard Skill
+Organizational Development;IT Hard Skill;IT Hard Skill
+Project Management;IT Hard Skill;IT Hard Skill
+Staff Development;IT Hard Skill;IT Hard Skill
+Strategic Partnership;IT Hard Skill;IT Hard Skill
+Strategic Planning;IT Hard Skill;IT Hard Skill
+Supervision;IT Hard Skill;IT Hard Skill
+Management;IT Hard Skill;IT Hard Skill
+Team Building;IT Hard Skill;IT Hard Skill
+Business Strategy;IT Hard Skill;IT Hard Skill
+Communication;IT Hard Skill;IT Hard Skill
+Business Development;IT Hard Skill;IT Hard Skill
+Time Management;IT Hard Skill;IT Hard Skill
+Negotiation;IT Hard Skill;IT Hard Skill
+Business Analysis;IT Hard Skill;IT Hard Skill
+High Availability;IT Hard Skill;IT Hard Skill
+Business Process Improvment;IT Hard Skill;IT Hard Skill
+Training;IT Hard Skill;IT Hard Skill
+ITIL Practices;IT Hard Skill;IT Hard Skill
+Ticketing Systems;IT Hard Skill;IT Hard Skill
+Budgeting;IT Hard Skill;IT Hard Skill
+Business Planning;IT Hard Skill;IT Hard Skill
+Business Re-engineering;IT Hard Skill;IT Hard Skill
+Change Management;IT Hard Skill;IT Hard Skill
+Consolidation;IT Hard Skill;IT Hard Skill
+Cost Control;IT Hard Skill;IT Hard Skill
+Decision Making;IT Hard Skill;IT Hard Skill
+Developing Policies;IT Hard Skill;IT Hard Skill
+Diversification;IT Hard Skill;IT Hard Skill
+Employee Evaluation;IT Hard Skill;IT Hard Skill
+Financing;IT Hard Skill;IT Hard Skill
+Government Relations;IT Hard Skill;IT Hard Skill
+Hiring;IT Hard Skill;IT Hard Skill
+International Management;IT Hard Skill;IT Hard Skill
+Investor Relations;IT Hard Skill;IT Hard Skill
+Reporting and Analysis;IT Hard Skill;IT Hard Skill
+Survey Sofware Analysis;IT Hard Skill;IT Hard Skill
+Statistics;IT Hard Skill;IT Hard Skill
+Data Entry;IT Hard Skill;IT Hard Skill
+Systems Deployment;IT Hard Skill;IT Hard Skill
+Web Analytics;IT Hard Skill;IT Hard Skill
+Technical Documentation;IT Hard Skill;IT Hard Skill
+Requirements Gathering;IT Hard Skill;IT Hard Skill
+Quantitative Research;IT Hard Skill;IT Hard Skill
+Quantitative Reports;IT Hard Skill;IT Hard Skill
+Statistical Analysis;IT Hard Skill;IT Hard Skill
+Data Mining;IT Hard Skill;IT Hard Skill
+Full Stack Development;IT Hard Skill;IT Hard Skill
+Back End Development;IT Hard Skill;IT Hard Skill
+Laptops;IT Hard Skill;IT Hard Skill
+Servers;IT Hard Skill;IT Hard Skill
+Web Services;IT Hard Skill;IT Hard Skill
+Web Applications;IT Hard Skill;IT Hard Skill
+Web Design;IT Hard Skill;IT Hard Skill
+Web Services;IT Hard Skill;IT Hard Skill
+Data Conversion;IT Hard Skill;IT Hard Skill
+Regression Testing;IT Hard Skill;IT Hard Skill
+Search;IT Hard Skill;IT Hard Skill
+Geography;IT Hard Skill;IT Hard Skill
+Data Modeling;IT Hard Skill;IT Hard Skill
+Search Engines;IT Hard Skill;IT Hard Skill
+Computer Science;IT Hard Skill;IT Hard Skill
+Application Frameworks;IT Hard Skill;IT Hard Skill
+Technical Analysis;IT Hard Skill;IT Hard Skill
+Technical Ability;IT Hard Skill;IT Hard Skill
+Data Integrity;IT Hard Skill;IT Hard Skill
+Web application Development;IT Hard Skill;IT Hard Skill
+Sourcing;IT Hard Skill;IT Hard Skill
+Enterprise Architecture;IT Hard Skill;IT Hard Skill
+Message Queue;IT Hard Skill;IT Hard Skill
+Intergration;IT Hard Skill;IT Hard Skill
+Auditing;IT Hard Skill;IT Hard Skill
+Virtualization;IT Hard Skill;IT Hard Skill
+Deskside;IT Hard Skill;IT Hard Skill
+Desktop Support;IT Hard Skill;IT Hard Skill
+Technical Support;IT Hard Skill;IT Hard Skill
+System Administration;IT Hard Skill;IT Hard Skill
+Troubleshooting;IT Hard Skill;IT Hard Skill
+Computer Hardware;IT Hard Skill;IT Hard Skill
+Networking;IT Hard Skill;IT Hard Skill
+Technical Training;IT Hard Skill;IT Hard Skill
+Technical Writing;IT Hard Skill;IT Hard Skill
+Technical Drawing;IT Hard Skill;IT Hard Skill
+Technical Analysis;IT Hard Skill;IT Hard Skill
+Test Automation;IT Hard Skill;IT Hard Skill
+Test Planning;IT Hard Skill;IT Hard Skill
+Data Analysis;IT Hard Skill;IT Hard Skill
+Data Center;IT Hard Skill;IT Hard Skill
+Databases;IT Hard Skill;IT Hard Skill
+Private Clouds;IT Hard Skill;IT Hard Skill
+User Interface Design;IT Hard Skill;IT Hard Skill
+User Experience;IT Hard Skill;IT Hard Skill
+Userflows;IT Hard Skill;IT Hard Skill
+Application Support;IT Hard Skill;IT Hard Skill
+Multi-tenancy;IT Hard Skill;IT Hard Skill
+Thin Clients;IT Hard Skill;IT Hard Skill
+Mac Systems;IT Hard Skill;IT Hard Skill
+Anti Spam;IT Hard Skill;IT Hard Skill
+Application Packaging;IT Hard Skill;IT Hard Skill
+Communication;Hard Skills Management;Hard Skills Management
+Interview;Hard Skills Management;Hard Skills Management
+Promote;Hard Skills Management;Hard Skills Management
+Coordinate;Hard Skills Management;Hard Skills Management
+Implement;Hard Skills Management;Hard Skills Management
+Organize;Hard Skills Management;Hard Skills Management
+Coach;Hard Skills Management;Hard Skills Management
+Set Goals;Hard Skills Management;Hard Skills Management
+Envision;Hard Skills Management;Hard Skills Management
+Decision Making;Hard Skills Management;Hard Skills Management
+Evaluate;Hard Skills Management;Hard Skills Management
+Manage Data;Hard Skills Management;Hard Skills Management
+Budget;Hard Skills Management;Hard Skills Management
+Estimate;Hard Skills Management;Hard Skills Management
+Forecast;Hard Skills Management;Hard Skills Management
+Brainstorm;Hard Skills Management;Hard Skills Management
+Budgeting;Hard Skills Management;Hard Skills Management
+Business Planning;Hard Skills Management;Hard Skills Management
+Business Re-engineering;Hard Skills Management;Hard Skills Management
+Change Management;Hard Skills Management;Hard Skills Management
+Consolidation;Hard Skills Management;Hard Skills Management
+Cost Control;Hard Skills Management;Hard Skills Management
+Decision Making;Hard Skills Management;Hard Skills Management
+Developing Policies;Hard Skills Management;Hard Skills Management
+Diversification;Hard Skills Management;Hard Skills Management
+Employee Evaluation;Hard Skills Management;Hard Skills Management
+Financing;Hard Skills Management;Hard Skills Management
+Government Relations;Hard Skills Management;Hard Skills Management
+Hiring;Hard Skills Management;Hard Skills Management
+International Management;Hard Skills Management;Hard Skills Management
+Investor Relations;Hard Skills Management;Hard Skills Management
+IPO (Initial Public Offering);Hard Skills Management;Hard Skills Management
+Joint Ventures;Hard Skills Management;Hard Skills Management
+Labour Relations;Hard Skills Management;Hard Skills Management
+Merger & Acquisitions;Hard Skills Management;Hard Skills Management
+Multi-sites Management;Hard Skills Management;Hard Skills Management
+Negotiation;Hard Skills Management;Hard Skills Management
+Profit & Loss;Hard Skills Management;Hard Skills Management
+Organizational Development;Hard Skills Management;Hard Skills Management
+Project Management;Hard Skills Management;Hard Skills Management
+Staff Development;Hard Skills Management;Hard Skills Management
+Strategic Partnership;Hard Skills Management;Hard Skills Management
+Strategic Planning;Hard Skills Management;Hard Skills Management
+Supervision;Hard Skills Management;Hard Skills Management
+Management;Hard Skills Management;Hard Skills Management
+Team Building;Hard Skills Management;Hard Skills Management
+Business Strategy;Hard Skills Management;Hard Skills Management
+Communication;Hard Skills Management;Hard Skills Management
+Business Development;Hard Skills Management;Hard Skills Management
+Negotiation;Hard Skills Management;Hard Skills Management
+Business Analysis;Hard Skills Management;Hard Skills Management
+High Availability;Hard Skills Management;Hard Skills Management
+Business Process Improvment;Hard Skills Management;Hard Skills Management
+Training;Hard Skills Management;Hard Skills Management
+Performance Review;Hard Skills Management;Hard Skills Management
+Quality Assurance;Hard Skills Management;Hard Skills Management
+Quality Control;Hard Skills Management;Hard Skills Management
+Scheduling;Hard Skills Management;Hard Skills Management
+Task Delegation;Hard Skills Management;Hard Skills Management
+Task Management;Hard Skills Management;Hard Skills Management
+SEO (Search Engine Optimization);Hard Skills Management;Hard Skills Management
+Web Analytics;Hard Skills Management;Hard Skills Management
+SME (Subject Matter Expert);Hard Skills Management;Hard Skills Management
+Technical Documentation;Hard Skills Management;Hard Skills Management
+Requirements Gathering;Hard Skills Management;Hard Skills Management
+Client Relations;Hard Skills Management;Hard Skills Management
+Opertations;Hard Skills Management;Hard Skills Management
+Quantitative Research;Hard Skills Management;Hard Skills Management
+Quantitative Reports;Hard Skills Management;Hard Skills Management
+Statistical Analysis;Hard Skills Management;Hard Skills Management
+Data Mining;Hard Skills Management;Hard Skills Management
+Start-ups;Hard Skills Management;Hard Skills Management
+Multi-Tasking;Hard Skills Management;Hard Skills Management
+Administrative Assistance;Hard Skills Management;Hard Skills Management
+Prototyping;Hard Skills Management;Hard Skills Management
+Report Writing;Hard Skills Management;Hard Skills Management
+Public Safety;Hard Skills Management;Hard Skills Management
+Investments;Hard Skills Management;Hard Skills Management
+Forecasting;Hard Skills Management;Hard Skills Management
+IT Service Management;Hard Skills Management;Hard Skills Management
+Contractual Agreements;Hard Skills Management;Hard Skills Management
+Spreedsheets;Hard Skills Management;Hard Skills Management
+Small Business;Hard Skills Management;Hard Skills Management
+IPO (Initial Public Offering);Hard Skills Management;Hard Skills Management
+Pricing Strategy;Hard Skills Management;Hard Skills Management
+Internal Audit;Hard Skills Management;Hard Skills Management
+Supply Chain Management;Hard Skills Management;Hard Skills Management
+Employee Wellness;Hard Skills Management;Hard Skills Management
+Scope Management;Hard Skills Management;Hard Skills Management
+Employee Benefits Designs;Hard Skills Management;Hard Skills Management
+Auditing;Hard Skills Management;Hard Skills Management
+Employee Engagement;Hard Skills Management;Hard Skills Management
+Leadership;Hard Skills Management;Hard Skills Management
+Technical Leadership;Hard Skills Management;Hard Skills Management
+Relationship Development;Hard Skills Management;Hard Skills Management
+Creative Leadership;Hard Skills Management;Hard Skills Management
+Process and Proceedure;Hard Skills Management;Hard Skills Management
+Cross Functional Team Leadership;Hard Skills Management;Hard Skills Management
+Strategic Partnerships;Hard Skills Management;Hard Skills Management
+Release Management;Hard Skills Management;Hard Skills Management
+Audit Management;Hard Skills Management;Hard Skills Management
+Chain of Custody;Hard Skills Management;Hard Skills Management
+Compliance;Hard Skills Management;Hard Skills Management
+Customer Relationship Management;Hard Skills Management;Hard Skills Management
+Document Management;Hard Skills Management;Hard Skills Management
+Instrument Calibration and Maintenance;Hard Skills Management;Hard Skills Management
+Inventory and Equipment Management;Hard Skills Management;Hard Skills Management
+Method Management;Hard Skills Management;Hard Skills Management
+Personnel and Workload Management;Hard Skills Management;Hard Skills Management
+Reports;Hard Skills Management;Hard Skills Management
+Time Tracking;Hard Skills Management;Hard Skills Management
+Traceability;Hard Skills Management;Hard Skills Management
+Workflows;Hard Skills Management;Hard Skills Management
+Energy Management;Hard Skills Management;Hard Skills Management
+Supervisory Skills;Hard Skills Management;Hard Skills Management
+Stafety Management Systems;Hard Skills Management;Hard Skills Management
+Case Management;Hard Skills Management;Hard Skills Management
+Supervisory Skills;Hard Skills Management;Hard Skills Management
+Project Estimation;Hard Skills Management;Hard Skills Management
+Industrial Safety;Hard Skills Management;Hard Skills Management
+Contract Neogotiation;Hard Skills Management;Hard Skills Management
+Construction Consulting;Hard Skills Management;Hard Skills Management
+Construction Project Management;Hard Skills Management;Hard Skills Management
+Renovation;Hard Skills Management;Hard Skills Management
+Real Estate;Hard Skills Management;Hard Skills Management
+Subcontracting;Hard Skills Management;Hard Skills Management
+Change Orders;Hard Skills Management;Hard Skills Management
+Piping;Hard Skills Management;Hard Skills Management
+Energy Consercation;Hard Skills Management;Hard Skills Management
+Gas;Hard Skills Management;Hard Skills Management
+Risk Management;Hard Skills Management;Hard Skills Management
+Interior Fit-Out;Hard Skills Management;Hard Skills Management
+LabView;Product;Product
+Apache Accummulo;Product;Product
+Apache ActiveMQ;Product;Product
+Apache Airavata;Product;Product
+Apache Airflow;Product;Product
+Apache Allura;Product;Product
+Apache Ambari;Product;Product
+Apache Any23;Product;Product
+Apache Apex;Product;Product
+Apache APR;Product;Product
+Apache Archiva;Product;Product
+Apache Areis;Product;Product
+Apache Arrow;Product;Product
+Apache AsterixDB;Product;Product
+Apache Atlas;Product;Product
+Apache Aurora;Product;Product
+Apache Avro;Product;Product
+Apache Axis;Product;Product
+Apache Bahir;Product;Product
+Apache Beam;Product;Product
+Apache Bigtop;Product;Product
+Apache Bloodhound;Product;Product
+Apache BookKeeper;Product;Product
+Apache Brooklyn;Product;Product
+Apache Buildr;Product;Product
+Apache Bval;Product;Product
+Apache Calcite;Product;Product
+Apache Camel;Product;Product
+Apache Carbondata;Product;Product
+Apache Cassandra;Product;Product
+Apache Cayenne;Product;Product
+Apache Celix;Product;Product
+Apache Chemistry;Product;Product
+Apache Chukwa;Product;Product
+Apache Clerezza;Product;Product
+Apache Cloudstack;Product;Product
+Apache Cocoon;Product;Product
+Apache Commons;Product;Product
+Apache Cordova;Product;Product
+Apache CouchDB;Product;Product
+Apache Creadur;Product;Product
+Apache Crunch;Product;Product
+Apache cTakes;Product;Product
+Apache Curator;Product;Product
+Apache CXF;Product;Product
+Apache DataFu;Product;Product
+Apache DB;Product;Product
+Apache DeltaSpike;Product;Product
+Apache Directory;Product;Product
+Apache DRAT;Product;Product
+Apache Drill;Product;Product
+Apache Eagle;Product;Product
+Apache Empire-db;Product;Product
+Apache Falcon;Product;Product
+Apache Felix;Product;Product
+Apache Fineract;Product;Product
+Apache Flex;Product;Product
+Apache Flink;Product;Product
+Apache Flume;Product;Product
+Apache Fluo;Product;Product
+Apache Forrest;Product;Product
+Apache FreeMarker;Product;Product
+Apache Geode;Product;Product
+Apache Geronimo;Product;Product
+Apache Giraph;Product;Product
+Apache Gora;Product;Product
+Apache Griffin;Product;Product
+Apache Groovy;Product;Product
+Apache Guacamole;Product;Product
+Apache Gump;Product;Product
+Apache Hadoop;Product;Product
+Apache Hama;Product;Product
+Apache HAWQ;Product;Product
+Apache Hbase;Product;Product
+Apache Helix;Product;Product
+Apache Hive;Product;Product
+Apache HTTP Components;Product;Product
+Apache Isis;Product;Product
+Apache Ignite;Product;Product
+Apache Impala;Product;Product
+Apache Jackrabbit;Product;Product
+Apache James;Product;Product
+Apache Jclouds;Product;Product
+Apache Jena;Product;Product
+Apache Jmeter;Product;Product
+Apache JSPWiki;Product;Product
+Apache Johnzon;Product;Product
+Apache Jousha;Product;Product
+Apache JUDDI;Product;Product
+Apache Juneau;Product;Product
+Apache Kafka;Product;Product
+Apache Karaf;Product;Product
+Apache Kibble;Product;Product
+Apache Knox;Product;Product
+Apache Kudu;Product;Product
+Apache Kylin;Product;Product
+Apache Lens;Product;Product
+Apache Libclould;Product;Product
+Apache Logging;Product;Product
+Apache Lucene;Product;Product
+Apache Lucene.Net;Product;Product
+Apache Madlib;Product;Product
+Apache Madout;Product;Product
+Apache ManifoldCF;Product;Product
+Apache Marmotta;Product;Product
+Apache Maven;Product;Product
+Apache Mesos;Product;Product
+Apache MetaModel;Product;Product
+Apache Metron;Product;Product
+Apache MINA;Product;Product
+Apache Mnemonic;Product;Product
+Apache MyFaces;Product;Product
+Apache Mynewt;Product;Product
+Apache Nutch;Product;Product
+Apache Nifi;Product;Product
+Apache ODE;Product;Product
+Apache OFBiz;Product;Product
+Apache Olingo;Product;Product
+Apache OODT;Product;Product
+Apache Oozie;Product;Product
+Apache Open Climate;Product;Product
+Apache Workbench;Product;Product
+Apache OpenJPA;Product;Product
+Apache OpenMeetings;Product;Product
+Apache OpenNLP;Product;Product
+Apache OpenOffice;Product;Product
+Apache OpenWebBeans;Product;Product
+Apache ORC;Product;Product
+Apache Parquet;Product;Product
+Apache PDFBox;Product;Product
+Apache Perl;Product;Product
+Apache Phoenix;Product;Product
+Apache Pig;Product;Product
+Apache Pivot;Product;Product
+Apache POI;Product;Product
+Apache Portals;Product;Product
+Apache Predictionio;Product;Product
+Apache Pulsar;Product;Product
+Apache Qpid;Product;Product
+Apache Ranger;Product;Product
+Apache REEF;Product;Product
+Apache River;Product;Product
+Apache RocketMQ;Product;Product
+Apache Roller;Product;Product
+Apache Royale;Product;Product
+Apache Samza;Product;Product
+Apache Santuario;Product;Product
+Apache Sentry;Product;Product
+Apache Serf;Product;Product
+Apache ServiceMix;Product;Product
+Apache ServiceComb;Product;Product
+Apache Shiro;Product;Product
+Apache SIS;Product;Product
+Apache Sling;Product;Product
+Apache SpamAssassin;Product;Product
+Apache Spark;Product;Product
+Apache Sqoop;Product;Product
+Apache Stanbol;Product;Product
+Apache STeVe;Product;Product
+Apache Storm;Product;Product
+Apache Streams;Product;Product
+Apache Struts;Product;Product
+Apache Subversion;Product;Product
+Apache Synapse;Product;Product
+Apache Syncope;Product;Product
+Apache SystemML;Product;Product
+Apache Tajo;Product;Product
+Apache Tapestry;Product;Product
+Apache Tcl;Product;Product
+Apache Tez;Product;Product
+Apache Thrift;Product;Product
+Apache Tika;Product;Product
+Apache TinkerPop;Product;Product
+Apache Tomcat;Product;Product
+Apache TomEE;Product;Product
+Apache Traffic Control;Product;Product
+Apache Traffic Server;Product;Product
+Apache Trafodion;Product;Product
+Apache Turbine;Product;Product
+Apache Twill;Product;Product
+Apache UIMA;Product;Product
+Apache Unomi;Product;Product
+Apache Usergrid;Product;Product
+Apache VCL;Product;Product
+Apache Velocity;Product;Product
+Apache VXQuery;Product;Product
+Apache Web Services;Product;Product
+Apache Whimsy;Product;Product
+Apache Wicket;Product;Product
+Apache Xalan;Product;Product
+Apache Xerces;Product;Product
+Apache XMLBeans;Product;Product
+Apache XML Graphics;Product;Product
+Apache Yetus;Product;Product
+Apache Zeppelin;Product;Product
+Apache Zookeeper;Product;Product
+Apache Products;Product;Product
+ADP GlobalView HCM;Product;Product
+ADP Streamline;Product;Product
+ADP Compass;Product;Product
+ADP WorkMarket;Product;Product
+ADP Standout;Product;Product
+ADP Datacloud;Product;Product
+ADP Vantage HCM;Product;Product
+ADP SmartCompliance;Product;Product
+ADP Workforce Now;Product;Product
+ADP Run;Product;Product
+ADP TotalSource;Product;Product
+ADP Comprehensive Services;Product;Product
+ADP Products;Product;Product
+RMAN;Product;Product
+Microsoft Office;Product;Product
+Microsoft Word;Product;Product
+Microsoft Excel;Product;Product
+Microsoft PowerPoint;Product;Product
+Microsoft Access;Product;Product
+Microsoft SQL;Product;Product
+Microsoft Outlook;Product;Product
+Microsoft OneNote;Product;Product
+Microsoft Publisher;Product;Product
+Skype for Business;Product;Product
+Office 365;Product;Product
+Microsoft Azure;Product;Product
+Microsoft Project;Product;Product
+Microsoft Teams;Product;Product
+Microsoft Visio;Product;Product
+Skype for Business Server;Product;Product
+Microsoft Sharepoint;Product;Product
+Microsoft Office Online;Product;Product
+Microsoft Windows XP;Product;Product
+Microsoft Windows 95;Product;Product
+Microsoft Windows 98;Product;Product
+Microsoft Windows NT;Product;Product
+Microsoft Windows 7;Product;Product
+Microsoft Windows 8;Product;Product
+Microsoft Windows 10;Product;Product
+Microsoft Windows Server 2012;Product;Product
+Microsoft Windows Server 2008 R2;Product;Product
+Microsoft Windows XP;Product;Product
+Microsoft Outlook;Product;Product
+Microsoft Exchange Server;Product;Product
+Microsoft InfoPath;Product;Product
+Microsoft Yammer;Product;Product
+Microsoft SQL Server;Product;Product
+Microsoft Visual Studio;Product;Product
+Microsoft Lync;Product;Product
+Microsoft Project Server;Product;Product
+Microsoft Sharepoint Server;Product;Product
+Jenkins;Product;Product
+Git;Product;Product
+Docker Products;Product;Product
+Red Hat Ansible;Product;Product
+Wordpress;Product;Product
+Joomla;Product;Product
+Drupal;Product;Product
+Magento;Product;Product
+TYPO3;Product;Product
+DotNetNuke;Product;Product
+Concrete5;Product;Product
+MODX;Product;Product
+Plone;Product;Product
+SilverStripe;Product;Product
+Mambo;Product;Product
+CMS Made Simple;Product;Product
+Kenico CMS;Product;Product
+ProcessWire;Product;Product
+Textpattern;Product;Product
+October;Product;Product
+Refinery CMS;Product;Product
+Umbraco;Product;Product
+Contao;Product;Product
+Telerik;Product;Product
+DotCMS;Product;Product
+PHP-Nuke;Product;Product
+B2evolution;Product;Product
+EZ Publish;Product;Product
+Pimcore;Product;Product
+Jahia;Product;Product
+SPIP;Product;Product
+XOOPS;Product;Product
+PhpBB;Product;Product
+Alfresco;Product;Product
+ImpressPages;Product;Product
+Magnolia;Product;Product
+Tiki Wiki CMS Groupware;Product;Product
+Pulse CMS;Product;Product
+Hippo CMS;Product;Product
+Orchard Project;Product;Product
+E107;Product;Product
+OpenCMS;Product;Product
+Microweber;Product;Product
+CMSimple;Product;Product
+Documentum;Product;Product
+Sitecore;Product;Product
+BrowserCMS;Product;Product
+Composr CMS;Product;Product
+Enonic XP;Product;Product
+Shopify;Product;Product
+Bitrix24;Product;Product
+Squarespace;Product;Product
+Prestashop;Product;Product
+Ghost;Product;Product
+Blogger;Product;Product
+Tumblr;Product;Product
+Blog Engine;Product;Product
+Medium;Product;Product
+Posthaven;Product;Product
+Atlassian Statuspage;Product;Product
+Atlassian Opsgenie;Product;Product
+Atlassian Crowd;Product;Product
+Atlassian Service Desk;Product;Product
+Atlassian Trello;Product;Product
+Atlassian Sorucetree;Product;Product
+Atlassian Bitbucket;Product;Product
+Atlassian Crucible;Product;Product
+Atlassian Jira Core;Product;Product
+Autodesk 3ds Max;Product;Product
+Autodesk A360;Product;Product
+Autodesk Autocad;Product;Product
+Autodesk Autocad LT;Product;Product
+Autodesk Civil 3D;Product;Product
+Autodesk Fusion 360;Product;Product
+Autodesk Maya;Product;Product
+Autodesk Inventor;Product;Product
+Autodesk Revit;Product;Product
+Autodesk Revit LT Suite;Product;Product
+Autodesk Infraworks;Product;Product
+Autodesk BIM 360;Product;Product
+Autodesk Alias;Product;Product
+Autodesk Powermill;Product;Product
+Autodesk Advance Steel;Product;Product
+Autodesk Arnold;Product;Product
+Autodesk Inventor LT Suite;Product;Product
+Autodesk CFD;Product;Product
+Autodesk HSM;Product;Product
+Autodesk Nastrain In-Cad;Product;Product
+Autodesk Design Reivew;Product;Product
+Autodesk DWG Truview;Product;Product
+Autodesk Dynamo Studio;Product;Product
+Autodesk Eagle;Product;Product
+Autodesk DWG Truview;Product;Product
+Autodesk Frabrication;Product;Product
+Autodesk Factory Design Utilities;Product;Product
+Autodesk Featurecam;Product;Product
+Autodesk Flame;Product;Product
+Autodesk Forge;Product;Product
+Autodesk Formit;Product;Product
+Autodesk Fusion Connect;Product;Product
+Autodesk Fusion Lifecycle;Product;Product
+Autodesk Fusion Team;Product;Product
+Autodesk Helius Composite;Product;Product
+Autodesk Helius PFA;Product;Product
+Autodesk Insight;Product;Product
+Autodesk Inventor LT;Product;Product
+Autodesk Inventor Tolerance Analysis;Product;Product
+Autodesk Maya LT;Product;Product
+Autodesk Moldflow;Product;Product
+Autodesk Montionbuilder;Product;Product
+Autodesk Mudbox;Product;Product
+Autodesk Navisworks;Product;Product
+Autodesk Netfabb;Product;Product
+Autodesk Point Layout;Product;Product
+Autodesk Powerinspect;Product;Product
+Autodesk Powershape;Product;Product
+Autodesk Recap Pro;Product;Product
+Autodesk Revit Live;Product;Product
+Autodesk Revit LT;Product;Product
+Autodesk Robot Structural Analysis Professional;Product;Product
+Autodesk Smoke;Product;Product
+Autodesk Structural Bridge Design;Product;Product
+Autodesk Trucomposites;Product;Product
+Autodesk Vault;Product;Product
+Autodesk Vehicle Tracking;Product;Product
+Autodesk Vred;Product;Product
+Atuodesk Within Medical;Product;Product
+Autotask PSA;Product;Product
+Autotask Endpoint Backt;Product;Product
+Autotask Workplace;Product;Product
+Autotask Datto RMM;Product;Product
+Autodesk Products;Product;Product
+Cyberduck;Product;Product
+Free FTP;Product;Product
+Fire FTP;Product;Product
+FOFF;Product;Product
+WinSCP;Product;Product
+AndFTP;Product;Product
+Transmit;Product;Product
+CuteFTP;Product;Product
+SmartFTP;Product;Product
+FlashFXP;Product;Product
+Commander One;Product;Product
+Total Commander;Product;Product
+WebDrive;Product;Product
+OpenSSH;Product;Product
+SolarWinds SFTP/SCP Server;Product;Product
+Tectia SSH;Product;Product
+Bitvise SSH Server;Product;Product
+Cerberus SFTP;Product;Product
+Syncplify;Product;Product
+Eset Nod32;Product;Product
+Eset Cyber Security Pro;Product;Product
+Kaspersky Endpoint Security;Product;Product
+Kaspersky Antivrius;Product;Product
+Symantec Ghost;Product;Product
+Symantec Products;Product;Product
+Crystal Reports;Product;Product
+SAP Business One;Product;Product
+SAP Products;Product;Product
+SAP Implementation;Product;Product
+SAP Ariba;Product;Product
+SAP (PLM);Product;Product
+SAP (SRM);Product;Product
+SAP (S/4HANA);Product;Product
+SAP (ABAP);Product;Product
+SAP (BW);Product;Product
+SAP (HRMS);Product;Product
+SAP (KW);Product;Product
+SAP (MDM);Product;Product
+SAP (Web AS);Product;Product
+SAP (ERP);Product;Product
+Sybase ASE;Product;Product
+Oracle PeopleTools;Product;Product
+PeopleSoft;Product;Product
+Software Development;Product;Product
+Oracle E-Business Suite;Product;Product
+Oracle Applications;Product;Product
+Oracle Products;Product;Product
+Oracle JDE EnterpriseOne;Product;Product
+Informatica;Product;Product
+Hibernate ORM;Product;Product
+Java Enterprise Edition;Product;Product
+Android;Product;Product
+iPhone;Product;Product
+iOS;Product;Product
+Good;Product;Product
+Arcgis Products;Product;Product
+Sitecore Products;Product;Product
+RabbitMQ;Product;Product
+IBM Tivoli;Product;Product
+Time Machine;Product;Product
+Handy Backup;Product;Product
+Nova Backup;Product;Product
+Comodo Backup;Product;Product
+Veeam ONE;Product;Product
+Total Recovery;Product;Product
+System Restore;Product;Product
+IDrive;Product;Product
+VirtualBox;Product;Product
+Microsoft Hyper V;Product;Product
+VMware vSphere;Product;Product
+VMware WorkStatation;Product;Product
+VMware ESXi;Product;Product
+VMware Horizon View;Product;Product
+Vmware WorkStatation Player;Product;Product
+VMware Fusion;Product;Product
+KVM (Kernel Based Virtual Machine);Product;Product
+Windows Virtual PC;Product;Product
+Desktop Virtualization;Product;Product
+Parallels Desktop;Product;Product
+Microsoft Virtual Server;Product;Product
+Oracle VM;Product;Product
+XenApp;Product;Product
+XenServer;Product;Product
+QEMU;Product;Product
+VMware Server;Product;Product
+XenDesktop;Product;Product
+Red Hat Virtualization;Product;Product
+Virtual Machine Manager;Product;Product
+FreeBSD;Product;Product
+Open vSwitch;Product;Product
+OpenStack;Product;Product
+OpenVZ;Product;Product
+VMware ThinApp;Product;Product
+Parallels Workstation;Product;Product
+Z/VM;Product;Product
+System Center Virtual Machine Manager;Product;Product
+Microsoft App-V;Product;Product
+Proxmox;Product;Product
+LXC;Product;Product
+Oracle VM Server;Product;Product
+Bhyve;Product;Product
+PearPC;Product;Product
+Ulteo Open Virtual Desktop;Product;Product
+Microsoft Windows Server 2016;Product;Product
+OS/2;Product;Product
+Vagrant;Product;Product
+Citrix Reciever;Product;Product
+Salesforce Lighting;Product;Product
+RSA Security;Product;Product
+Commvault;Product;Product
+SiteMinder;Product;Product
+NetSuite;Product;Product
+Oracle Hyperion;Product;Product
+Procore;Product;Product
+Outlook;Product;Product
+Apple Mail;Product;Product
+Gmail;Product;Product
+Thunderbird;Product;Product
+Outlook.com;Product;Product
+Service Now;Product;Product
+Zendesk;Product;Product
+Remedy;Product;Product
+Trellis Desk;Product;Product
+Open Ticket Request System;Product;Product
+Redmine;Product;Product
+Freshdesk;Product;Product
+Salesforce Service Cloud;Product;Product
+Zoho Desk;Product;Product
+Oracle Service Cloud;Product;Product
+Heat;Product;Product
+AnyDesk;Product;Product
+ConnectWise;Product;Product
+Samanage;Product;Product
+Incident Monitor;Product;Product
+Kayako;Product;Product
+Happyfox;Product;Product
+Jira Serice Desk;Product;Product
+LiveAgent;Product;Product
+Nextiva;Product;Product
+IBM Service Desk Cloud;Product;Product
+Mantis;Product;Product
+AzureDesk;Product;Product
+Nectar Desk;Product;Product
+LiveChat;Product;Product
+MSP Anywhere;Product;Product
+Dixa;Product;Product
+ProProfs Help Desk;Product;Product
+IBM Lotus Approach;Product;Product
+Oracle Data Guard;Product;Product
+Oracle RAC;Product;Product
+Tableau;Product;Product
+Salesforce;Product;Product
+Facebook;Product;Product
+Twitter;Product;Product
+Instagram;Product;Product
+Bentley ConstructSim;Product;Product
+Bentley ContextCapture;Product;Product
+Bentley Descartes;Product;Product
+Bentley gINT;Product;Product
+Bentley Hevacomp;Product;Product
+Bentley iTwin;Product;Product
+Bentley LARS;Product;Product
+Bentley LEAP;Product;Product
+Bentley LEGION;Product;Product
+Bentley LumenRT;Product;Product
+Bentley MAXSURF;Product;Product
+Bentley MicroStation;Product;Product
+Bentley MineCycle;Product;Product
+Bentley MOSES;Product;Product
+Bentley Navigator;Product;Product
+Bentley OpenBridge;Product;Product
+Bentley OpenBuildings;Product;Product
+Bentley OpenCities Map;Product;Product
+Bentley OpenFlows;Product;Product
+Bentley OpenPlant;Product;Product
+Bentley OpenRail;Product;Product
+Bentley OpenRoads;Product;Product
+Bentley OpenSite;Product;Product
+Bentley OpenUtilities;Product;Product
+Bentley PlantWise;Product;Product
+Bentley PLAXIS;Product;Product
+Bentley Pointools;Product;Product
+Bentley ProcureWare;Product;Product
+Bentley ProjectWise;Product;Product
+Bentley Promis.e;Product;Product
+Bentley ProStructures;Product;Product
+Bentley RAM;Product;Product
+Bentley SACS;Product;Product
+Bentley STAAD;Product;Product
+Bentley SUPERLOAD;Product;Product
+Bentley SYNCHRO;Product;Product
+Bentley Products;Product;Product
+Autotask Endpoint Backt;Product;Product
+Autotask Workplace;Product;Product
+Autotask Datto RMM;Product;Product
+Avid Express;Product;Product
+Avid Interplay Assist;Product;Product
+Amazon AWS;Product;Product
+AWS Athena;Product;Product
+AWS EMR;Product;Product
+AWS ECS;Product;Product
+AWS ECR;Product;Product
+AWS EKS;Product;Product
+AWS Cloudwatch;Product;Product
+AWS Lambda;Product;Product
+Amazon S3;Product;Product
+Amazon EBS;Product;Product
+Amazon Glacier;Product;Product
+Amazon RDS;Product;Product
+Amazon DynamoDB;Product;Product
+Amazon ElasticCache;Product;Product
+Amazon CloudFront;Product;Product
+AWS Direct Connect;Product;Product
+AWS CodeDeploy;Product;Product
+AWS Elastic Beanstalk;Product;Product
+Amazon Aurora;Product;Product
+Amazon EC2;Product;Product
+Amazon Elastic Container Registry;Product;Product
+Amazon Virtual Private Cloud;Product;Product
+AWS Snowball;Product;Product
+AWS Storage Gateway;Product;Product
+Amazon ElasticCache;Product;Product
+Amazon API Gateway;Product;Product
+AWS CodeBuild;Product;Product
+Amazone EC2 Systems Manager;Product;Product
+AWS CloudFormation;Product;Product
+AWS CloudTrail;Product;Product
+AWS Config;Product;Product
+AWS Management Console;Product;Product
+AWS (IAM);Product;Product
+Amazon Cognito;Product;Product
+AWS Directory Service;Product;Product
+Amazon Elasticsearch;Product;Product
+Amazon Elastic MapReduce;Product;Product
+Amazon Kinesis Streams;Product;Product
+Amazon (SWF);Product;Product
+Amazon (SQS);Product;Product
+Amazon (SNS);Product;Product
+Amazon GameLift;Product;Product
+Amazon Polly;Product;Product
+FileZilla;Product;Product
+SolarWinds Products;Product;Product
+Django;Product;Product
+Mantis BT;Product;Product
+ImageMagick;Product;Product
+Laravel;Product;Product
+MDN Tools;Product;Product
+MSXML Tools;Product;Product
+NetCDF;Product;Product
+Oauth;Product;Product
+OpenCL;Product;Product
+OpenID;Product;Product
+OpenSSL;Product;Product
+PHProjekt;Product;Product
+RegEX;Product;Product
+SOAP;Product;Product
+LabView;Product;Product

@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>
+    <div class="jsp-view-section-title">
+      <h4>Main Info</h4>
+      <button mat-icon-button color="primary" (click)="changeToEditMode.emit(true)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+    <div>First name: {{initialData?.first_name}}</div>
+    <div>Last name: {{initialData?.last_name}}</div>
+    <div>Email: {{initialData?.email}}</div>
+    <div>Phone: +{{phoneNumber}}</div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,33 @@
+# General
+# ------------------------------------------------------------------------------
+USE_DOCKER=yes
+
+# Redis
+# ------------------------------------------------------------------------------
+REDIS_URL=redis://redis:6379/0
+
+# Celery
+# ------------------------------------------------------------------------------
+
+# Flower
+CELERY_FLOWER_USER=
+CELERY_FLOWER_PASSWORD=
+
+DOMAIN_NAME=localhost:4200
+HTTP_SCHEME=http
+
+# Stripe
+# ------------------------------------------------------------------------------
+STRIPE_PUBLIC_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_LIVE_MODE=
+WEBHOOKS_SIGNING_SECRET=
+
+# Social Accounts
+# ------------------------------------------------------------------------------
+SOCIAL_FACEBOOK_NAME=
+SOCIAL_AUTH_FACEBOOK_APP_ID=
+SOCIAL_AUTH_FACEBOOK_SECRET=
+SOCIAL_GOOGLE_NAME=
+SOCIAL_AUTH_GOOGLE_APP_ID=
+SOCIAL_AUTH_GOOGLE_SECRET=

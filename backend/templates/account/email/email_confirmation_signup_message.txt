@@ -1,0 +1,9 @@
+{% load account %}{% user_display user as user_display %}{% load i18n %}{% autoescape off %}
+
+Hello {{ user_display }}!
+
+Thanks for registering at 133T.com.
+
+Now we need to verify your email address to complete your registration.
+Follow the link to confirm your email address: <a href="{{ activate_url }}">link</a>.
+{% endautoescape %}

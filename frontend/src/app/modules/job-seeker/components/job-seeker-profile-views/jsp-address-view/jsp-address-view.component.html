@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>
+    <div class="jsp-view-section-title">
+      <h4>Address</h4>
+      <button mat-icon-button color="primary" (click)="changeToEditMode.emit(true)">
+        <mat-icon>edit</mat-icon>
+      </button>
+    </div>
+  </mat-card-title>
+  <mat-card-content>
+    <div>Address: {{initialData?.address}}</div>
+    <div>Country: {{initialData?.country.name}}</div>
+    <div>City, State: {{initialData?.city.name}} ({{initialData?.city.state.abbreviation}})</div>
+    <div>Zip: {{initialData?.zip.code}}</div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,244 @@
+<div *ngIf="!(eventState$ | async)?.pending; else loadingView">
+
+<div fxLayout="row" fxLayoutAlign="space-between">
+  <h2 class="mat-dialog-title">{{(eventType$ | async)?.name}}</h2>
+  <span *ngIf="(eventOwner$ | async).id" class="mat-caption">
+    Created by
+    <a
+      class="link"
+      (click)="goToOwnerPage()">
+      {{(eventOwner$ | async).name}}
+    </a>
+  </span>
+</div>
+<mat-dialog-content>
+  <form
+    [ngxsForm]="ngxsConnectFormKey"
+    [formGroup]="form"
+    [ngxsFormClearOnDestroy]="true">
+
+  <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start center" fxLayoutAlign.lt-lg="center start" fxLayoutGap="20px" fxLayoutGap.lt-lg="0">
+    <span class="mat-body-strong">Attendees:</span>
+    <div fxLayout="column">
+      <ef-selector-with-search
+        [formCtrl]="form.controls.colleagues"
+        [options]="(colleaguesState$ | async).data"
+        [comparingKey]="'value'"
+        [pending]="(colleaguesState$ | async)?.pending"
+        multiple="true"
+        placeholder="Add collegue..."
+        searchPlaceholderLabel="Find collegue...">
+      </ef-selector-with-search>
+      <cc-attendees-list
+        [formCtrl]="form.controls.colleagues">
+      </cc-attendees-list>
+    </div>
+    <div fxLayout="column">
+      <ef-selector-with-search
+        [formCtrl]="form.controls.job"
+        [options]="(jobsState$ | async).data"
+        [comparingKey]="'id'"
+        [pending]="(jobsState$ | async)?.pending"
+        [unselect]="false"
+        placeholder="Select job posting..."
+        searchPlaceholderLabel="Find job posting...">
+      </ef-selector-with-search>
+      <span
+        *ngIf="form.controls.job.value"
+        class="mat-h3">
+        <a class="link" (click)="goToJobPage(form.controls.job.value.id)">
+          {{form.controls.job.value.title}}
+        </a>
+      </span>
+    </div>
+
+    <div fxLayout="column">
+      <ef-selector-with-search
+        [formCtrl]="form.controls.candidates"
+        [options]="(candidatesState$ | async).data"
+        [comparingKey]="'value'"
+        [pending]="(candidatesState$ | async)?.pending"
+        multiple="true"
+        placeholder="Add candidate..."
+        searchPlaceholderLabel="Find candidate...">
+      </ef-selector-with-search>
+      <cc-attendees-list
+        [formCtrl]="form.controls.candidates">
+      </cc-attendees-list>
+    </div>
+  </div>
+
+
+  <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start center" fxLayoutAlign.lt-lg="center start" fxLayoutGap.lt-lg="0" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <span class="mat-body-strong">*From:</span>
+      <cc-cool-datetime-picker
+        [formCtrl]="form.controls.time_from"
+        [timezone]="form.controls.timezone.value"
+      ></cc-cool-datetime-picker>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <span class="mat-body-strong">*To:</span>
+      <cc-cool-datetime-picker
+        [formCtrl]="form.controls.time_to"
+        [relyInRangeOnCtrl]="form.controls.time_from"
+        [minTimeRange]="minTimeRange"
+        [timezone]="form.controls.timezone.value"
+      ></cc-cool-datetime-picker>
+    </div>
+  </div>
+
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <span class="mat-body-strong">*Time zone:</span>
+      <ef-selector-with-search
+        [formCtrl]="form.controls.timezone"
+        [options]="(zonesState$ | async).data"
+        [pending]="(zonesState$ | async)?.pending"
+        [getValueFromKey]="'value'"
+        [comparingKey]="'title'"
+        [unselect]="false"
+        placeholder="Select time zone..."
+        searchPlaceholderLabel="Find time zone...">
+      </ef-selector-with-search>
+    </div>
+  </div>
+
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <span class="mat-body-strong">*Country:</span>
+      <ef-selector-with-search
+        [formCtrl]="form.controls.location.controls.country"
+        [options]="(countriesState$ | async).data?.results"
+        [pending]="(countriesState$ | async)?.pending"
+        [getValueFromKey]="'id'"
+        [comparingKey]="'id'"
+        [unselect]="false"
+        placeholder="Select country..."
+        searchPlaceholderLabel="Find country...">
+      </ef-selector-with-search>
+    </div>
+
+    <!-- TODO: fix it, does not work properly, needs to be adopted to server side search -->
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <span class="mat-body-strong">*City, State:</span>
+      <div fxLayout="column">
+        <ef-selector-with-server-search
+          [formCtrl]="form.controls.location.controls.city"
+          [options]="citiesList$"
+          [pending]="(citiesState$ | async)?.pending"
+          [comparingKey]="'id'"
+          [unselect]="false"
+          (changeSearchString)="changeCitySearchString($event)"
+          (getNextOptions)="getNextCities()"
+          placeholder="Select city..."
+          searchPlaceholderLabel="Find city...">
+        </ef-selector-with-server-search>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+      <span class="mat-body-strong">*Zip:</span>
+      <div fxLayout="column">
+        <ef-selector-with-search
+          [formCtrl]="form.controls.location.controls.zip"
+          [options]="(zipsState$ | async).data?.results"
+          [pending]="(zipsState$ | async)?.pending"
+          [getValueFromKey]="'id'"
+          [comparingKey]="'id'"
+          [unselect]="false"
+          placeholder="Select zip..."
+          searchPlaceholderLabel="Find zip...">
+        </ef-selector-with-search>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+    <span class="mat-body-strong">*Address:</span>
+    <mat-form-field fxFlex="80">
+      <input [formControl]="form.controls.location.controls.address" matInput placeholder="Enter address...">
+    </mat-form-field>
+  </div>
+
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px" fxFlexFill>
+
+      <span class="mat-body-strong">*Subject:</span>
+
+      <mat-form-field fxFlex="60">
+        <input formControlName="subject" matInput placeholder="Enter subject...">
+      </mat-form-field>
+
+      <div>
+        <ef-selector-with-search
+          [formCtrl]="letterTemplateCtrl"
+          [options]="(letterTemplatesState$ | async).data?.results"
+          [comparingKey]="'id'"
+          [pending]="(letterTemplatesState$ | async)?.pending"
+          placeholder="Select letter template..."
+          searchPlaceholderLabel="Find letter template...">
+        </ef-selector-with-search>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutAlign="start center" fxFlexFill fxLayoutGap="20px">
+      <span class="mat-body-strong">*Description:</span>
+      <mat-form-field fxFlex="80">
+        <textarea formControlName="description" matInput [matTextareaAutosize]="true" [matAutosizeMinRows]="1" placeholder="Enter description..."></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+
+  </form>
+</mat-dialog-content>
+
+<mat-card *ngIf="(formState$ | async).errors?.collision">
+  <mat-error fxLayoutAlign="center end" fxLayoutGap="10px">
+      <mat-icon>warning</mat-icon>
+      <span>
+        {{(formState$ | async).errors?.collision}}
+      </span>
+  </mat-error>
+</mat-card>
+
+
+<mat-dialog-actions *ngIf="!(formState$ | async).pending" align="end">
+  <button
+    mat-button
+    color="warn"
+    *ngIf="isFormUpdatingEvent()"
+    (click)="onDelete()"
+  >
+    Delete event
+  </button>
+  <button mat-button mat-dialog-close>Cancel changes</button>
+  <button
+    [disabled]="!form.dirty || !form.valid"
+    mat-button
+    (click)="onSubmit()"
+  >
+    {{getSaveButtonText()}}
+  </button>
+</mat-dialog-actions>
+
+</div>
+
+<ng-template #loadingView>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <mat-spinner
+      diameter="30"
+      mode="indeterminate">
+    </mat-spinner>
+  </div>
+</ng-template>

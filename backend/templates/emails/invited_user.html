@@ -1,0 +1,20 @@
+subject: |
+    [{{ domain_name }}]: Invitation to 133T recruiting system
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Invited User</title>
+        </head>
+        <body>
+            <p>Hi {{ invited_user.get_full_name }},</p>
+            <p>
+                You're receiving this e-mail because {{ company_user.user.get_full_name }}
+                invites you to join 133T recruiting system as recruiter of {{ company_user.company.name }}.</p>
+            <p>
+                Your login in the system: {{ invited_user.email }}
+            </p>
+            <p>Follow the link to finish your registration: <a href="{{ url }}">Link.</a></p>
+        </body>
+    </html>

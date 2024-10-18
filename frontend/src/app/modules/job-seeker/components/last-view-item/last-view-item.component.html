@@ -1,0 +1,10 @@
+<div class="last-view-item">
+  <div>
+    <span class="link" (click)="goToCompanyProfile.emit(lastViewItem.company.id)">
+      {{lastViewItem.company.company}}
+    </span>
+  </div>
+  <div>
+    <span>{{lastViewItem.created_at | date}}</span>
+  </div>
+</div>

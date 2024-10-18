@@ -1,0 +1,29 @@
+<div class="score-card">
+  <div class="score-card-container" *ngIf="isCardViewMode(cardMode$ | async)">
+    <div class="stat-item" *ngFor="let item of (cardData$ | async)">
+      <p> {{item.n_candidates}}</p>
+      <p> {{item.name}}</p>
+    </div>
+    <div class="action-button">
+      <button mat-raised-button (click)="onToggleScoreCard()">
+        <mat-icon matSuffix>
+          edit
+        </mat-icon>
+      </button>
+    </div>
+  </div>
+  <div class="edit-score-card-container" *ngIf="!isCardViewMode(cardMode$ | async)">
+    <div class="edit-stat-item" *ngFor="let item of (allStatCardData$ | async)">
+      <mat-checkbox [value]="item.id" [name]="checkBoxHelper.checkBoxName"
+                    [checked]="isStatSelected(item.id)"></mat-checkbox>
+      {{item.n_candidates}} {{item.name}}
+    </div>
+    <div class="action-button">
+      <button mat-raised-button (click)="getSelectedStatuses()">
+        <mat-icon matSuffix>
+          beenhere
+        </mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

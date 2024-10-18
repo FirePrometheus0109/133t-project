@@ -1,0 +1,26 @@
+h4 {
+  margin-right: 30px;
+}
+
+.workflowstats-control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-item {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+  width: 80px;
+}
+
+.stat-item p {
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+}
+
+.stat-container {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,7 @@
+export const HttpStatuses = {
+  '400_BAD_REQUEST': 400,
+  '401_UNAUTHORIZED': 401,
+  '403_FORBIDDEN': 403,
+  '404_NOT_FOUND': 404,
+  '500_INTERNAL_SERVER_ERROR': 500
+};

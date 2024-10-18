@@ -1,0 +1,16 @@
+subject: |
+    [{{ domain_name }}]: Account Deleting
+content_type: html
+body: |
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title type="text/css">Account Deleting</title>
+        </head>
+        <body>
+            <p>Hello {{ user.get_full_name }}!</p>
+            <p>Your account has been deleted. </p>
+            <p>To restore your account use <a href="{{ url }}">link</a>.</p>
+            <p>Thank you!</p>
+        </body>
+    </html>

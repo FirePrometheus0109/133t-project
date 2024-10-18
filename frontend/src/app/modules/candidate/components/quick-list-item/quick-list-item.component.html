@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-content>
+    <div class="quick-list-item">
+      <app-workflow-candidate [candidate]="quickListItem"
+                              [enums]="enums"
+                              (change)="onChangeCandidateWorkflow($event)"></app-workflow-candidate>
+      <span class="link" (click)="navigateToProfile.emit(quickListItem.id)">
+        {{quickListItem.user.first_name}} {{quickListItem.user.last_name}}
+      </span>
+      Applied for
+      <span class="link" (click)="navigateToJob.emit(quickListItem.job.id)">{{quickListItem.job.title}}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

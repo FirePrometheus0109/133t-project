@@ -1,0 +1,10 @@
+<mat-paginator [length]="count$ | async"
+               [pageSize]="pageSize$ | async"
+               [pageSizeOptions]="pageSizeOptions$ | async"
+               (page)="onPageChanged($event)">
+</mat-paginator>
+<app-candidate-activity-item *ngFor="let activityItem of (candidatesActivity$ | async)"
+                             [activityItem]="activityItem"
+                             (navigateToCandidate)="navigateToCandidate($event)"
+                             (navigateToJob)="navigateToJob($event)">
+</app-candidate-activity-item>

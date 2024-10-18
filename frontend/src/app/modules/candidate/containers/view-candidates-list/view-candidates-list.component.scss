@@ -1,0 +1,34 @@
+.select-all-checkbox {
+  align-self: center;
+}
+
+.filter-card {
+  margin: 40px 40px;
+}
+
+.sorting-field {
+  margin-left: 40px;
+}
+
+[hidden] {
+  display: none;
+}
+
+.button-section {
+  display: flex;
+  justify-content: space-between;
+  .candidate-list-sorting {
+    display: flex;
+  }
+  .candidate-list-actions {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.top-search-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

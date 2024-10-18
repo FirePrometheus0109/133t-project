@@ -1,0 +1,69 @@
+<div class="trial-notification-container">
+  <mat-card class="trial-notification" *ngIf="(activePlan$ | async)?.is_trial">
+    Trial until {{getUntilDate()}}
+  </mat-card>
+</div>
+<div class="subscription-panel" *ngIf="!isAllPlansPassed">
+  <mat-card>
+    <mat-card-content>
+      <h4> Job Posting </h4>
+      <p *ngIf="isActivePlanSelected$ | async"> Remain {{(activePlan$ | async)?.balance?.jobs_remain }}</p>
+      <mat-icon matSuffix>list_alt</mat-icon>
+      <h4>{{(selectedPlan$ | async)?.jobs_count}}</h4>
+    </mat-card-content>
+    <mat-action-row>
+      <button mat-icon-button color="primary" (click)="upvoteSubscription()">
+        <mat-icon>add_circle</mat-icon>
+      </button>
+
+      <button mat-icon-button color="primary" [disabled]="isFirst$ | async" (click)="downvoteSubscription()">
+        <mat-icon>remove_circle</mat-icon>
+      </button>
+    </mat-action-row>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-content>
+      <h4> Profile views </h4>
+      <p *ngIf="isActivePlanSelected$ | async"> Remain {{(activePlan$ | async)?.balance?.job_seekers_remain }}</p>
+      <mat-icon matSuffix>streetview</mat-icon>
+      <h4>{{(selectedPlan$ | async)?.job_seekers_count}}</h4>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+    <mat-card-content>
+      <h4>{{(selectedPlan$ | async)?.name}}</h4>
+      <h4> {{(selectedPlan$ | async)?.price | currency}}</h4>
+      <app-new-price-marker *ngIf="(selectedPlan$ | async)?.price_apply_date"
+                            [newPrice]="(selectedPlan$ | async)?.new_price"
+                            [priceApplyDate]="(selectedPlan$ | async)?.price_apply_date">
+      </app-new-price-marker>
+      <p>
+        <small>{{(selectedPlan$ | async)?.jobs_count}} Job posting</small>
+      </p>
+      <p>
+        <small>{{(selectedPlan$ | async)?.job_seekers_count}} Profile views</small>
+      </p>
+      <p>
+        <small>monthly</small>
+      </p>
+    </mat-card-content>
+    <mat-action-row>
+      <button *ngxPermissionsOnly="['purchase_subscription_plan']" (click)="processPayment()" mat-button>
+        {{(isActivePlanSelected$ | async) ? 'Renew' : 'Purchase'}}
+      </button>
+    </mat-action-row>
+  </mat-card>
+</div>
+<mat-card *ngIf="isAllPlansPassed">
+  <mat-card-content>
+    <p>Did not find suitable package?</p>
+    <p>Contact 133T</p>
+  </mat-card-content>
+  <mat-action-row>
+    <button mat-icon-button color="primary" (click)="backToPackages()">
+      <mat-icon>remove_circle</mat-icon>
+    </button>
+  </mat-action-row>
+</mat-card>
